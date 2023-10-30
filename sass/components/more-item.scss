@@ -1,0 +1,30 @@
+.more-item{
+    
+    .icon{
+        height: 30px;
+        width: 30px;
+        stroke: $primary;
+    }
+    .more-text{
+        color: $secondary;
+    }
+}
+.more-line{
+    display: inline-block;
+    height: 30px;
+    width: 1px;
+    background-color: gray;
+    margin: 0 10px;
+}
+
+.more-item:hover{
+    .icon{
+        stroke: $white;
+    }
+    .more-text{
+        color: $white;
+    }
+    .more-line{
+        color: $white;
+    }
+}

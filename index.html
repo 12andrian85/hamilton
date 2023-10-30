@@ -1,29 +1,903 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Hamilton</title>
     <meta name="description" content="About website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="public/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-    <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+    <!-- <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet"> -->
+    
 </head>
-<body>
-    <header>
-        <h1>hello people</h1>
-        <button class="btn btn-primary">button</button>
-        <a href="theme-kit.html" class="btn-danger">theme-kit</a>
-    </header>
+<!-- svg -->
+<!-- style="display:none" -->
+<svg width="0" height="0" class="d-none">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 50" id="headleft-sfg">
+        <rect width="80" height="50" fill="#275ADE"></rect>
+        <path d="M80 25H235L260 50H80V25Z" fill="#275ADE"></path>
+    </symbol>
+</svg>
 
+<body>
+    <!-- heder -->
+    <header class="header">
+        <h1 class="d-none">Hamilton</h1>
+        <!-- logo -->
+        <div class="nav-logo d-flex justify-content-center d-lg-none">
+            <img src="/SVG/head-logo.svg" style="height: 55px;" alt="">
+            <div class="d-flex flex-column ms-2">
+                <span class="text-primary fs-5 fw-semibold">Hamilton</span>
+                <span class="text-secondary fs-sm">Estate Rental</span>
+            </div>
+        </div>
+
+        <!-- contact-header -->
+        <div class="contact-header d-none d-lg-flex">
+            <ul class="justify-content-between list-unstyled d-flex">
+                <li class="text-secondary d-flex align-items-center">
+                    <img src="/SVG/headleft-sfg.svg" alt="">
+                </li>
+                <li class="text-secondary px-2 d-flex align-items-center">
+                    <i class="fa-solid pe-2 fa-location-dot"></i>
+                    <span>588 road broklyan - </span><span class="text-primary">London</span>
+                </li>
+                <li class="text-secondary px-2 d-flex align-items-center">
+                    <i class="fa-solid pe-2 fa-phone"></i>
+                    <span>+199(980)6915</span>
+                </li>
+                </li>
+                <li class="text-secondary px-2 d-flex align-items-center">
+                    <i class="fa-regular pe-2 fa-envelope"></i>
+                    <span>shifamoni@gmail.com</span>
+                </li>
+                <li class="text-secondary px-2 d-flex align-items-center ">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                    <i class="fa-solid pe-2 fa-magnifying-glass"></i>
+                </li>
+                <li class="text-secondary d-flex align-items-center">
+                    <img src="/SVG/head-right.svg" alt="">
+                </li>
+            </ul>
+        </div>
+
+        <!-- navigation -->
+        <div class="main-nav">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid d-flex ">
+                        <div class="d-flex flex-row-reverse justify-content-between w-100">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <!-- logo -->
+                            <div class="nav-logo d-none d-lg-flex justify-content-center me-auto">
+                                <img src="/SVG/head-logo.svg" style="height: 55px;" alt="">
+                                <div class="d-flex flex-column ms-2">
+                                    <span class="text-primary fs-5 fw-semibold">Hamilton</span>
+                                    <span class="text-secondary fs-sm">Estate Rental</span>
+                                </div>
+                            </div>
+                            <div class="text-secondary px-2 d-flex align-items-center d-lg-none">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                </form>
+                                <i class="fa-solid pe-2 fa-magnifying-glass"></i>
+                            </div>
+                            <div class="d-flex justify-content-center d-lg-none">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Contacts
+                                </button>
+                            </div>
+                        </div>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+
+                            <!-- main nav -->
+                            <ul class="navbar-nav nav-underline">
+                                <li class="nav-item dropdown text-primary">
+                                    <a class="nav-link active dropdown-toggle" href="/theme-kit.html" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false-">
+                                        Home
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item " href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        About
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Services
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Projects
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        News
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="theme-kit.html">Contacts</a>
+                                </li>
+                            </ul>
+                            <!-- button quote -->
+                            <button class="btn btn-lg btn-secondary fs-6">Get a Quout</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
     <main>
+        <a href="/components.html" class="btn btn-secondary sticky-top">components</a>
+        <!-- banner -->
+        <div class="banner position-relative overflow-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-md-6 col-lg-7 d-flex align-items-center">
+                        <section class="splide" aria-label="Basic Structure Example">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">Slide 1</li>
+                                    <li class="splide__slide">Slide 02</li>
+                                    <li class="splide__slide">Slide 03</li>
+                                    <li class="splide__slide">Slide 04</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col col-12 col-md-6 col-lg-5">
+                        <form class="form-find-estate p-4" action="">
+                            <h3 class="text-start">title</h3>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control rounded-0"
+                                    placeholder="What are you looking for you" aria-label="Sizing example input">
+                            </div>
+                            <div class="input-group mb-3">
+                                <select class="form-select rounded-0 my-3" size="1" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1" size="1">One</option>
+                                    <option value="2" size="1">Two</option>
+                                    <option value="3" size="1">Three</option>
+                                </select>
+                            </div>
+                            <select class="form-select rounded-0 my-3" size="1" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1" size="1">One</option>
+                                <option value="2" size="1">Two</option>
+                                <option value="3" size="1">Three</option>
+                            </select>
+                            <select class="form-select rounded-0 my-3" size="1" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1" size="1">One</option>
+                                <option value="2" size="1">Two</option>
+                                <option value="3" size="1">Three</option>
+                            </select>
+                            <select class="form-select rounded-0 my-3" size="1" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1" size="1">One</option>
+                                <option value="2" size="1">Two</option>
+                                <option value="3" size="1">Three</option>
+                            </select>
+                            <div class="input-group mb-3">
+                                <input type="range">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- features -->
+        <div class="feature py-5">
+            <div class="container text-center">
+                <!-- <div class="title title--center title--left">
+                    <span class="title__sub">text</span>
+                    <h2 class="title__label">subtitle</h2>
+                </div> -->
+                <!-- <div class="title title--left title-all-center">
+                    <span class="title__sub">text</span>
+                    <h2 class="title__label">subtitle</h2>
+                </div> -->
+
+                <div class="title feature-title title-center">
+                    <span class="feature-title text-primary position-relative">Views all 329 New Listings</span>>
+                    <h2 class="title__label">subtitle</h2>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card card-feature h-100">
+                            <img src="" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in
+                                    to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-feature h-100">
+                            <img src="" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in
+                                    to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-feature h-100">
+                            <img src="" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in
+                                    to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Think to separate in components  -->
+        <!-- card-feature -->
+        <!-- card-property -->
+        <!-- card-project -->
+        <!-- etc -->
+
+        <!-- Component card-feature  -->
+        <!-- <div class="card-feature card h-100">
+            <img src="" class="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural
+                    lead-in
+                    to additional content.</p>
+            </div>
+        </div> -->
+
+        <!-- Component property
+        <div class="card-property card" style="width: 18rem;">
+            <div class="position-relative" style="height: 100px;">
+                <img src="" class="card-img-top" alt="">
+                <span class="badge bg-primary position-absolute bottom-0 start-0">$$$$1</span>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make
+                    up
+                    the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div> -->
+
+
+        <!-- popularly -->
+        <section class="popularly">
+            <div class="container">
+                <span>text</span>
+                <h2>title</h2>
+                <section class="splide" id="popular" aria-label="Basic Structure Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide mb-5">
+                                <div class="card card-popularly" style="width: 18rem;">
+                                    <div class="position-relative" style="heityht: 100px;">
+                                        <img src="" class="card-img-top" alt="">
+                                        <span class="badge bg-primary position-absolute bottom-0 start-0">$$$$1</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the
+                                            card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide mb-5">
+                                <div class="card card-popularly" style="width: 18rem;">
+                                    <div class="position-relative" style="height: 100px;">
+                                        <img src="" class="card-img-top" alt="">
+                                        <span class="badge bg-primary position-absolute bottom-0 start-0">$$$$1</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the
+                                            card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide mb-5">
+                                <div class="card card-popularly" style="width: 18rem;">
+                                    <div class="position-relative" style="height: 100px;">
+                                        <img src="" class="card-img-top" alt="">
+                                        <span class="badge bg-primary position-absolute bottom-0 start-0">$$$$1</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the
+                                            card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide mb-5">
+                                <div class="card card-popularly" style="width: 18rem;">
+                                    <div class="position-relative" style="height: 100px;">
+                                        <img src="" class="card-img-top" alt="">
+                                        <span class="badge bg-primary position-absolute bottom-0 start-0">$$$$1</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the
+                                            card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+        <!-- consulting -->
+        <section class="consulting py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-md-6 text-center text-md-start">
+                        <span>text</span>
+                        <h2>title</h2>
+                        <p> fraze fraze fraze fraze fraze fraze fraze fraze fraze fraze</p>
+                        <div class="text-center d-md-flex text-md-start my-3">
+                            img
+                            <div class="d-md-block">
+                                <h4>subtitle</h4>
+                                <p> fraze fraze fraze fraze fraze fraze fraze fraze</p>
+                            </div>
+                        </div>
+                        <div class="text-center d-md-flex text-md-start my-3">
+                            img
+                            <div>
+                                <h4>subtitle</h4>
+                                <p> fraze fraze fraze fraze fraze fraze fraze fraze</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6">
+                        <div class="row">
+                            <div class="col col-12 col-lg-6">img1</div>
+                            <div class="col col-12 col-md-6">img2</div>
+                            <div class="col col-12 col-md-6 col-lg-12">img3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- more -->
+        <section class="more">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-12 col-md-6 d-none d-md-block">
+                        img
+                    </div>
+                    <div class="col col-12 col-md-6 text-center text-md-start py-4">
+                        <div class="container">
+                            <span>text</span>
+                            <h2>title</h2>
+                            <div class="row row-cols-1 row-cols-md-2">
+                                <div class="col"></div>
+                                <div class="col"></div>
+                                <div class="col"></div>
+                                <div class="col"></div>
+                                <div class="col"></div>
+                                <div class="col"></div>
+                                <div class="col"></div>
+                                <div class="col"></div>
+                                <div class="col"></div>
+                                <div class="col"></div>
+                                <div class="col"></div>
+                                <div class="col"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- types -->
+        <section class="types text-center py-5">
+            <div class="container">
+                <span>text</span>
+                <h2>title</h2>
+                <div class="type-block d-md-flex">
+                    <div class="card card-top mx-2" style="width: 18rem-;">
+                        <div class="card" style="width: 18rem;">
+                            <img src="" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="card mx-2" style="width: 18rem;">
+                        <img src="" class="card-img-top" alt="">
+                    </div>
+
+                    <div class="card card-top mx-2" style="width: 18rem;">
+                        <img src="" class="card-img-top" alt="">
+                    </div>
+
+                    <div class="card mx-2" style="width: 18rem;">
+                        <img src="" class="card-img-top" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- new-items-->
+        <div class="new-items category d-flex mb-5">
+            <div class="container-fluid">
+                <div class="w-100" style="overflow: auto;">
+                    <!-- tabulation -->
+                    <div class=" overflow-auto ">
+                        <div class="d-md-flex justify-content-between">
+                            <div class=" align-items-start mb-4">
+                                <span>text</span>
+                                <h2>title</h2>
+                            </div>
+                            <ul class="nav nav-tabs overflow-auto flex-nowrap justify-content-md-end border-0 mb-4"
+                                id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="btn-tab btn btn-link px-4 text-nowrap active" id="home-tab"
+                                        data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab"
+                                        aria-controls="home-tab-pane" aria-selected="true">
+                                        1
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="btn-tab btn btn-link px-4 text-nowrap" id="profile-tab"
+                                        data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                        aria-controls="profile-tab-pane" aria-selected="false">
+                                        2
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="btn-tab btn btn-link px-4 text-nowrap" id="contact-tab"
+                                        data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                        aria-controls="contact-tab-pane" aria-selected="false">
+                                        3
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="btn-tab btn btn-link px-4 text-nowrap" id="work-tab"
+                                        data-bs-toggle="tab" data-bs-target="#work-tab-pane" type="button" role="tab"
+                                        aria-controls="work-tab-pane" aria-selected="false">
+                                        4
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="btn-tab btn btn-link px-4 text-nowrap" id="factory-tab"
+                                        data-bs-toggle="tab" data-bs-target="#factory-tab-pane" type="button" role="tab"
+                                        aria-controls="factory-tab-pane" aria-selected="false">
+                                        5
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="btn-tab btn btn-link px-4 text-nowrap" id="project-tab"
+                                        data-bs-toggle="tab" data-bs-target="#project-tab-pane" type="button" role="tab"
+                                        aria-controls="project-tab-pane" aria-selected="false">
+                                        6
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- items -->
+                        <div class="tab-content" id="myTabContent">
+                            <!-- item -->
+                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">
+                                <div class="row row-cols-1 row-cols-md-3">
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem-;">
+                                            1
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem-;">
+                                            1
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem-;">
+                                            1
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                aria-labelledby="profile-tab" tabindex="0">
+                                <div class="row row-cols-1 row-cols-md-3">
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem-;">
+                                            2
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem-;">
+                                            2
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem-;">
+                                            2
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                aria-labelledby="contact-tab" tabindex="0">
+                                <div class="row row-cols-1 row-cols-md-3">
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem-;">
+                                            3
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem-;">
+                                            3
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem-;">
+                                            3
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="tab-pane fade" id="work-tab-pane" role="tabpanel" aria-labelledby="work-tab"
+                                tabindex="0">
+                                <div class="row row-cols-1 row-cols-md-3">
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem-;">
+                                            4
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem-;">
+                                            4
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem-;">
+                                            4
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="tab-pane fade" id="factory-tab-pane" role="tabpanel"
+                                aria-labelledby="factory-tab" tabindex="0">
+                                <div class="row row-cols-1 row-cols-md-3">
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem-;">
+                                            5
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem-;">
+                                            5
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem-;">
+                                            5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="tab-pane fade" id="project-tab-pane" role="tabpanel"
+                                aria-labelledby="project-tab" tabindex="0">
+                                <div class="row row-cols-1 row-cols-md-3">
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem-;">
+                                            6
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem-;">
+                                            6
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem-;">
+                                            6
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- plans -->
+        <section class="plans py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-md-6">
+                        <h3>title</h3>
+                        <span>text</span>
+                        <div class="row">
+                            <div class="col col-12 col-md-6">
+                                <label for="name">Name</label>
+                                <input class="input-group w-100" id="name" type="text" placeholder="name">
+                            </div>
+                            <div class="col col-12 col-md-6">
+                                <label for="email">Email Address</label>
+                                <input class="input-group w-100" id="email" type="text" placeholder="Email">
+                            </div>
+                            <div class="col col-12 col-md-6">
+                                <label for="phone">Phone</label>
+                                <input class="input-group w-100" id="phone" type="tel" placeholder="phone">
+                            </div>
+                            <div class="col col-12 col-md-6">
+                                <label for="details">Subject</label>
+                                <input class="input-group w-100" id="details" type="text" placeholder="subject">
+                            </div>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here"
+                                    id="floatingTextarea"></textarea>
+                                <label for="floatingTextarea">Comments</label>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-primary rounded-0" type="submit">
+                                Get In Touch
+                            </button>
+                            <div class="d-flex align-items-center">
+                                <input type="checkbox" id="cheked">
+                                <label for="cheked">I agree my data is
+                                    <a href="#">collected</a>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6"></div>
+                </div>
+            </div>
+        </section>
+        <!-- video -->
+        <div class="video position-relative" style="height: 20rem;">
+            <video src="" class="object-fit-cover w-100 h-100"></video>
+            <a class="btn btn-outline-secondary position-absolute top-50 start-50 translate-middle">Play</a>
+        </div>
+        <!-- articles -->
+        <section class="articles py-5">
+            <div class="container">
+                <div class="text-center">
+                    <span>text</span>
+                    <h2>title</h2>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                    <div class="col my-3 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3 d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3 d-flex justify-content-center ms-auto me-auto">
+                        <div class="card" style="width: 18rem;">
+                            <img src="" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- partners -->
+        <div class="partners">
+            <div class="text-center mb-3">
+                <span>text</span>
+                <h2>title</h2>
+            </div>
+            <section class="splide" id="partners" aria-label="Basic Structure Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">Slide 01</li>
+                        <li class="splide__slide">Slide 02</li>
+                        <li class="splide__slide">Slide 03</li>
+                        <li class="splide__slide">Slide 04</li>
+                        <li class="splide__slide">Slide 05</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </main>
-    
-    <footer>
+
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-4">
+                <div class="col">
+                    <div>
+                        logo
+                    </div>
+                    <p> fraze fraze fraze fraze fraze fraze fraze fraze fraze fraze</p>
+                    <div>
+                        social Info
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>title</h4>
+                    <ul class="list-unstyled">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>title</h4>
+                    <ul class="list-unstyled">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>title</h4>
+                    <p> fraze fraze fraze fraze fraze fraze fraze fraze fraze</p>
+
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder=""
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-    
-    <script src="js/main.js"></script>
+
+    <!-- Modal Contact-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-center">
+                    <h1 class="modal-title fs-5  text-primary" id="exampleModalLabel">contacts</h1>
+                </div>
+                <div class="modal-body">
+                    <ul class="d-flex flex-column list-unstyled">
+                        <li class="my-1">
+                            <span class="d-flex text-secondary justify-content-center align-items-center">
+                                <i class="fa-solid fa-location-dot pe-2"></i>
+                                road broklyan -
+                                <span class="text-primary">London</span>
+                            </span>
+                        </li>
+                        <li class="my-1 d-flex align-items-center text-secondary justify-content-center">
+                            <i class="fa-solid fa-phone pe-2"></i>
+                            <a href="#" class="text-secondary" type="tel">+199(980)6915</a>
+                        </li>
+                        <li class="my-1 d-flex align-items-center text-secondary justify-content-center">
+                            <i class="fa-regular fa-envelope pe-2"></i>
+                            <a href="#" class="text-secondary" type=email>shifamoni@gmail.com</a>
+                        </li>
+                        <li class="my-1 d-flex align-items-center text-secondary justify-content-center">
+                            <form class="d-flex align-items-center px-4" role="search">
+                                <input class="form-control border-0 me-2" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script type="module" src="js/main.js"></script>
 </body>
+
 </html>

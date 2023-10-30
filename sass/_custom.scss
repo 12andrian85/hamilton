@@ -1,11 +1,31 @@
-// @import "./variables";
+
+@import "./variables";
 @import "./mixins";
 
+    // global
 @import "./global/scaffolding";
 @import "./global/forms";
 @import "./global/typography";
 @import "./global/buttons";
-
+    // blocks
 @import "./blocks/header";
 @import "./blocks/main-nav";
+@import "./blocks/banner";
+@import "./blocks/feature";
+@import "./blocks/explore";
 @import "./blocks/footer";
+
+
+// components
+@import "./components/title-center.scss";
+@import "./components/card-feature.scss";
+@import "./components/card-popularly.scss";
+@import "./components/more-item.scss";
+@import "./components/types.scss";
+@import "./components/new-works.scss";
+
+
+
+
+
+

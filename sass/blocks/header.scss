@@ -1,0 +1,42 @@
+.header {
+   
+
+
+    .navbar {
+        .nav-link {
+            display: flex;
+            align-items: center;
+            color: $secondary;
+            font-weight: 600;
+            margin: 10px;
+            padding: 0;
+        }
+
+        .dropdown-item {
+            color: $secondary;
+        }
+        .active{
+            color: $primary;
+        }
+
+        .nav-link:hover,
+        .dropdown-item:hover {
+            color: $primary;
+        }
+
+        .nav-link:focus {
+            color: $primary;
+            border-bottom: 1px solid $primary;
+
+        }
+    }
+
+    .collapse {
+        .btn {
+            padding: 8px 30px;
+        }
+        .btn:hover{
+            background-color: $primary;
+        }
+    }
+}

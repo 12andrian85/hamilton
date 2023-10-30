@@ -1,0 +1,45 @@
+.banner {
+    // position: relative;
+    
+    .splide {
+        margin-left: auto;
+        position: initial;
+        width: 100%;
+
+
+        .splide__pagination {
+            padding: 0;
+            right: auto;
+            left: 0;
+            height: 20%;
+            transform: translateY(-50%);
+            top: 50%;
+        }
+
+        .splide__arrows {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: $width-tablet) {
+    .banner {
+        .splide {
+
+            .splide__pagination {
+
+            }
+        }
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .banner {
+        .splide {
+
+            .splide__pagination {
+                // left: -23px;
+            }
+        }
+    }
+}
