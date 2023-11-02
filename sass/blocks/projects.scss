@@ -1,0 +1,38 @@
+.projects {
+
+
+    .accordion {
+
+        .accordion-item {
+            background-color: #d0e6f0;
+            margin: 15px 0;
+        }
+
+        .accordion-button {
+            background-color: #d0e6f0;
+        }
+
+        .accordion-button:focus {
+            background-color: #d0e6f0;
+            box-shadow: none;
+        }
+        .accordion-button-icon-transform:focus{
+            transform: rotate(90deg);
+        }
+        .accordion-button::after {
+            background-image: url("/SVG/angles-right-solid.svg");
+            background-color: $secondary;
+            padding: 5px;
+            width: 41px;
+            height: 42px;
+            background-position: center;
+            border-radius: 5px;
+        }
+
+
+        .accordion-body {
+            background-color: #d0e6f0;
+        }
+    }
+
+}

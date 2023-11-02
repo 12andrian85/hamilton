@@ -13,6 +13,10 @@
 @import "./blocks/banner";
 @import "./blocks/feature";
 @import "./blocks/explore";
+@import "./blocks/team-details";
+@import "./blocks/projects";
+@import "./blocks/contacts";
+@import "./blocks/blog-post";
 @import "./blocks/footer";
 
 
@@ -23,7 +27,22 @@
 @import "./components/more-item.scss";
 @import "./components/types.scss";
 @import "./components/new-works.scss";
+@import "./components/socials.scss";
+@import "./components/team.scss";
+@import "./components/reviews.scss";
+@import "./components/latest-articles.scss";
+@import "./components/contacts-information.scss";
 
+
+// about us
+@import "./about/banner.scss";
+@import "./about/living-spaces.scss";
+@import "./about/popular-properties.scss";
+
+// service
+@import "./service/banner.scss";
+@import "./service/gallery.scss";
+@import "./service/profile.scss";
 
 
 

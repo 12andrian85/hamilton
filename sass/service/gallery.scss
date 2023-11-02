@@ -1,0 +1,65 @@
+.gallery{
+
+
+    .splide{
+
+        &__arrow{
+            display: none;
+            border-radius: 0;
+        }
+        &__pagination{
+            display: none;
+        }
+    }
+}
+
+@media (min-width: $width-tablet) {
+    .gallery{
+        .splide{
+            &__arrow{
+                display: block;
+            }
+            &__arrow--next{
+                right: -35px;
+            }
+            &__arrow--prev{
+                left: -35px;
+            }
+            &__track{
+                position: absolute;
+                bottom: 0;
+                height: 80px;
+                width: 100%;
+            }
+            
+        }
+    }
+}
+@media (min-width: $width-desktop) {
+    .gallery{
+        .splide{
+            
+            &__arrow--next{
+                right: -40px;
+            }
+            &__arrow--prev{
+                left: -40px;
+            }
+            
+        }
+    }
+}
+@media (min-width: $width-x-desktop) {
+    .gallery{
+        .splide{
+            
+            &__arrow--next{
+                right: -60px;
+            }
+            &__arrow--prev{
+                left: -60px;
+            }
+            
+        }
+    }
+}

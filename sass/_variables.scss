@@ -25,7 +25,6 @@ $dark:          $gray-600;
 // scss-docs-end theme-color-variables
 
 // Square radius
-// $border-radius:    0;
 $btn-border-radius-lg: 0;
 
 // Create your own map
@@ -35,10 +34,9 @@ $custom-colors: (
 $font-size-sm: 12px;
 $badge-border-radius: 0;
 $fs-sm: 10px;
-
+$accordion-icon-transform:   rotate(90deg) !default;
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-// $font-family-sans-serif: 'Edu SA Beginner', cursive, serif;
 
 // breackpoints
 $width-mobile: 320px;
@@ -48,4 +46,5 @@ $width-x-desktop: 1200px;
 $width-xx-desktop: 1400px;
 
 // ex
+// @media (min-width: $width-tablet) {}
 // @media (min-width: $width-desktop) {}
