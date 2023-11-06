@@ -10975,7 +10975,6 @@ textarea.form-control-lg {
   }
 }
 ul, li, div, span, article, section, nav, form {
-  min-height: 50px;
   outline-style: dashed;
   outline-color: tomato;
   outline-width: 1px;
@@ -11030,11 +11029,23 @@ ul, li, div, span, article, section, nav, form {
   height: 20%;
   transform: translateY(-50%);
   top: 50%;
+  display: none;
 }
 .banner .splide .splide__arrows {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .banner .splide .splide__pagination {
+    display: flex;
+    left: -40px;
+  }
+}
+@media (min-width: 992px) {
+  .banner .splide .splide__pagination {
+    left: -45px;
+  }
+}
 @media (min-width: 768px) {
   .explore .card {
     width: 25%;
@@ -11069,6 +11080,13 @@ ul, li, div, span, article, section, nav, form {
 }
 .projects .accordion .accordion-body {
   background-color: #d0e6f0;
+}
+
+.breadcrumb {
+  width: max-content;
+}
+.breadcrumb .breadcrumb-item::before {
+  color: white;
 }
 
 .title-center {

@@ -11,7 +11,7 @@ if (splideBanner) {
   new Splide('#banner', {
     direction: 'ttb',
     heightRatio: 0.3,
-    width: '95%',
+    // width: '95%',
     type: 'loop',
     wheel: "true",
   }).mount();

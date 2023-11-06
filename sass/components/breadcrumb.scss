@@ -1,0 +1,7 @@
+.breadcrumb{
+    width: max-content;
+
+    .breadcrumb-item::before{
+        color: white;
+    }
+}

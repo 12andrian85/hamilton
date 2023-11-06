@@ -1,6 +1,6 @@
 .banner {
     // position: relative;
-    
+
     .splide {
         margin-left: auto;
         position: initial;
@@ -14,6 +14,7 @@
             height: 20%;
             transform: translateY(-50%);
             top: 50%;
+            display: none;
         }
 
         .splide__arrows {
@@ -27,7 +28,8 @@
         .splide {
 
             .splide__pagination {
-
+                display: flex;
+                left: -40px;
             }
         }
     }
@@ -38,7 +40,7 @@
         .splide {
 
             .splide__pagination {
-                // left: -23px;
+                left: -45px;
             }
         }
     }
