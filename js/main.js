@@ -14,6 +14,7 @@ if (splideBanner) {
     // width: '95%',
     type: 'loop',
     wheel: "true",
+    height: 400,
   }).mount();
 
 }
