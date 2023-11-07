@@ -1,11 +1,18 @@
 .banner {
     // position: relative;
+    background-color: black;
+    background-image: url(/public/img/naomi-ellsworth-EMPLSuvDuhQ-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
 
     .splide {
         margin-left: auto;
         position: initial;
         width: 100%;
 
+        .splide__box{
+            height: 340px;
+        }
 
         .splide__pagination {
             padding: 0;
@@ -26,6 +33,9 @@
 @media (min-width: $width-tablet) {
     .banner {
         .splide {
+            .title-center::after{
+                display: none;
+            }
 
             .splide__pagination {
                 display: flex;

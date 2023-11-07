@@ -11017,10 +11017,19 @@ ul, li, div, span, article, section, nav, form {
   background-color: #1684b5;
 }
 
+.banner {
+  background-color: black;
+  background-image: url(/public/img/naomi-ellsworth-EMPLSuvDuhQ-unsplash.jpg);
+  background-size: cover;
+  height: 100vh;
+}
 .banner .splide {
   margin-left: auto;
   position: initial;
   width: 100%;
+}
+.banner .splide .splide__box {
+  height: 340px;
 }
 .banner .splide .splide__pagination {
   padding: 0;
@@ -11036,6 +11045,9 @@ ul, li, div, span, article, section, nav, form {
 }
 
 @media (min-width: 768px) {
+  .banner .splide .title-center::after {
+    display: none;
+  }
   .banner .splide .splide__pagination {
     display: flex;
     left: -40px;
