@@ -1,0 +1,25 @@
+.availability{
+    background-color: #F2F6F7FF;
+       
+    .availability-style{
+            height: 20px;
+    }
+}
+@media (min-width: $width-tablet) {
+
+    .availability{
+        .availability-img{
+            height: 380px;
+            width: 100%;
+        }
+    }
+}
+@media (min-width: $width-desktop) {
+
+    .availability{
+        .availability-img{
+            height: 540px;
+            width: 100%;
+        }
+    }
+}

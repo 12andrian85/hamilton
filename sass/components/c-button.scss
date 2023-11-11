@@ -1,0 +1,20 @@
+.c-button::after{
+    position: absolute;
+    content: "";
+    background-image: url("/SVG/triangle-right.svg");
+    background-size: cover;
+    height: 45px;
+    width: 40px;
+    right: -2px;
+    top: -3px;
+}
+.c-button::before{
+    position: absolute;
+    content: "";
+    background-image: url("/SVG/triangle-left.svg");
+    background-size: cover;
+    height: 45px;
+    width: 40px;
+    left: -2px;
+    top: -3px;
+}

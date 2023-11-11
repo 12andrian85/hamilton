@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="public/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-    <!-- <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet"> -->
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
 
 </head>
 <!-- svg -->
@@ -19,13 +19,55 @@
         <path d="M80 25H235L260 50H80V25Z" fill="#275ADE"></path>
     </symbol>
 </svg>
+<!-- home -->
+<svg width="0" height="0" class="d-none">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="home">
+        <g clip-path="url(#clip0_0_3)">
+            <path d="M3.125 7.69231V19.2308H16.875V7.69231" stroke="#"></path>
+            <path d="M19.375 10L10 1.53847L0.625 10" stroke="#" stroke-linecap="round"></path>
+            <path d="M15 19.2308V9.23077H10V19.2308" stroke="#"></path>
+            <path d="M8.4375 9.61539H4.6875V13.4615H8.4375V9.61539Z" stroke="#"></path>
+            <path d="M6.5625 9.23077V13.8462" stroke="#"></path>
+            <path d="M8.74594 11.2098L4.99621 11.1538" stroke="#"></path>
+            <path d="M15.625 6.15384V0.769226H13.75V4.51505" stroke="#" stroke-linecap="round"></path>
+            <path
+                d="M18.125 17.6923C18.125 17.2675 17.8452 16.9231 17.5 16.9231C17.1548 16.9231 16.875 17.2675 16.875 17.6923V18.4615C16.875 18.8864 17.1548 19.2308 17.5 19.2308C17.8452 19.2308 18.125 18.8864 18.125 18.4615V17.6923Z"
+                stroke="#"></path>
+            <path
+                d="M3.125 17.6923C3.125 17.2675 2.84518 16.9231 2.5 16.9231C2.15482 16.9231 1.875 17.2675 1.875 17.6923V18.4615C1.875 18.8864 2.15482 19.2308 2.5 19.2308C2.84518 19.2308 3.125 18.8864 3.125 18.4615V17.6923Z"
+                stroke="#"></path>
+        </g>
+        <defs>
+            <clipPath id="clip0_0_3">
+                <rect width="20" height="20" fill="white"></rect>
+            </clipPath>
+        </defs>
+    </symbol>
+</svg>
+<!-- card -->
+<svg width="0" height="0" class="hidden">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" id="credit-card-regular">
+        <path
+            d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z">
+        </path>
+    </symbol>
+</svg>
+<!-- elipse -->
+<svg width="0" height="0" class="d-none">
+    <symbol fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 475 133" id="Ellipse 1">
+        <path
+            d="M475 133C341.667 133 363.589 133 234.722 133C105.856 133 136.111 133 0 133C0 72.087 112.8 0 241.667 0C370.533 0 475 72.087 475 133Z"
+            fill=""></path>
+    </symbol>
+</svg>
+
 
 <body>
     <!-- heder -->
     <header class="header">
-        <h1 class="d-none">Hamilton</h1>
+        <!-- <h1 class="d-none">Hamilton</h1> -->
         <!-- logo -->
-        <div class="nav-logo d-flex justify-content-center d-lg-none">
+        <div class="nav-logo d-flex justify-content-center d-lg-none ">
             <img src="/SVG/head-logo.svg" style="height: 55px;" alt="">
             <div class="d-flex flex-column ms-2">
                 <span class="text-primary fs-5 fw-semibold">Hamilton</span>
@@ -34,7 +76,7 @@
         </div>
 
         <!-- contact-header -->
-        <div class="contact-header d-none d-lg-flex">
+        <div class="contact-header d-none d-lg-flex border-bottom">
             <ul class="justify-content-between list-unstyled d-flex w-100">
                 <li class="text-secondary d-flex align-items-center">
                     <img src="/SVG/headleft-sfg.svg" alt="">
@@ -163,7 +205,7 @@
                                 </li>
                             </ul>
                             <!-- button quote -->
-                            <button class="btn btn-lg btn-secondary fs-6">Get a Quout</button>
+                            <button class="btn btn-secondary fs-6 ms-3">Get a Quout</button>
                         </div>
                     </div>
                 </nav>
@@ -171,29 +213,24 @@
         </div>
     </header>
     <main>
-        <!-- temporarily buttons -->
-        <!-- <div>
-        <a href="/components.html" class="btn btn-secondary sticky-top">components</a>
-        <a href="/about-us.html" class="btn btn-secondary sticky-top">About Us</a>
-        <a href="/service.html" class="btn btn-secondary sticky-top">Service</a>
-        <a href="/team-details.html" class="btn btn-secondary sticky-top">Team-Details</a>
-        <a href="/projects.html" class="btn btn-secondary sticky-top">projects</a>
-        <a href="/contacts.html" class="btn btn-secondary sticky-top">Contact Page</a>
-        <a href="/blog-post.html" class="btn btn-secondary sticky-top">Bloc Post</a>
-      </div> -->
         <!-- banner -->
         <div class="banner overflow-hidden align-items-center d-flex position-relative">
             <div class="position-absolute w-100 h-100 opacity-75" style="background-color: black;"></div>
-            <div class="container">
+            <div class="container z-1">
                 <div class="row">
-                    <div class="col col-12 col-md-6 col-lg-7 position-relative d-flex align-items-center">
-                        <section class="splide" id="banner" aria-label="Basic Structure Example">
+                    <div class="col col-12 col-md-6 col-lg-7 position-relative  pe-lg-4">
+                        <section class="splide mb-5 d-flex align-items-center" id="banner"
+                            aria-label="Basic Structure Example">
                             <div class="splide__track slide__box">
                                 <ul class="splide__list">
-                                    <li class="splide__slide text-center text-md-start d-flex flex-column justify-content-between">
-                                        <span class="title-center ms-md-4 text-white position-relative">Views all 329
-                                            New Listings</span>
-                                        <h2 class="text-capitalize text-white fs-1">
+                                    <li
+                                        class="splide__slide text-center text-md-start  d-flex flex-column justify-content-between">
+                                        <div class="title-start">
+                                            <span class="title-start ms-md-4 text-white position-relative">Views all 329
+                                                New Listings</span>
+                                        </div>
+                                        <h2
+                                            class="text-capitalize fs-1 text-capitalize text-white fw-semibold- display-4-">
                                             the leading real estate rental marketplace
                                         </h2>
                                         <p class="text-white">
@@ -202,55 +239,138 @@
                                             It features scrambled Latin text, which emphasizes the
                                             design over content of the layout.
                                         </p>
-                                        <button class="btn btn-primary rounded-0">Our Services</button>
+                                        <button
+                                            class="c-button position-relative align-self-start d-flex btn btn-primary py-2 px-5">
+                                            Our Services
+                                        </button>
                                     </li>
-                                    <li class="splide__slide">Slide 02</li>
-                                    <li class="splide__slide">Slide 03</li>
-                                    <li class="splide__slide">Slide 04</li>
+                                    <li
+                                        class="splide__slide text-center text-md-start  d-flex flex-column justify-content-between">
+                                        <span class="title-center ms-md-4 text-white position-relative">Views all 329
+                                            New Listings</span>
+                                        <h2
+                                            class="text-capitali fs-1 text-capitalize text-white fw-semibold- display-4-">
+                                            the leading real estate rental marketplace
+                                        </h2>
+                                        <p class="text-white">
+                                            Lorem ipsum, placeholder or dummy text used in
+                                            typesetting and graphic design for previewing layouts.
+                                            It features scrambled Latin text, which emphasizes the
+                                            design over content of the layout.
+                                        </p>
+                                        <button
+                                            class="c-button position-relative align-self-start d-flex btn btn-primary py-2 px-5">
+                                            Our Services
+                                        </button>
+                                    </li>
+
+                                    <li
+                                        class="splide__slide text-center text-md-start  d-flex flex-column justify-content-between">
+                                        <span class="title-center ms-md-4 text-white position-relative">Views all 329
+                                            New Listings</span>
+                                        <h2
+                                            class="text-capitali fs-1 text-capitalize text-white fw-semibold- display-4-">
+                                            the leading real estate rental marketplace
+                                        </h2>
+                                        <p class="text-white">
+                                            Lorem ipsum, placeholder or dummy text used in
+                                            typesetting and graphic design for previewing layouts.
+                                            It features scrambled Latin text, which emphasizes the
+                                            design over content of the layout.
+                                        </p>
+                                        <button
+                                            class="c-button position-relative align-self-start d-flex btn btn-primary py-2 px-5">
+                                            Our Services
+                                        </button>
+                                    </li>
+
+                                    <li
+                                        class="splide__slide text-center text-md-start  d-flex flex-column justify-content-between">
+                                        <span class="title-center ms-md-4 text-white position-relative">Views all 329
+                                            New Listings</span>
+                                        <h2
+                                            class="splide__title fs-1 text-capitalize text-white fw-semibold- display-4-">
+                                            the leading real estate rental marketplace
+                                        </h2>
+                                        <p class="text-white">
+                                            Lorem ipsum, placeholder or dummy text used in
+                                            typesetting and graphic design for previewing layouts.
+                                            It features scrambled Latin text, which emphasizes the
+                                            design over content of the layout.
+                                        </p>
+                                        <button
+                                            class="c-button position-relative align-self-start d-flex btn btn-primary py-2 px-5">
+                                            Our Services
+                                        </button>
+                                    </li>
+
+
+
                                 </ul>
                             </div>
                         </section>
                     </div>
-                    <div class="col col-12 col-md-6 col-lg-5">
-                        <!-- 
+
+                    <!-- trebuie sa ma uit  -->
+                    <!-- <div class="col col-12 col-md-6 col-lg-5">
+                        
                             1 fiecare element form trebue sa fie intrun div
                             2 bg image este deasupra pe forma (gereaza z-index)
-                         -->
+                        
                         <form class="form-find-estate p-4" action="">
                             <h3 class="text-start">Find home for rent</h3>
                             <div class="mb-3">
-                                <input type="text" class="form-control rounded-0"
+                                <input type="text" class="form-control rounded-0" -->
+                    <div class="col col-12 col-md-6 col-lg-5 ps-md-4 d-lg-flex align-items-center">
+                        <!-- form -->
+                        <form class="form-find-estate position-relative bg-white p-4 mb-5" action="">
+                            <h3 class="text-center text-md-start text-capitalize fs-2 fw-bold mb-3">find your accessible
+                                homes for rent</h3>
+                            <div class="field mb-3">
+                                <input type="text" class="form-control py-2 rounded-0"
                                     placeholder="What are you looking for you" aria-label="Sizing example input">
                             </div>
-                            <div class="input-group mb-3">
-                                <select class="form-select rounded-0 my-3" size="1" aria-label="Default select example">
-                                    <option selected>Open this select menu</option>
+                            <div class="field mb-3">
+                                <select class="form-select py-2 rounded-0 my-3" size="1"
+                                    aria-label="Default select example">
+                                    <option selected> What are you looking for!</option>
                                     <option value="1" size="1">One</option>
                                     <option value="2" size="1">Two</option>
                                     <option value="3" size="1">Three</option>
                                 </select>
                             </div>
-                            <select class="form-select rounded-0 my-3" size="1" aria-label="Default select example">
-                                <option selected>Open this select menu</option>
-                                <option value="1" size="1">One</option>
-                                <option value="2" size="1">Two</option>
-                                <option value="3" size="1">Three</option>
-                            </select>
-                            <select class="form-select rounded-0 my-3" size="1" aria-label="Default select example">
-                                <option selected>Open this select menu</option>
-                                <option value="1" size="1">One</option>
-                                <option value="2" size="1">Two</option>
-                                <option value="3" size="1">Three</option>
-                            </select>
-                            <select class="form-select rounded-0 my-3" size="1" aria-label="Default select example">
-                                <option selected>Open this select menu</option>
-                                <option value="1" size="1">One</option>
-                                <option value="2" size="1">Two</option>
-                                <option value="3" size="1">Three</option>
-                            </select>
-                            <div class="input-group mb-3">
+                            <div class="field">
+                                <select class="form-select py-2 rounded-0 my-3" size="1"
+                                    aria-label="Default select example">
+                                    <option selected>Property Type </option>
+                                    <option value="1" size="1">One</option>
+                                    <option value="2" size="1">Two</option>
+                                    <option value="3" size="1">Three</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <select class="form-select py-2 rounded-0 my-3" size="1"
+                                    aria-label="Default select example">
+                                    <option selected>All Categories</option>
+                                    <option value="1" size="1">One</option>
+                                    <option value="2" size="1">Two</option>
+                                    <option value="3" size="1">Three</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <select class="form-select py-2 rounded-0 my-3" size="1"
+                                    aria-label="Default select example">
+                                    <option selected>All cities</option>
+                                    <option value="1" size="1">One</option>
+                                    <option value="2" size="1">Two</option>
+                                    <option value="3" size="1">Three</option>
+                                </select>
+                            </div>
+                            <div class="field mb-4  d-flex flex-column">
+                                <span class="align-self-end text-primary py-2 me-4">$2.092-$8.00</span>
                                 <input type="range" class="w-100">
                             </div>
+                            <button class="btn btn-primary py-2 px-4" type="submit">Find Property</button>
                         </form>
                     </div>
                 </div>
@@ -259,7 +379,76 @@
         <!-- features -->
         <div class="feature py-5">
             <div class="container text-center">
-                <!-- <div class="title title--center title--left">
+                <div class="c-title-center">
+                    <span class="title-center text-primary position-relative mb-3">Views all 329 New Listings</span>
+                    <h2 class="fw-bolder m-4 text-capitalize ">see how realton can help</h2>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+                    <div class="col">
+                        <div class="card c-card-feature shadow-lg d-flex justify-content-center align-items-center"
+                            style="width: 18rem-;">
+                            <div class="w-25 h-25 border border-light-subtle m-5 p-3">
+                                <img src="/SVG/home.svg" class="card-img-top" alt="">
+                            </div>
+                            <div class="card-body mb-4">
+                                <h4 class="card-title text-secondary fw-bold">Buy a Property</h4>
+                                <p class="card-text">
+                                    over 1 million+ homes for sales on the website, we can you with
+                                    a house you will want to call home
+                                </p>
+                                <a href="#"
+                                    class="d-flex card-btn btn btn-outline-primary fw-medium d-flex  border-0 rounded-0">Find
+                                    A Home
+                                    <i class="fa-solid fa-arrow-right ms-auto align-self-end mb-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card c-card-feature shadow-lg d-flex justify-content-center align-items-center"
+                            style="width: 18rem-;">
+                            <div class="w-25 h-25 border border-light-subtle m-5 p-3">
+                                <img src="/SVG/credit-card-regular.svg" class="card-img-top text-secondary" alt="">
+                            </div>
+                            <div class="card-body mb-4">
+                                <h4 class="card-title text-secondary fw-bold">Sell a Property</h4>
+                                <p class="card-text">
+                                    over 1 million+ homes for sales on the website, we can you with
+                                    a house you will want to call home
+                                </p>
+                                <a href="#"
+                                    class="d-flex card-btn btn btn-outline-primary fw-medium d-flex  border-0 rounded-0">Find
+                                    A Home
+                                    <i class="fa-solid fa-arrow-right ms-auto align-self-end mb-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card c-card-feature shadow-lg d-flex justify-content-center align-items-center"
+                            style="width: 18rem-;">
+                            <div class="w-25 h-25 border border-light-subtle m-5 p-3">
+                                <img src="/SVG/rectangle-list-regular.svg" class="card-img-top" alt="">
+                            </div>
+                            <div class="card-body mb-4">
+                                <h4 class="card-title text-secondary fw-bold">Rent a Property</h4>
+                                <p class="card-text">
+                                    over 1 million+ homes for sales on the website, we can you with
+                                    a house you will want to call home
+                                </p>
+                                <a href="#"
+                                    class="d-flex card-btn btn btn-outline-primary fw-medium d-flex  border-0 rounded-0">Find
+                                    A Home
+                                    <i class="fa-solid fa-arrow-right ms-auto align-self-end mb-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!-- <div class="title title--center title--left">
                     <span class="title__sub">text</span>
                     <h2 class="title__label">subtitle</h2>
                 </div> -->
@@ -315,135 +504,275 @@
         <!-- card-property -->
         <!-- card-project -->
         <!-- etc -->
-
-        <!-- Component card-feature  -->
-        <!-- <div class="card-feature card h-100">
-            <img src="" class="card-img-top" alt="">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural
-                    lead-in
-                    to additional content.</p>
-            </div>
-        </div> -->
-
-        <!-- Component property
-        <div class="card-property card" style="width: 18rem;">
-            <div class="position-relative" style="height: 100px;">
-                <img src="" class="card-img-top" alt="">
-                <span class="badge bg-primary position-absolute bottom-0 start-0">$$$$1</span>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make
-                    up
-                    the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div> -->
-
-
         <!-- popularly -->
-        <section class="popularly">
+        <section class="popularly bg-light py-5">
             <div class="container">
-                <!-- 
-                    title trebue sa fie un component ce include h2 si span
-                 -->
-                <span>text</span>
-                <h2>asdaastitle</h2>
-
-                <li class="c-fedea   splide__slide d-flex justify-content-center mb-5">
-                    <div class="card card-popularly" style="width: 18rem;">
-                        <div class="position-relative" style="height: 100px;">
-                            <img src="" class="card-img-top" alt="">
-                            <span class="badge bg-primary position-absolute bottom-0 start-0">$$$$1</span>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and
-                                make
-                                up
-                                the bulk of the
-                                card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere here</a>
-                        </div>
-                    </div>
-                </li>
-                
-                
+                <div class="c-title-center text-center mb-3">
+                    <span class="title-center text-primary position-relative mb-3">Views all 329 New Listings</span>
+                    <h2 class="fs-1 text-capitalize fw-bolder my-3">discover popular properties</h2>
+                </div>
                 <section class="splide" id="popular" aria-label="Basic Structure Example">
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <li class="splide__slide d-flex justify-content-center mb-5">
-                                <div class="card card-popularly" style="width: 18rem;">
-                                    <div class="position-relative" style="height: 100px;">
-                                        <img src="" class="card-img-top" alt="">
-                                        <span class="badge bg-primary position-absolute bottom-0 start-0">$$$$1</span>
+                            <!-- item -->
+                            <li class="splide__slide d-flex justify-content-center px-md-3 mb-2 mb-md-5 mb-md-5">
+                                <div class="card card-popularly shadow-lg my-5" style="width: 20rem-;">
+                                    <div class="card-head position-relative">
+                                        <img src="/public/img/naomi-ellsworth-EMPLSuvDuhQ-unsplash.jpg"
+                                            class="card-img-top" alt="">
+                                        <div class="badge py-2 px-3 bg-primary position-absolute bottom-0 start-0">
+                                            <span class="fs-4 fw-medium">$987</span>
+                                            <span class="fs-6 fw-normal">/Mounth</span>
+                                        </div>
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and
+                                        <h4 class="card-title text-start text-secondary fw-bold">New Apartament Nice
+                                            View</h4>
+                                        <p class="card-text text-start">Some quick example text to build on the card
+                                            title and
                                             make
                                             up
                                             the bulk of the
                                             card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide d-flex justify-content-center mb-5">
-                                <div class="card card-popularly" style="width: 18rem;">
-                                    <div class="position-relative" style="height: 100px;">
-                                        <img src="" class="card-img-top" alt="">
-                                        <span class="badge bg-primary position-absolute bottom-0 start-0">$$$$1</span>
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and
-                                            make
-                                            up
-                                            the bulk of the
-                                            card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide d-flex justify-content-center mb-5">
-                                <div class="card card-popularly" style="width: 18rem;">
-                                    <div class="position-relative" style="height: 100px;">
-                                        <img src="" class="card-img-top" alt="">
-                                        <span class="badge bg-primary position-absolute bottom-0 start-0">$$$$1</span>
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and
-                                            make
-                                            up
-                                            the bulk of the
-                                            card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide d-flex justify-content-center mb-5">
-                                <div class="card card-popularly" style="width: 18rem;">
-                                    <div class="position-relative" style="height: 100px;">
-                                        <img src="" class="card-img-top" alt="">
-                                        <span class="badge bg-primary position-absolute bottom-0 start-0">$$$$1</span>
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and
-                                            make
-                                            up
-                                            the bulk of the
-                                            card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </li>
+                                        <div class="card-description d-flex justify-content-between fs-sm mb-4">
+                                            <div class="d-flex border-bottom border-end">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-car"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    4 Room
+                                                </span>
+                                            </div>
+                                            <div class="d-flex border-bottom border-end border-primary">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-bath"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    Bathroom
+                                                </span>
+                                            </div>
+                                            <div class="d-flex border-bottom border-end">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-house"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    Garage
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="card-address fs-sm">
+                                                <i class="fa-solid fa-location-dot text-primary"></i>
+                                                <span>777 Panama City, FL</span>
+                                            </div>
+                                            <div class="text-primary">
+                                                <span class="rounded-circle me-2 border p-2 border-light-subtle">
+                                                    <i class="fa-regular fa-heart"></i>
 
+                                                </span>
+                                                <span class="rounded-circle  border p-2 border-light-subtle">
+                                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- item -->
+                            <li class="splide__slide d-flex justify-content-center px-md-3 mb-2 mb-md-5">
+                                <div class="card card-popularly shadow-lg my-5" style="width: 20rem-;">
+                                    <div class="card-head position-relative">
+                                        <img src="/public/img/mark-champs-Id2IIl1jOB0-unsplash.jpg" class="card-img-top"
+                                            alt="">
+                                        <div class="badge py-2 px-3 bg-primary position-absolute bottom-0 start-0">
+                                            <span class="fs-4 fw-medium">$987</span>
+                                            <span class="fs-6 fw-normal">/Mounth</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title text-capitalize text-start text-secondary fw-bold">
+                                            single family home view
+                                        </h4>
+                                        <p class="card-text text-start">Some quick example text to build on the card
+                                            title and
+                                            make
+                                            up
+                                            the bulk of the
+                                            card's content.</p>
+                                        <div class="card-description d-flex justify-content-between fs-sm mb-4">
+                                            <div class="d-flex border-bottom border-end">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-car"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    4 Room
+                                                </span>
+                                            </div>
+                                            <div class="d-flex border-bottom border-end border-primary">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-bath"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    Bathroom
+                                                </span>
+                                            </div>
+                                            <div class="d-flex border-bottom border-end">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-house"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    Garage
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="card-address fs-sm">
+                                                <i class="fa-solid fa-location-dot text-primary"></i>
+                                                <span>777 Panama City, FL</span>
+                                            </div>
+                                            <div class="text-primary">
+                                                <span class="rounded-circle me-2 border p-2 border-light-subtle">
+                                                    <i class="fa-regular fa-heart"></i>
+
+                                                </span>
+                                                <span class="rounded-circle  border p-2 border-light-subtle">
+                                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- item -->
+                            <li class="splide__slide d-flex justify-content-center px-md-3 mb-2 mb-md-5">
+                                <div class="card card-popularly shadow-lg my-5" style="width: 20rem-;">
+                                    <div class="card-head position-relative">
+                                        <img src="/public/img/vu-anh-TiVPTYCG_3E-unsplash.jpg" class="card-img-top"
+                                            alt="">
+                                        <div class="badge py-2 px-3 bg-primary position-absolute bottom-0 start-0">
+                                            <span class="fs-4 fw-medium">$987</span>
+                                            <span class="fs-6 fw-normal">/Mounth</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title text-capitalize text-start text-secondary fw-bold">
+                                            apartament luxury family home
+                                        </h4>
+                                        <p class="card-text text-start">Some quick example text to build on the card
+                                            title and
+                                            make
+                                            up
+                                            the bulk of the
+                                            card's content.</p>
+                                        <div class="card-description d-flex justify-content-between fs-sm mb-4">
+                                            <div class="d-flex border-bottom border-end">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-car"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    4 Room
+                                                </span>
+                                            </div>
+                                            <div class="d-flex border-bottom border-end border-primary">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-bath"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    Bathroom
+                                                </span>
+                                            </div>
+                                            <div class="d-flex border-bottom border-end">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-house"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    Garage
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="card-address fs-sm">
+                                                <i class="fa-solid fa-location-dot text-primary"></i>
+                                                <span>777 Panama City, FL</span>
+                                            </div>
+                                            <div class="text-primary">
+                                                <span class="rounded-circle me-2 border p-2 border-light-subtle">
+                                                    <i class="fa-regular fa-heart"></i>
+
+                                                </span>
+                                                <span class="rounded-circle  border p-2 border-light-subtle">
+                                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- item-->
+                            <li class="splide__slide d-flex justify-content-center px-md-3 mb-2 mb-md-5">
+                                <div class="card card-popularly shadow-lg my-5" style="width: 20rem-;">
+                                    <div class="card-head position-relative">
+                                        <img src="/public/img/avi-werde-hHz4yrvxwlA-unsplash.jpg" class="card-img-top"
+                                            alt="">
+                                        <div class="badge py-2 px-3 bg-primary position-absolute bottom-0 start-0">
+                                            <span class="fs-4 fw-medium">$987</span>
+                                            <span class="fs-6 fw-normal">/Mounth</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title text-start text-capitalize text-secondary fw-bold">
+                                            economical but no less comfortable
+                                        </h4>
+                                        <p class="card-text text-start">Some quick example text to build on the card
+                                            title and
+                                            make
+                                            up
+                                            the bulk of the
+                                            card's content.</p>
+                                        <div class="card-description d-flex justify-content-between fs-sm mb-4">
+                                            <div class="d-flex border-bottom border-end">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-car"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    4 Room
+                                                </span>
+                                            </div>
+                                            <div class="d-flex border-bottom border-end border-primary">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-bath"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    Bathroom
+                                                </span>
+                                            </div>
+                                            <div class="d-flex border-bottom border-end">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-house"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    Garage
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="card-address fs-sm">
+                                                <i class="fa-solid fa-location-dot text-primary"></i>
+                                                <span>777 Panama City, FL</span>
+                                            </div>
+                                            <div class="text-primary">
+                                                <span class="rounded-circle me-2 border p-2 border-light-subtle">
+                                                    <i class="fa-regular fa-heart"></i>
+
+                                                </span>
+                                                <span class="rounded-circle  border p-2 border-light-subtle">
+                                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </section>
@@ -455,58 +784,250 @@
             <div class="container">
                 <div class="row">
                     <div class="col col-12 col-md-6 text-center text-md-start">
-                        <span>text</span>
-                        <h2>title</h2>
-                        <p> fraze fraze fraze fraze fraze fraze fraze fraze fraze fraze</p>
-                        <div class="text-center d-md-flex text-md-start my-3">
-                            img
-                            <div class="d-md-block">
-                                <h4>subtitle</h4>
-                                <p> fraze fraze fraze fraze fraze fraze fraze fraze</p>
+                        <div class="c-title-start text-start mb-3">
+                            <span class="title-start ms-md-4 text-primary position-relative mb-3">
+                                Views all 329 New Listings</span>
+                            <h2 class="fs-1 fw-bolder text-capitalize my-3">
+                                unique buisness strategy consulting
+                            </h2>
+                        </div>
+                        <p class="text-secondary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam,
+                        </p>
+                        <div class="w-100 bg-secondary my-4 border border-light"></div>
+                        <div class="text-center d-md-flex align-items-center text-md-start my-3">
+                            <img style="width: 50px; height: 50px;" src="/public/img/Screenshot_1.jpg" alt="">
+                            <div class="d-md-block ms-md-4">
+                                <h4 class="text-capitalize">built-in storage cupboards</h4>
+                                <p class="mb-0">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam,
+                                </p>
                             </div>
                         </div>
-                        <div class="text-center d-md-flex text-md-start my-3">
-                            img
-                            <div>
-                                <h4>subtitle</h4>
-                                <p> fraze fraze fraze fraze fraze fraze fraze fraze</p>
+                        <div class="text-center d-md-flex align-items-center text-md-start my-3">
+                            <img style="width: 50px; height: 50px;" src="/public/img/Screenshot_2.jpg" alt="">
+                            <div class="ms-md-4">
+                                <h4 class="text-capitalize">quality materials</h4>
+                                <p class="mb-0">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam,
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="col col-12 col-md-6">
-                        <div class="row">
-                            <div class="col col-12 col-lg-6">img1</div>
-                            <div class="col col-12 col-md-6">img2</div>
-                            <div class="col col-12 col-md-6 col-lg-12">img3</div>
+                        <div class="row gy-4">
+                            <div class="col col-12 col-lg-6">
+                                <div class="card text-bg-dark">
+                                    <img class="consulting-img"
+                                        src="/public//img/sidekix-media-I_QC1JICzA0-unsplash.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-6">
+                                <div class="card text-bg-dark">
+                                    <img class="consulting-img"
+                                        src="/public//img/sidekix-media-I_QC1JICzA0-unsplash.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-6 col-lg-12">
+                                <div class="card text-bg-dark">
+                                    <img class="consulting-img"
+                                        src="/public//img/sidekix-media-I_QC1JICzA0-unsplash.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
-        <!-- more -->
-        <section class="more">
-            <div class="container-fluid">
+        <!-- availability -->
+        <section class="availability">
+            <div class="container-fluid-">
                 <div class="row">
-                    <div class="col col-12 col-md-6 d-none d-md-block">
-                        img
+                    <div class="col col-12 col-lg-6 d-none d-md-block px-0">
+                        <div class="availability__img overflow-hidden">
+                            <img class="availability-img" src="/public/img/mostafa-safadel-cHjAxnJk_wQ-unsplash.jpg"
+                                alt="">
+                        </div>
                     </div>
-                    <div class="col col-12 col-md-6 text-center text-md-start py-4">
+                    <div class="col col-12 col-lg-6 text-center text-md-start py-5  position-relative">
                         <div class="container">
-                            <span>text</span>
-                            <h2>title</h2>
+                            <div class="availability-style position-absolute bg-primary start-0 top-0 w-100"></div>
+                            <div class="c-title-start text-start mb-3">
+                                <span class=" title-start ms-4 text-primary position-relative">
+                                    Views all 329 New Listings
+                                </span>
+                                <h2 class="mt-2 fs-1 text-capitalize fw-bolder">
+                                    more available in the same
+                                </h2>
+                            </div>
                             <div class="row row-cols-1 row-cols-md-2">
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
-                                <div class="col"></div>
+                                <div class="col py-2">
+                                    <div class="c-availability">
+                                        <a href="#"
+                                            class="availability-item btn btn-outline-primary  d-flex align-items-center border-0 rounded-0">
+                                            <svg class="icon">
+                                                <use xlink:href="#home"></use>
+                                            </svg>
+                                            <span class="availability-line"></span>
+                                            <span class="availability-text fw-bold">The Perfect Residency Home</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class="c-availability">
+                                        <a href="#"
+                                            class="availability-item btn btn-outline-primary  d-flex align-items-center border-0 rounded-0">
+                                            <svg class="icon">
+                                                <use xlink:href="#home"></use>
+                                            </svg>
+                                            <span class="availability-line"></span>
+                                            <span class="availability-text fw-bold">The Perfect Residency Home</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class="available-item">
+                                        <div class="c-availability">
+                                            <a href="#"
+                                                class="availability-item btn btn-outline-primary  d-flex align-items-center border-0 rounded-0">
+                                                <svg class="icon">
+                                                    <use xlink:href="#home"></use>
+                                                </svg>
+                                                <span class="availability-line"></span>
+                                                <span class="availability-text fw-bold">The Perfect Residency
+                                                    Home</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class="c-availability">
+                                        <a href="#"
+                                            class="availability-item btn btn-outline-primary  d-flex align-items-center border-0 rounded-0">
+                                            <svg class="icon">
+                                                <use xlink:href="#home"></use>
+                                            </svg>
+                                            <span class="availability-line"></span>
+                                            <span class="availability-text fw-bold">The Perfect Residency
+                                                Home</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class="c-availability">
+                                        <a href="#"
+                                            class="availability-item btn btn-outline-primary  d-flex align-items-center border-0 rounded-0">
+                                            <svg class="icon">
+                                                <use xlink:href="#home"></use>
+                                            </svg>
+                                            <span class="availability-line"></span>
+                                            <span class="availability-text fw-bold">The Perfect Residency
+                                                Home</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class="c-availability">
+                                        <a href="#"
+                                            class="availability-item btn btn-outline-primary  d-flex align-items-center border-0 rounded-0">
+                                            <svg class="icon">
+                                                <use xlink:href="#home"></use>
+                                            </svg>
+                                            <span class="availability-line"></span>
+                                            <span class="availability-text fw-bold">The Perfect Residency
+                                                Home</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class="c-availability">
+                                        <a href="#"
+                                            class="availability-item btn btn-outline-primary  d-flex align-items-center border-0 rounded-0">
+                                            <svg class="icon">
+                                                <use xlink:href="#home"></use>
+                                            </svg>
+                                            <span class="availability-line"></span>
+                                            <span class="availability-text fw-bold">The Perfect Residency
+                                                Home</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class="available-item">
+                                        <div class="c-availability">
+                                            <a href="#"
+                                                class="availability-item btn btn-outline-primary  d-flex align-items-center border-0 rounded-0">
+                                                <svg class="icon">
+                                                    <use xlink:href="#home"></use>
+                                                </svg>
+                                                <span class="availability-line"></span>
+                                                <span class="availability-text fw-bold">The Perfect Residency
+                                                    Home</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class="c-availability">
+                                        <a href="#"
+                                            class="availability-item btn btn-outline-primary  d-flex align-items-center border-0 rounded-0">
+                                            <svg class="icon">
+                                                <use xlink:href="#home"></use>
+                                            </svg>
+                                            <span class="availability-line"></span>
+                                            <span class="availability-text fw-bold">The Perfect Residency
+                                                Home</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class="available-item">
+                                        <div class="c-availability">
+                                            <a href="#"
+                                                class="availability-item btn btn-outline-primary  d-flex align-items-center border-0 rounded-0">
+                                                <svg class="icon">
+                                                    <use xlink:href="#home"></use>
+                                                </svg>
+                                                <span class="availability-line"></span>
+                                                <span class="availability-text fw-bold">The Perfect Residency
+                                                    Home</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class="available-item">
+                                        <div class="c-availability">
+                                            <a href="#"
+                                                class="availability-item btn btn-outline-primary  d-flex align-items-center border-0 rounded-0">
+                                                <svg class="icon">
+                                                    <use xlink:href="#home"></use>
+                                                </svg>
+                                                <span class="availability-line"></span>
+                                                <span class="availability-text fw-bold">The Perfect
+                                                    Residency Home</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col py-2">
+                                    <div class="c-availability">
+                                        <a href="#"
+                                            class="availability-item btn btn-outline-primary  d-flex align-items-center border-0 rounded-0">
+                                            <svg class="icon">
+                                                <use xlink:href="#home"></use>
+                                            </svg>
+                                            <span class="availability-line"></span>
+                                            <span class="availability-text fw-bold">The Perfect
+                                                Residency Home</span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -514,223 +1035,735 @@
             </div>
         </section>
         <!-- types -->
-        <section class="types text-center py-5">
+        <section class="types text-center py-5 my-5">
             <div class="container">
-                <span>text</span>
-                <h2>title</h2>
-                <div class="type-block d-md-flex">
-                    <div class="card card-top m-2">
-                        <img src="" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+                <div class="c-title-center mb-3">
+                    <span class="title-center text-primary position-relative mb-3">Views all 329 New Listings</span>
+                    <h2 class="fs-1 py-4 text-capitalize fw-bolder">explore apartment types</h2>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-3 type-block">
+                    <div class="col types-down">
+                        <a href="#" class="types__wrapper">
+                            <div class="card types__card position-relative" style="width: 18rem-;">
+                                <img src="/public/img/brittney-in-beta-q0-1FzvJpjY-unsplash.jpg" class="card-img-top"
+                                    alt="foto">
+                                <div class="card-body types__body position-absolute bg-primary w-100 bottom-0">
+                                    <h5 class="card-title">Paris</h5>
+                                    <div class="d-flex flex-column align-items-center justify-content-center">
+                                        <span class="card-text">Paris </span>
+                                        <span class="card-text">04 Properties </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="card card-top m-2">
-                        <img src="" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+                    <div class="col">
+                        <a href="#" class="types__wrapper">
+                            <div class="card types__card position-relative" style="width: 18rem-;">
+                                <img src="/public/img/luke-van-zyl-koH7IVuwRLw-unsplash.jpg" class="card-img-top"
+                                    alt="foto">
+                                <div class="card-body types__body position-absolute bg-primary w-100 bottom-0">
+                                    <div class="d-flex flex-column align-items-center justify-content-center">
+                                        <span class="card-text">Roma</span>
+                                        <span class="card-text">08 Properties </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="card card-top m-2">
-                        <img src="" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+                    <div class="col types-down">
+                        <a href="#" class="types__wrapper">
+                            <div class="card types__card position-relative" style="width: 18rem-;">
+                                <img src="/public/img/vu-anh-TiVPTYCG_3E-unsplash.jpg" class="card-img-top" alt="foto">
+                                <div class="card-body types__body position-absolute bg-primary w-100 bottom-0">
+                                    <div class="d-flex flex-column align-items-center justify-content-center">
+                                        <span class="card-text">Chisinau</span>
+                                        <span class="card-text">02 Lux-Properties </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="types__wrapper">
+                            <div class="card types__card position-relative" style="width: 18rem-;">
+                                <img src="/public/img/ben-eaton-VYFGc4Ggut8-unsplash.jpg" class="card-img-top"
+                                    alt="foto">
+                                <div class="card-body types__body position-absolute bg-primary w-100 bottom-0">
+                                    <div class="d-flex flex-column align-items-center justify-content-center">
+                                        <span class="card-text">chelsea</span>
+                                        <span class="card-text">07 Properties</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
 
         </section>
         <!-- new-items-->
-        <div class="new-items category d-flex mb-5">
+        <div class="new-items category d-flex mb-5 px-4 py-5">
             <div class="container-fluid">
                 <div class="w-100" style="overflow: auto;">
                     <!-- tabulation -->
-                    <div class=" overflow-auto ">
-                        <div class="d-md-flex justify-content-between">
-                            <div class=" align-items-start mb-4">
-                                <span>text</span>
-                                <h2>title</h2>
-                            </div>
-                            <ul class="nav nav-tabs overflow-auto flex-nowrap justify-content-md-end border-0 mb-4"
-                                id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="btn-tab btn btn-link px-4 text-nowrap active" id="home-tab"
-                                        data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab"
-                                        aria-controls="home-tab-pane" aria-selected="true">
-                                        1
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="btn-tab btn btn-link px-4 text-nowrap" id="profile-tab"
-                                        data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab"
-                                        aria-controls="profile-tab-pane" aria-selected="false">
-                                        2
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="btn-tab btn btn-link px-4 text-nowrap" id="contact-tab"
-                                        data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab"
-                                        aria-controls="contact-tab-pane" aria-selected="false">
-                                        3
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="btn-tab btn btn-link px-4 text-nowrap" id="work-tab"
-                                        data-bs-toggle="tab" data-bs-target="#work-tab-pane" type="button" role="tab"
-                                        aria-controls="work-tab-pane" aria-selected="false">
-                                        4
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="btn-tab btn btn-link px-4 text-nowrap" id="factory-tab"
-                                        data-bs-toggle="tab" data-bs-target="#factory-tab-pane" type="button" role="tab"
-                                        aria-controls="factory-tab-pane" aria-selected="false">
-                                        5
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="btn-tab btn btn-link px-4 text-nowrap" id="project-tab"
-                                        data-bs-toggle="tab" data-bs-target="#project-tab-pane" type="button" role="tab"
-                                        aria-controls="project-tab-pane" aria-selected="false">
-                                        6
-                                    </button>
-                                </li>
-                            </ul>
+                    <div class="table overflow-auto d-md-flex justify-content-between align-items-center">
+                        <div class="c-title-start text-start mb-3">
+                            <span class=" title-start ms-4 text-primary position-relative mb-3">Views all 329 New
+                                Listings</span>
+                            <h2 class="fs-1 text-capitalize fw-bolder mt-3">
+                                recently completed works
+                            </h2>
                         </div>
-                        <!-- items -->
-                        <div class="tab-content" id="myTabContent">
-                            <!-- item -->
-                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
-                                aria-labelledby="home-tab" tabindex="0">
-                                <div class="row row-cols-1 row-cols-md-3">
-                                    <div class="col">
-                                        <div class="card" style="width: 18rem-;">
-                                            1
+                        <ul class="nav nav-tabs overflow-auto flex-nowrap justify-content-md-end border-0 mb-4"
+                            id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="btn-tab btn btn-link  px-4 text-nowrap active" id="home-tab"
+                                    data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">
+                                    All Projects
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="btn-tab btn btn-link px-4 text-nowrap" id="profile-tab"
+                                    data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                    aria-controls="profile-tab-pane" aria-selected="false">
+                                    Industrial
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="btn-tab btn btn-link px-4 text-nowrap" id="contact-tab"
+                                    data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                    aria-controls="contact-tab-pane" aria-selected="false">
+                                    Massproject
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="btn-tab btn btn-link px-4 text-nowrap" id="work-tab" data-bs-toggle="tab"
+                                    data-bs-target="#work-tab-pane" type="button" role="tab"
+                                    aria-controls="work-tab-pane" aria-selected="false">
+                                    Interior
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="btn-tab btn btn-link px-4 text-nowrap" id="factory-tab"
+                                    data-bs-toggle="tab" data-bs-target="#factory-tab-pane" type="button" role="tab"
+                                    aria-controls="factory-tab-pane" aria-selected="false">
+                                    Factory
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="btn-tab btn btn-link px-4 text-nowrap" id="project-tab"
+                                    data-bs-toggle="tab" data-bs-target="#project-tab-pane" type="button" role="tab"
+                                    aria-controls="project-tab-pane" aria-selected="false">
+                                    New Project
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- items -->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
+                            <div class="row row-cols-1 row-cols-md-3 gy-3">
+                                <div class="col">
+                                    <div class="card border-0" style="width: 18rem-;">
+                                        <div class="new-works">
+                                            <a href="#" class="new-works__wrapper">
+                                                <div
+                                                    class="card new-works__card overflow-hidden border-0 bg-secondary  position-relative">
+                                                    <img src="/public/img/luke-van-zyl-koH7IVuwRLw-unsplash.jpg"
+                                                        class="new-works__img card-img-top" style="height: 400px;"
+                                                        alt="foto">
+                                                    <div
+                                                        class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
+                                                        <img src="/SVG/aroow-rectangle.svg" alt="">
+                                                    </div>
+                                                    <svg class="new-works__icon icon position-absolute w-100">
+                                                        <use xlink:href="#Ellipse 1">
+                                                        </use>
+                                                    </svg>
+                                                    <div
+                                                        class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
+                                                        <span class="new-works__text new-works__text--text">Duplex
+                                                            Foue</span> <br>
+                                                        <h4 class="new-works__text new-works__text--title">Noe Valley
+                                                            Zones</h4>
+                                                    </div>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="card" style="width: 18rem-;">
-                                            1
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0" style="width: 18rem-;">
+                                        <div class="new-works">
+                                            <a href="#" class="new-works__wrapper">
+                                                <div
+                                                    class="card new-works__card overflow-hidden border-0 bg-secondary  position-relative">
+                                                    <img src="/public/img/bernadette-gatsby-bN_TkedaBuQ-unsplash.jpg"
+                                                        class="new-works__img card-img-top" style="height: 400px;"
+                                                        alt="foto">
+                                                    <div
+                                                        class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
+                                                        <img src="/SVG/aroow-rectangle.svg" alt="">
+                                                    </div>
+                                                    <svg class="new-works__icon icon position-absolute w-100">
+                                                        <use xlink:href="#Ellipse 1">
+                                                        </use>
+                                                    </svg>
+                                                    <div
+                                                        class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
+                                                        <span class="new-works__text new-works__text--text">Duplex
+                                                            Foue</span> <br>
+                                                        <h4 class="new-works__text new-works__text--title">
+                                                            Deluxe Apartment
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="card" style="width: 18rem-;">
-                                            1
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem-;">
+                                        <div class="card border-0" style="width: 18rem-;">
+                                            <div class="new-works">
+                                                <a href="#" class="new-works__wrapper">
+                                                    <div
+                                                        class="card new-works__card overflow-hidden border-0 bg-secondary  position-relative">
+                                                        <img src="/public/img/avi-werde-hHz4yrvxwlA-unsplash.jpg"
+                                                            class="new-works__img card-img-top" style="height: 400px;"
+                                                            alt="foto">
+                                                        <div
+                                                            class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
+                                                            <img src="/SVG/aroow-rectangle.svg" alt="">
+                                                        </div>
+                                                        <svg class="new-works__icon icon position-absolute w-100">
+                                                            <use xlink:href="#Ellipse 1">
+                                                            </use>
+                                                        </svg>
+                                                        <div
+                                                            class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
+                                                            <span class="new-works__text new-works__text--text">Duplex
+                                                                Foue</span> <br>
+                                                            <h4 class="new-works__text new-works__text--title">
+                                                                Pacific Heights Area
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- item -->
-                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
-                                aria-labelledby="profile-tab" tabindex="0">
-                                <div class="row row-cols-1 row-cols-md-3">
-                                    <div class="col">
-                                        <div class="card" style="width: 18rem-;">
-                                            2
+                        </div>
+                        <!-- item -->
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                            tabindex="0">
+                            <div class="row row-cols-1 row-cols-md-3">
+                                <div class="col">
+                                    <div class="card" style="width: 18rem-;">
+                                        <div class="card border-0" style="width: 18rem-;">
+                                            <div class="new-works">
+                                                <a href="#" class="new-works__wrapper">
+                                                    <div
+                                                        class="card new-works__card overflow-hidden border-0 bg-secondary  position-relative">
+                                                        <img src="/public/img/recently-works/industrial-1.jpg"
+                                                            class="new-works__img card-img-top" style="height: 400px;"
+                                                            alt="foto">
+                                                        <div
+                                                            class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
+                                                            <img src="/SVG/aroow-rectangle.svg" alt="">
+                                                        </div>
+                                                        <svg class="new-works__icon icon position-absolute w-100">
+                                                            <use xlink:href="#Ellipse 1">
+                                                            </use>
+                                                        </svg>
+                                                        <div
+                                                            class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
+                                                            <span class="new-works__text new-works__text--text">Duplex
+                                                                Foue</span> <br>
+                                                            <h4 class="new-works__text new-works__text--title">
+                                                                Pacific Heights Area
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="card" style="width: 18rem-;">
-                                            2
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem-;">
+                                        <div class="card border-0" style="width: 18rem-;">
+                                            <div class="new-works">
+                                                <a href="#" class="new-works__wrapper">
+                                                    <div
+                                                        class="card new-works__card overflow-hidden border-0 bg-secondary  position-relative">
+                                                        <img src="/public/img/recently-works/industrial-2.jpg"
+                                                            class="new-works__img card-img-top" style="height: 400px;"
+                                                            alt="foto">
+                                                        <div
+                                                            class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
+                                                            <img src="/SVG/aroow-rectangle.svg" alt="">
+                                                        </div>
+                                                        <svg class="new-works__icon icon position-absolute w-100">
+                                                            <use xlink:href="#Ellipse 1">
+                                                            </use>
+                                                        </svg>
+                                                        <div
+                                                            class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
+                                                            <span class="new-works__text new-works__text--text">Duplex
+                                                                Foue</span> <br>
+                                                            <h4 class="new-works__text new-works__text--title">
+                                                                Pacific Heights Area
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="card" style="width: 18rem-;">
-                                            2
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem-;">
+                                        <div class="card border-0" style="width: 18rem-;">
+                                            <div class="new-works">
+                                                <a href="#" class="new-works__wrapper">
+                                                    <div
+                                                        class="card new-works__card overflow-hidden border-0 bg-secondary  position-relative">
+                                                        <img src="/public/img/recently-works/industrial-3.jpg"
+                                                            class="new-works__img card-img-top" style="height: 400px;"
+                                                            alt="foto">
+                                                        <div
+                                                            class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
+                                                            <img src="/SVG/aroow-rectangle.svg" alt="">
+                                                        </div>
+                                                        <svg class="new-works__icon icon position-absolute w-100">
+                                                            <use xlink:href="#Ellipse 1">
+                                                            </use>
+                                                        </svg>
+                                                        <div
+                                                            class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
+                                                            <span class="new-works__text new-works__text--text">Duplex
+                                                                Foue</span> <br>
+                                                            <h4 class="new-works__text new-works__text--title">
+                                                                Pacific Heights Area
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- item -->
-                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
-                                aria-labelledby="contact-tab" tabindex="0">
-                                <div class="row row-cols-1 row-cols-md-3">
-                                    <div class="col">
-                                        <div class="card" style="width: 18rem-;">
-                                            3
+                        </div>
+                        <!-- item -->
+                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                            tabindex="0">
+                            <div class="row row-cols-1 row-cols-md-3">
+                                <div class="col">
+                                    <div class="card" style="width: 18rem-;">
+                                        <div class="card border-0" style="width: 18rem-;">
+                                            <div class="new-works">
+                                                <a href="#" class="new-works__wrapper">
+                                                    <div
+                                                        class="card new-works__card overflow-hidden border-0 bg-secondary  position-relative">
+                                                        <img src="/public/img/recently-works/project-4.jpg"
+                                                            class="new-works__img card-img-top" style="height: 400px;"
+                                                            alt="foto">
+                                                        <div
+                                                            class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
+                                                            <img src="/SVG/aroow-rectangle.svg" alt="">
+                                                        </div>
+                                                        <svg class="new-works__icon icon position-absolute w-100">
+                                                            <use xlink:href="#Ellipse 1">
+                                                            </use>
+                                                        </svg>
+                                                        <div
+                                                            class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
+                                                            <span class="new-works__text new-works__text--text">Duplex
+                                                                Foue</span> <br>
+                                                            <h4 class="new-works__text new-works__text--title">
+                                                                Pacific Heights Area
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="card" style="width: 18rem-;">
-                                            3
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem-;">
+                                        <div class="card border-0" style="width: 18rem-;">
+                                            <div class="new-works">
+                                                <a href="#" class="new-works__wrapper">
+                                                    <div
+                                                        class="card new-works__card overflow-hidden border-0 bg-secondary  position-relative">
+                                                        <img src="/public/img/recently-works/project-1.jpg"
+                                                            class="new-works__img card-img-top" style="height: 400px;"
+                                                            alt="foto">
+                                                        <div
+                                                            class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
+                                                            <img src="/SVG/aroow-rectangle.svg" alt="">
+                                                        </div>
+                                                        <svg class="new-works__icon icon position-absolute w-100">
+                                                            <use xlink:href="#Ellipse 1">
+                                                            </use>
+                                                        </svg>
+                                                        <div
+                                                            class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
+                                                            <span class="new-works__text new-works__text--text">Duplex
+                                                                Foue</span> <br>
+                                                            <h4 class="new-works__text new-works__text--title">
+                                                                Pacific Heights Area
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="card" style="width: 18rem-;">
-                                            3
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem-;">
+                                        <div class="card border-0" style="width: 18rem-;">
+                                            <div class="new-works">
+                                                <a href="#" class="new-works__wrapper">
+                                                    <div
+                                                        class="card new-works__card overflow-hidden border-0 bg-secondary  position-relative">
+                                                        <img src="/public/img/recently-works/project-3.jpg"
+                                                            class="new-works__img card-img-top" style="height: 400px;"
+                                                            alt="foto">
+                                                        <div
+                                                            class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
+                                                            <img src="/SVG/aroow-rectangle.svg" alt="">
+                                                        </div>
+                                                        <svg class="new-works__icon icon position-absolute w-100">
+                                                            <use xlink:href="#Ellipse 1">
+                                                            </use>
+                                                        </svg>
+                                                        <div
+                                                            class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
+                                                            <span class="new-works__text new-works__text--text">Duplex
+                                                                Foue</span> <br>
+                                                            <h4 class="new-works__text new-works__text--title">
+                                                                Pacific Heights Area
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- item -->
-                            <div class="tab-pane fade" id="work-tab-pane" role="tabpanel" aria-labelledby="work-tab"
-                                tabindex="0">
-                                <div class="row row-cols-1 row-cols-md-3">
-                                    <div class="col">
-                                        <div class="card" style="width: 18rem-;">
-                                            4
+                        </div>
+                        <!-- item -->
+                        <div class="tab-pane fade" id="work-tab-pane" role="tabpanel" aria-labelledby="work-tab"
+                            tabindex="0">
+                            <div class="row row-cols-1 row-cols-md-3">
+                                <div class="col">
+                                    <div class="card" style="width: 18rem-;">
+                                        <div class="card border-0" style="width: 18rem-;">
+                                            <div class="new-works">
+                                                <a href="#" class="new-works__wrapper">
+                                                    <div
+                                                        class="card new-works__card overflow-hidden border-0 bg-secondary  position-relative">
+                                                        <img src="/public/img/recently-works/interior-1.jpg"
+                                                            class="new-works__img card-img-top" style="height: 400px;"
+                                                            alt="foto">
+                                                        <div
+                                                            class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
+                                                            <img src="/SVG/aroow-rectangle.svg" alt="">
+                                                        </div>
+                                                        <svg class="new-works__icon icon position-absolute w-100">
+                                                            <use xlink:href="#Ellipse 1">
+                                                            </use>
+                                                        </svg>
+                                                        <div
+                                                            class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
+                                                            <span class="new-works__text new-works__text--text">Duplex
+                                                                Foue</span> <br>
+                                                            <h4 class="new-works__text new-works__text--title">
+                                                                Pacific Heights Area
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="card" style="width: 18rem-;">
-                                            4
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem-;">
+                                        <div class="card border-0" style="width: 18rem-;">
+                                            <div class="new-works">
+                                                <a href="#" class="new-works__wrapper">
+                                                    <div
+                                                        class="card new-works__card overflow-hidden border-0 bg-secondary  position-relative">
+                                                        <img src="/public/img/recently-works/interior-2.jpg"
+                                                            class="new-works__img card-img-top" style="height: 400px;"
+                                                            alt="foto">
+                                                        <div
+                                                            class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
+                                                            <img src="/SVG/aroow-rectangle.svg" alt="">
+                                                        </div>
+                                                        <svg class="new-works__icon icon position-absolute w-100">
+                                                            <use xlink:href="#Ellipse 1">
+                                                            </use>
+                                                        </svg>
+                                                        <div
+                                                            class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
+                                                            <span class="new-works__text new-works__text--text">Duplex
+                                                                Foue</span> <br>
+                                                            <h4 class="new-works__text new-works__text--title">
+                                                                Pacific Heights Area
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="card" style="width: 18rem-;">
-                                            4
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem-;">
+                                        <div class="card border-0" style="width: 18rem-;">
+                                            <div class="new-works">
+                                                <a href="#" class="new-works__wrapper">
+                                                    <div
+                                                        class="card new-works__card overflow-hidden border-0 bg-secondary  position-relative">
+                                                        <img src="/public/img/recently-works/interior-3.jpg"
+                                                            class="new-works__img card-img-top" style="height: 400px;"
+                                                            alt="foto">
+                                                        <div
+                                                            class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
+                                                            <img src="/SVG/aroow-rectangle.svg" alt="">
+                                                        </div>
+                                                        <svg class="new-works__icon icon position-absolute w-100">
+                                                            <use xlink:href="#Ellipse 1">
+                                                            </use>
+                                                        </svg>
+                                                        <div
+                                                            class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
+                                                            <span class="new-works__text new-works__text--text">Duplex
+                                                                Foue</span> <br>
+                                                            <h4 class="new-works__text new-works__text--title">
+                                                                Pacific Heights Area
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- item -->
-                            <div class="tab-pane fade" id="factory-tab-pane" role="tabpanel"
-                                aria-labelledby="factory-tab" tabindex="0">
-                                <div class="row row-cols-1 row-cols-md-3">
-                                    <div class="col">
-                                        <div class="card" style="width: 18rem-;">
-                                            5
+                        </div>
+                        <!-- item -->
+                        <div class="tab-pane fade" id="factory-tab-pane" role="tabpanel" aria-labelledby="factory-tab"
+                            tabindex="0">
+                            <div class="row row-cols-1 row-cols-md-3">
+                                <div class="col">
+                                    <div class="card" style="width: 18rem-;">
+                                        <div class="card border-0" style="width: 18rem-;">
+                                            <div class="new-works">
+                                                <a href="#" class="new-works__wrapper">
+                                                    <div
+                                                        class="card new-works__card overflow-hidden border-0 bg-secondary  position-relative">
+                                                        <img src="/public/img/recently-works/factory-3.jpg"
+                                                            class="new-works__img card-img-top" style="height: 400px;"
+                                                            alt="foto">
+                                                        <div
+                                                            class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
+                                                            <img src="/SVG/aroow-rectangle.svg" alt="">
+                                                        </div>
+                                                        <svg class="new-works__icon icon position-absolute w-100">
+                                                            <use xlink:href="#Ellipse 1">
+                                                            </use>
+                                                        </svg>
+                                                        <div
+                                                            class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
+                                                            <span class="new-works__text new-works__text--text">Duplex
+                                                                Foue</span> <br>
+                                                            <h4 class="new-works__text new-works__text--title">
+                                                                Pacific Heights Area
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="card" style="width: 18rem-;">
-                                            5
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem-;">
+                                        <div class="card border-0" style="width: 18rem-;">
+                                            <div class="new-works">
+                                                <a href="#" class="new-works__wrapper">
+                                                    <div
+                                                        class="card new-works__card overflow-hidden border-0 bg-secondary  position-relative">
+                                                        <img src="/public/img/recently-works/factory-2.jpg"
+                                                            class="new-works__img card-img-top" style="height: 400px;"
+                                                            alt="foto">
+                                                        <div
+                                                            class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
+                                                            <img src="/SVG/aroow-rectangle.svg" alt="">
+                                                        </div>
+                                                        <svg class="new-works__icon icon position-absolute w-100">
+                                                            <use xlink:href="#Ellipse 1">
+                                                            </use>
+                                                        </svg>
+                                                        <div
+                                                            class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
+                                                            <span class="new-works__text new-works__text--text">Duplex
+                                                                Foue</span> <br>
+                                                            <h4 class="new-works__text new-works__text--title">
+                                                                Pacific Heights Area
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="card" style="width: 18rem-;">
-                                            5
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem-;">
+                                        <div class="card border-0" style="width: 18rem-;">
+                                            <div class="new-works">
+                                                <a href="#" class="new-works__wrapper">
+                                                    <div
+                                                        class="card new-works__card overflow-hidden border-0 bg-secondary  position-relative">
+                                                        <img src="/public/img/recently-works/factory-1.jpg"
+                                                            class="new-works__img card-img-top" style="height: 400px;"
+                                                            alt="foto">
+                                                        <div
+                                                            class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
+                                                            <img src="/SVG/aroow-rectangle.svg" alt="">
+                                                        </div>
+                                                        <svg class="new-works__icon icon position-absolute w-100">
+                                                            <use xlink:href="#Ellipse 1">
+                                                            </use>
+                                                        </svg>
+                                                        <div
+                                                            class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
+                                                            <span class="new-works__text new-works__text--text">Duplex
+                                                                Foue</span> <br>
+                                                            <h4 class="new-works__text new-works__text--title">
+                                                                Pacific Heights Area
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- item -->
-                            <div class="tab-pane fade" id="project-tab-pane" role="tabpanel"
-                                aria-labelledby="project-tab" tabindex="0">
-                                <div class="row row-cols-1 row-cols-md-3">
-                                    <div class="col">
-                                        <div class="card" style="width: 18rem-;">
-                                            6
+                        </div>
+                        <!-- item -->
+                        <div class="tab-pane fade" id="project-tab-pane" role="tabpanel" aria-labelledby="project-tab"
+                            tabindex="0">
+                            <div class="row row-cols-1 row-cols-md-3">
+                                <div class="col">
+                                    <div class="card" style="width: 18rem-;">
+                                        <div class="card border-0" style="width: 18rem-;">
+                                            <div class="new-works">
+                                                <a href="#" class="new-works__wrapper">
+                                                    <div
+                                                        class="card new-works__card overflow-hidden border-0 bg-secondary  position-relative">
+                                                        <img src="/public/img/recently-works/new-proj-3.jpg"
+                                                            class="new-works__img card-img-top" style="height: 400px;"
+                                                            alt="foto">
+                                                        <div
+                                                            class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
+                                                            <img src="/SVG/aroow-rectangle.svg" alt="">
+                                                        </div>
+                                                        <svg class="new-works__icon icon position-absolute w-100">
+                                                            <use xlink:href="#Ellipse 1">
+                                                            </use>
+                                                        </svg>
+                                                        <div
+                                                            class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
+                                                            <span class="new-works__text new-works__text--text">Duplex
+                                                                Foue</span> <br>
+                                                            <h4 class="new-works__text new-works__text--title">
+                                                                Pacific Heights Area
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="card" style="width: 18rem-;">
-                                            6
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem-;">
+                                        <div class="card border-0" style="width: 18rem-;">
+                                            <div class="new-works">
+                                                <a href="#" class="new-works__wrapper">
+                                                    <div
+                                                        class="card new-works__card overflow-hidden border-0 bg-secondary  position-relative">
+                                                        <img src="/public/img/recently-works/new-proj-1.jpg"
+                                                            class="new-works__img card-img-top" style="height: 400px;"
+                                                            alt="foto">
+                                                        <div
+                                                            class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
+                                                            <img src="/SVG/aroow-rectangle.svg" alt="">
+                                                        </div>
+                                                        <svg class="new-works__icon icon position-absolute w-100">
+                                                            <use xlink:href="#Ellipse 1">
+                                                            </use>
+                                                        </svg>
+                                                        <div
+                                                            class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
+                                                            <span class="new-works__text new-works__text--text">Duplex
+                                                                Foue</span> <br>
+                                                            <h4 class="new-works__text new-works__text--title">
+                                                                Pacific Heights Area
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="card" style="width: 18rem-;">
-                                            6
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem-;">
+                                        <div class="card border-0" style="width: 18rem-;">
+                                            <div class="new-works">
+                                                <a href="#" class="new-works__wrapper">
+                                                    <div
+                                                        class="card new-works__card overflow-hidden border-0 bg-secondary  position-relative">
+                                                        <img src="/public/img/recently-works/new-proj-2.jpg"
+                                                            class="new-works__img card-img-top" style="height: 400px;"
+                                                            alt="foto">
+                                                        <div
+                                                            class="new-works__block position-absolute bg-white m-3 p-2 top-0 end-0">
+                                                            <img src="/SVG/aroow-rectangle.svg" alt="">
+                                                        </div>
+                                                        <svg class="new-works__icon icon position-absolute w-100">
+                                                            <use xlink:href="#Ellipse 1">
+                                                            </use>
+                                                        </svg>
+                                                        <div
+                                                            class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
+                                                            <span class="new-works__text new-works__text--text">Duplex
+                                                                Foue</span> <br>
+                                                            <h4 class="new-works__text new-works__text--title">
+                                                                Pacific Heights Area
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -743,116 +1776,250 @@
         <!-- plans -->
         <section class="plans py-5">
             <div class="container">
+                <div class="c-title-center text-center mb-3">
+                    <span class="title-center text-primary position-relative mb-3">Views all 329 New Listings</span>
+                    <h2 class="fs-1 text-capitalize fw-bolder">title</h2>
+                </div>
                 <div class="row">
-                    <div class="col col-12 col-md-6">
-                        <h3>title</h3>
-                        <span>text</span>
-                        <div class="row">
-                            <div class="col col-12 col-md-6 my-3">
-                                <label for="name">Name</label>
-                                <input class="input-group w-100" id="name" type="text" placeholder="name">
-                            </div>
-                            <div class="col col-12 col-md-6 my-3">
-                                <label for="email">Email Address</label>
-                                <input class="input-group w-100" id="email" type="text" placeholder="Email">
-                            </div>
-                            <div class="col col-12 col-md-6 my-3">
-                                <label for="phone">Phone</label>
-                                <input class="input-group w-100" id="phone" type="tel" placeholder="phone">
-                            </div>
-                            <div class="col col-12 col-md-6 my-3">
-                                <label for="details">Subject</label>
-                                <input class="input-group w-100" id="details" type="text" placeholder="subject">
-                            </div>
-                            <div class="form-floating my-3">
-                                <textarea class="form-control" placeholder="Leave a comment here"
-                                    id="floatingTextarea"></textarea>
-                                <label for="floatingTextarea">Comments</label>
-                            </div>
+                    <div class="col col-12 col-md-6 form-wrapper p-5 order-2 order-md-1">
+                        <div class="text-start mb-3">
+                            <h4 class="fw-bolder mb-3">Contact us today</h4>
+                            <span class="fs-sm text-dark">We are happy to help. Anytime</span>
                         </div>
-                        <div class="d-flex justify-content-between my-3">
-                            <button class="btn btn-primary rounded-0" type="submit">
-                                Get In Touch
-                            </button>
-                            <div class="d-flex align-items-center">
-                                <input type="checkbox" id="cheked">
-                                <label for="cheked">I agree my data is
-                                    <a href="#">collected</a>
-                                </label>
+                        <form action="" class="form">
+                            <div class="row">
+                                <div class="col col-12 col-md-6 my-3">
+                                    <div class="field form__inner d-flex align-items-center">
+                                        <i class="fa-solid fa-user"></i>
+                                        <input class="form__input w-100" id="name" type="text" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-md-6 my-3">
+                                    <div class="field form__inner d-flex align-items-center">
+                                        <i class="fa-solid fa-tty"></i>
+                                        <input class="form__input w-100" id="email" type="text"
+                                            placeholder="Email Address">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-md-6 my-3">
+                                    <div class="field form__inner d-flex align-items-center">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <input class="form__input w-100" id="phone" type="tel" placeholder="phone">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-md-6 my-3">
+                                    <div class="field form__inner d-flex align-items-center">
+                                        <i class="fa-solid fa-info"></i>
+                                        <input class="form__input w-100" id="details" type="text" placeholder="subject">
+                                    </div>
+                                </div>
+                                <div class="form-floating my-3">
+                                    <div class="field form__inner d-flex align-items-center-">
+                                        <i class="fa-solid fa-pen mt-2"></i>
+                                        <textarea class="form-control form__input ms-0"
+                                            placeholder="How can help you? Feel free to get in touch!"
+                                            id="floatingTextarea"></textarea>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="d-flex justify-content-between my-3">
+                                <button class="btn btn-primary rounded-0 px-4" type="submit">
+                                    Get In Touch
+                                </button>
+                                <div class="d-flex align-items-center">
+                                    <input class="me-2" type="checkbox" id="cheked">
+                                    <label for="cheked">I agree my data is
+                                        <a href="#">collected</a>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col col-12 col-md-6 order-1 order-md-2">
+                        <div>
+                            <img class="w-100" src="/public/img/home-plan.jpg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col col-12 col-md-6"></div>
             </div>
         </section>
         <!-- video -->
         <div class="video position-relative" style="height: 20rem;">
-            <video src="" class="object-fit-cover w-100 h-100"></video>
-            <a class="btn btn-outline-secondary position-absolute top-50 start-50 translate-middle">Play</a>
+            <video src="#" class="object-fit-cover w-100 h-100"></video>
+            <a
+                class="btn btn-outline-secondary text-white border-white position-absolute top-50 start-50 translate-middle">Play</a>
         </div>
         <!-- articles -->
         <section class="articles py-5">
             <div class="container">
-                <div class="text-center">
-                    <span>text</span>
-                    <h2 class="m-0">title</h2>
+                <div class="c-title-center text-center mb-3">
+                    <span class="title-center text-primary position-relative mb-3">Views all 329 New Listings</span>
+                    <h2 class="fs-1 text-capitalize fw-bolder mt-2">latest news & articals</h2>
                 </div>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-                    <div class="col my-3 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;">
-                            <img src="" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up
-                                    the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="col  d-flex justify-content-center">
+                        <article class="articals my-3">
+                            <div class="card aricals__card p-2 shadow" style="width: 23rem-;">
+                                <img src="/public/img/ricardo-gomez-angel-mMpafh0iM5I-unsplash.jpg" class="card-img-top"
+                                    style="height: 300px;" alt="">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="me-3 mb-3">
+                                            <span>
+                                                <i class="fa-regular me-1 fa-user" style="color: #1684B5FF;"></i>
+                                            </span>
+                                            <span>By Admin</span>
+                                        </div>
+                                        <div>
+                                            <span>
+                                                <i class="fa-regular me-1 fa-comments" style="color: #1684B5FF;"></i>
+                                            </span>
+                                            <span>(6)Comments</span>
+                                        </div>
+                                    </div>
+                                    <h5 class="card-text text-md-start text-capitalize fw-bolder mb-3">
+                                        roofing surveys paints award wind optimistic outlook
+                                    </h5>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="rounded-circle bg-success overflow-hidden me-1"
+                                                style="height: 40px; width: 40px;">
+                                                <img src="public/img/joe-holland-80zZ1s24Nag-unsplash.jpg" width="70px"
+                                                    alt="">
+                                            </div>
+                                            <span class="ms-2">Bradley Grady</span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <a href="#" class=" fw-bolder">More Details</a>
+                                            <i class="fa-solid fa-arrow-trend-up" style="color: #1684B5FF;"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
-                    <div class="col my-3 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;">
-                            <img src="" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up
-                                    the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="col  d-flex justify-content-center">
+                        <article class="articals my-3">
+                            <div class="card aricals__card p-2 shadow" style="width: 23rem-;">
+                                <img src="public/img/rodrigo-curi-ll40XjATWLw-unsplash.jpg" class="card-img-top"
+                                    style="height: 300px;" alt="">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="me-3 mb-3">
+                                            <span>
+                                                <i class="fa-regular me-1 fa-user" style="color: #1684B5FF;"></i>
+                                            </span>
+                                            <span>By Admin</span>
+                                        </div>
+                                        <div>
+                                            <span>
+                                                <i class="fa-regular me-1 fa-comments" style="color: #1684B5FF;"></i>
+                                            </span>
+                                            <span>(6)Comments</span>
+                                        </div>
+                                    </div>
+                                    <h5 class="card-text text-md-start fw-bolder mb-3">Some quick example text to build
+                                        on the card
+                                        title </h5>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="rounded-circle overflow-hidden bg-success me-1"
+                                                style="height: 40px; width: 40px;">
+                                                <img src="public/img/jeremy-mcgilvrey-Mum-4dB0VsE-unsplash.jpg"
+                                                    style="height: 70px;" alt="">
+                                            </div>
+                                            <span class="ms-2">Grady Bradley</span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <a href="#" class=" fw-bolder">More Details</a>
+                                            <i class="fa-solid fa-arrow-trend-up" style="color: #1684B5FF;"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
-                    <div class="col my-3 d-flex justify-content-center ms-auto me-auto">
-                        <div class="card" style="width: 18rem;">
-                            <img src="" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up
-                                    the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="col d-flex justify-content-center ms-auto me-auto">
+                        <article class="articals my-3">
+                            <div class="card aricals__card p-2 shadow" style="width: 23rem-;">
+                                <img src="public/img/vu-anh-TiVPTYCG_3E-unsplash.jpg" class="card-img-top"
+                                    style="height: 300px;" alt="">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="me-3 mb-3">
+                                            <span>
+                                                <i class="fa-regular me-1 fa-user" style="color: #1684B5FF;"></i>
+                                            </span>
+                                            <span>By Admin</span>
+                                        </div>
+                                        <div>
+                                            <span>
+                                                <i class="fa-regular me-1 fa-comments" style="color: #1684B5FF;"></i>
+                                            </span>
+                                            <span>(6)Comments</span>
+                                        </div>
+                                    </div>
+                                    <h5 class="card-text text-md-start fw-bolder mb-3">Some quick example text to build
+                                        on the card
+                                        title </h5>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="rounded-circle overflow-hidden bg-success me-1"
+                                                style="height: 40px; width: 40px;">
+                                                <img src="public/img/ph-m-duy-quang-QGr6H7pri-Q-unsplash.jpg"
+                                                    style="height: 70px;" alt="">
+                                            </div>
+                                            <span class="ms-2">Grady Bradley</span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <a href="#" class=" fw-bolder">More Details</a>
+                                            <i class="fa-solid fa-arrow-trend-up" style="color: #1684B5FF;"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </div>
 
             </div>
         </section>
         <!-- partners -->
-        <div class="partners">
-            <div class="text-center mb-3">
-                <span>text</span>
-                <h2>title</h2>
+        <div class="partners pb-5">
+            <div class="text-center mb-3 d-flex align-items-center py-4">
+                <div class="title-line w-100"></div>
+                <h4 class="partners-title text-capitalize text-nowrap mx-3">our partners & supporters</h4>
+                <div class="title-line w-100"></div>
             </div>
             <section class="splide" id="partners" aria-label="Basic Structure Example">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide">Slide 01</li>
-                        <li class="splide__slide">Slide 02</li>
-                        <li class="splide__slide">Slide 03</li>
-                        <li class="splide__slide">Slide 04</li>
-                        <li class="splide__slide">Slide 05</li>
+                        <li class="splide__slide">
+                            <div class="splide__wrapper overflow-hidden">
+                                <img class="splide__img w-100" src="public/img/envato.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__wrapper overflow-hidden">
+                                <img class="splide__img w-100" src="public/img/envato.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__wrapper overflow-hidden">
+                                <img class="splide__img w-100" src="public/img/envato.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__wrapper overflow-hidden">
+                                <img class="splide__img w-100" src="public/img/envato.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__wrapper overflow-hidden">
+                                <img class="splide__img w-100" src="public/img/envato.svg" alt="">
+                            </div>
+                        </li>
+
                     </ul>
                 </div>
             </section>
@@ -860,50 +2027,148 @@
     </main>
 
     <!-- footer -->
-    <footer class="footer py-5">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-4">
+    <footer class="footer position-relative py-5">
+        <div class="footer-wrapper position-absolute top-0 w-100 h-100"></div>
+        <div class="container z-3 position-relative text-white">
+            <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4">
                 <div class="col">
-                    <div>
-                        logo
+                    <div class="footer-logo d-flex justify-content-start mb-3">
+                        <img src="/SVG/head-logo-footer.svg" style="height: 55px;" alt="">
+                        <div class="d-flex flex-column ms-2">
+                            <span class="text-white fs-5 fw-semibold">Hamilton</span>
+                            <span class="text-primary fs-sm">Estate Rental</span>
+                        </div>
                     </div>
-                    <p> fraze fraze fraze fraze fraze fraze fraze fraze fraze fraze</p>
-                    <div>
-                        social Info
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus
+                    </p>
+                    <div class="footer-social">
+                        <div class="border-start border-primary ps-2">
+                            <h6>Social Info</h6>
+                        </div>
+                        <div class="c-socials">
+                            <ul class="socials__list list-unstyled d-flex">
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element  m-2 p-2-">
+                                        <i class="socials__brand fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element m-2 p-2-">
+                                        <i class="socials__brand fa-solid  fa-v"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element m-2 p-2-">
+                                        <i class="socials__brand fa-brands  fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element m-2 p-2-">
+                                        <i class="socials__brand fa-solid pe-1  socials__brands fa-share-nodes"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <h4>title</h4>
+                <div class="col footer-block">
+                    <h4 class="footer-subtitle text-capitalize">
+                        our navigation
+                    </h4>
                     <ul class="list-unstyled">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                airplane fright
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                about ports
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                meet the team
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                news & team
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                our projects
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col">
-                    <h4>title</h4>
+                <div class="col footer-block">
+                    <h4 class="footer-subtitle text-capitalize">
+                        our sevices
+                    </h4>
                     <ul class="list-unstyled">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                reliability & punctuality
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                trusted franchise
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                warehouses storage
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                real time tracing
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                transparent pricing
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col">
-                    <h4>title</h4>
-                    <p> fraze fraze fraze fraze fraze fraze fraze fraze fraze</p>
-
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder=""
-                            aria-label="Example text with button addon" aria-describedby="button-addon1">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+                <div class="col footer-block ">
+                    <h4 class="footer-subtitle text-capitalize mb-5">
+                        newlsletter
+                    </h4>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div class="form-control field d-flex rounded-0">
+                        <input class="border-0" type="text" placeholder="Email Address"
+                            aria-describedby="button-submit">
+                        <button class="btn btn-primary" type="button" id="button-submit">
+                            <i class="footer-svg- fa-solid fa-angles-right"></i>
+                        </button>
                     </div>
                 </div>
+            </div>
+            <div
+                class="text-white d-flex flex-column flex-md-row mt-5 align-items-center justify-content-center py-4  border-top border-primary">
+                <span>cCopyrights 2003</span>
+                <a href="#">Website_Stock</a>
+                <span>All right reserved</span>
             </div>
         </div>
     </footer>
@@ -913,7 +2178,8 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header d-flex justify-content-center">
-                    <h1 class="modal-title fs-5  text-primary" id="exampleModalLabel">contacts</h1>
+                    <h1 class="modal-title fs-5  text-primary" id="exampleModalLabel">contacts
+                    </h1>
                 </div>
                 <div class="modal-body">
                     <ul class="d-flex flex-column list-unstyled">

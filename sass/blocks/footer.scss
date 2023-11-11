@@ -1,0 +1,44 @@
+.footer{
+    background-image: url("/public/img/avi-werde-hHz4yrvxwlA-unsplash.jpg");
+    background-size: cover;
+    .footer-wrapper{
+        background-color: $black;
+        opacity: 85%;
+    }
+    .footer-subtitle{
+        border-bottom: 1px solid $primary;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+    .footer-svg{
+        color: $primary;
+    }
+    .footer-list{
+        color: $white;
+    }
+
+    .footer-list:hover{
+        color: $primary;
+    }
+    .form-control{
+        width: min-content;
+        background-color: $white;
+        padding: 2px;
+    }
+
+    @media (min-width: $width-tablet) {
+        .footer{
+            .form-control{
+                width: 100px;
+            }
+        }
+    }
+    @media (min-width: $width-tablet) {
+        .footer{
+            .form-control{
+                width: auto;
+            }
+        }
+    }
+    // @media (min-width: $width-desktop) {
+}

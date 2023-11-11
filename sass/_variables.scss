@@ -11,6 +11,8 @@ $red:     #cc0a1e;
 $yellow:  #e6ff07;
 $green:   #5fc01e;
 $cyan:    #3bdeff;
+$white:    #ffffff;
+
 // scss-docs-end color-variables
 
 // scss-docs-start theme-color-variables
@@ -25,7 +27,7 @@ $dark:          $gray-600;
 // scss-docs-end theme-color-variables
 
 // Square radius
-$btn-border-radius-lg: 0;
+$btn-border-radius: 0;
 
 // Create your own map
 $custom-colors: (

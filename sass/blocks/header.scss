@@ -1,5 +1,5 @@
 .header {
-   
+
 
 
     .navbar {
@@ -11,11 +11,15 @@
             margin: 10px;
             padding: 0;
         }
-
+        .btn{
+            width: max-content;
+            border-radius: 0;
+            }
         .dropdown-item {
             color: $secondary;
         }
-        .active{
+
+        .active {
             color: $primary;
         }
 
@@ -35,8 +39,14 @@
         .btn {
             padding: 8px 30px;
         }
-        .btn:hover{
+
+        .btn:hover {
             background-color: $primary;
         }
+    }
+
+    .contact-header {
+        height: 34px;
+        margin-top: 15px;
     }
 }

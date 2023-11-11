@@ -10,9 +10,10 @@ if (splideBanner) {
 
   new Splide('#banner', {
     direction: 'ttb',
-    heightRatio: 0.3,
+    heightRatio: 0.99,
     // width: '95%',
     type: 'loop',
+   
     wheel: "true",
     height: 400,
   }).mount();
@@ -25,8 +26,9 @@ if (splidePopular) {
   new Splide('#popular', {
     type: 'loop',
     perPage: 3,
+    // autoplay: 'true',
     focus: 'center',
-    arrows: 'false',
+    arrows: false,
     breakpoints: {
       640: {
         perPage: 1,
@@ -50,7 +52,7 @@ if (splidePartners) {
     type: 'loop',
     perPage: 3,
     focus: 'center',
-    arrows: 'false',
+    arrows: false,
     breakpoints: {
       640: {
         perPage: 1,

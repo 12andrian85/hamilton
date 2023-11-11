@@ -12,6 +12,13 @@
 @import "./blocks/main-nav";
 @import "./blocks/banner";
 @import "./blocks/feature";
+@import "./blocks/popularly";
+@import "./blocks/consulting";
+@import "./blocks/availability";
+@import "./blocks/new-items";
+@import "./blocks/plans";
+@import "./blocks/video";
+@import "./blocks/partners";
 @import "./blocks/explore";
 @import "./blocks/team-details";
 @import "./blocks/projects";
@@ -21,14 +28,16 @@
 
 
 // components
+@import "./components/c-button.scss";
 @import "./components/breadcrumb.scss";
-@import "./components/title-center.scss";
-@import "./components/card-feature.scss";
-@import "./components/card-popularly.scss";
-@import "./components/more-item.scss";
+@import "./components/c-title-center.scss";
+@import "./components/c-title-start.scss";
+@import "./components/c-card-feature.scss";
+@import "./components/c-card-popularly.scss";
+@import "./components/availability.scss";
 @import "./components/types.scss";
 @import "./components/new-works.scss";
-@import "./components/socials.scss";
+@import "./components/c-socials.scss";
 @import "./components/team.scss";
 @import "./components/reviews.scss";
 @import "./components/latest-articles.scss";

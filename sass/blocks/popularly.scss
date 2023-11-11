@@ -1,0 +1,14 @@
+.popularly{
+    .card{
+        // border-radius: 0;
+        .card-head{
+            overflow: hidden;
+            height: 250px;
+
+        }
+        img{
+            border-radius: 0;
+            height: inherit;
+        }
+    }
+}

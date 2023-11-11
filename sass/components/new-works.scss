@@ -5,30 +5,56 @@
         fill: $white;
     }
 
-    &__inner{
-        bottom: 25px; 
+    &__text {
+        font-size: 10px;
     }
 
-    &__text--text{
+    &__inner {
+        bottom: 10px;
+    }
+
+    &__text--text {
         color: $primary;
     }
 
-    &__text--title{
+    &__text--title {
         color: $secondary;
     }
 
-    &__block img{
+    &__block img {
         height: 40px;
     }
 
-    &__wrapper:hover{
-        .new-works__icon{
+    &__wrapper:hover {
+        .new-works__icon {
             fill: $primary
-
         }
-            .new-works__text{
-                color: $white;
+
+        .new-works__text {
+            color: $white;
         }
     }
 
+}
+
+@media (min-width: $width-tablet) {
+    .new-works {
+        &__text {
+            font-size: 12px;
+        }
+
+        &__inner {
+            bottom: 8px;
+        }
+
+    }
+
+}
+
+@media (min-width: $width-desktop) {
+    .new-works {
+        &__text {
+            font-size: 22px;
+        }
+    }
 }

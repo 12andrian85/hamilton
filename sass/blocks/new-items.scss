@@ -1,0 +1,22 @@
+.new-items{
+    background-color: #F2F6F7FF;
+    
+    .nav{
+        background-color: $white;
+        border-radius: 5px;
+        .btn-tab{
+            padding: 10px;
+            color: $secondary;
+            font-size: 14px;
+        }
+        .btn-tab:hover{
+            background-color: $primary;
+            border-radius: 5px;
+            color: $white;
+            text-decoration: white;
+          
+        }
+    }
+
+   
+}

@@ -1,0 +1,22 @@
+.socials{
+
+    &__element{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        height: 30px;
+        width: 30px;
+        border: 1px dashed $primary;
+    }
+    &__brand{
+        color: $white;
+    }
+    &__element:hover{
+        background-color: $white;
+       
+       .socials__brand{
+        color: $primary;
+       } 
+    }
+}

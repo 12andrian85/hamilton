@@ -1,0 +1,17 @@
+.consulting{
+    .title-start{
+        margin-left: 25px;
+    }
+    .consulting-img{
+
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .consulting{
+        .consulting-img{
+            height: 200px;
+        }
+    }
+    
+}

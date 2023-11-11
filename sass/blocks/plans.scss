@@ -1,0 +1,19 @@
+.plans{
+    .form-wrapper{
+        background-color: #F2F6F7FF;
+    }
+    .form{
+        &__inner{
+            position: relative;
+            border-bottom: 1px solid $gray-400;
+            
+        }
+      
+        &__input{
+            background-color: transparent;
+            border: none;
+            margin-left: 5px;
+        }
+    }
+
+}
