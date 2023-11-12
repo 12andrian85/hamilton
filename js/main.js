@@ -5,6 +5,7 @@ const splidePopular = document.querySelector('#popular')
 const splidePartners = document.querySelector('#partners')
 const splideGallery = document.querySelector('#gallery')
 const splideSugestion = document.querySelector('#sugestion')
+const splideProperties = document.querySelector('#properties')
 
 if (splideBanner) {
 
@@ -52,7 +53,7 @@ if (splidePartners) {
     type: 'loop',
     perPage: 3,
     focus: 'center',
-    arrows: false,
+    // arrows: true,
     breakpoints: {
       640: {
         perPage: 1,
@@ -143,7 +144,30 @@ if (splideSugestion) {
   }).mount();
 }
 
+if (splideProperties) {
 
+  new Splide('#properties', {
+    type: 'loop',
+    perPage: 3,
+    // autoplay: 'true',
+    focus: 'center',
+    // arrows: false,
+    breakpoints: {
+      640: {
+        perPage: 1,
+      },
+      768: {
+        perPage: 2,
+      },
+      // 1200: {
+      //   perPage: 3,
+      // },
+      2560: {
+        perPage: 3,
+      },
+    }
+  }).mount();
+}
 
 
 

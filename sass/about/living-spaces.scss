@@ -5,21 +5,38 @@
     }
 
     &__service {
-        height: 50px;
-        width: 150px;
         top: 70px;
         transform: translateX(-50%);
         left: 50%;
+        padding: 15px;
     }
     
     &__img {
         height: 75vh;
+    }
+    &__element{
+        padding: 10px 0;
+        font-weight: bolder;
+        color: $secondary;
+        position: relative;
+        text-transform: capitalize;
+    }
+    &__element::before{
+        position: absolute;
+        content: "";
+        height: 10px;
+        width: 10px;
+        background-color: $primary;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -15px;
     }
     
     &__foto {
         height: 150px;
         width: 50%;
     }
+    
 }
     
 @media (min-width: $width-tablet) {

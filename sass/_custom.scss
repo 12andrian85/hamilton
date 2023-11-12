@@ -38,9 +38,9 @@
 @import "./components/types.scss";
 @import "./components/new-works.scss";
 @import "./components/c-socials.scss";
-@import "./components/team.scss";
+@import "./components/c-team.scss";
 @import "./components/reviews.scss";
-@import "./components/latest-articles.scss";
+@import "./components/c-latest-articles.scss";
 @import "./components/contacts-information.scss";
 
 
@@ -48,6 +48,8 @@
 @import "./about/banner.scss";
 @import "./about/living-spaces.scss";
 @import "./about/popular-properties.scss";
+@import "./about/reviews.scss";
+@import "./about/latest-articles.scss";
 
 // service
 @import "./service/banner.scss";

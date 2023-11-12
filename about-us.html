@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="public/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-    <!-- <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet"> -->
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
 
 </head>
 
@@ -95,7 +95,7 @@
 
                             <!-- main nav -->
                             <ul class="navbar-nav nav-underline">
-                              
+
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="index.html" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -164,40 +164,107 @@
     </header>
     <main>
         <!-- banner -->
-        <div class="banner">
-            <div class="container text-center text-lg-start">
-                <div class="text-center py-5">
-                    <span>text text text text</span>
-                    <h1>About Us</h1>
+        <div class="banner  position-relative">
+            <div class="position-absolute w-100 h-100 opacity-75" style="background-color: black;"></div>
+            <div class="container banner-block text-center text-lg-start z-1 position-relative">
+                <div class=" text-white text-center py-5">
+                    <span class="fs-3">Business Models you can Consider</span>
+                    <h1 class="fw-medium display-2 mt-2">About Us</h1>
                 </div>
-                <button class="btn btn-primary btn-lg">Home / About Us</button>
+                <nav class="c-breadcrumb d-flex justify-content-center d-md-block" aria-label="breadcrumb ">
+                    <ol class="breadcrumb rounded-top py-3 mb-0 px-4 bg-primary">
+                        <li class="breadcrumb-item">
+                            <a href="index.html" class="text-white text-decoration-none">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active text-white" aria-current="page">About-Us</li>
+                    </ol>
+                </nav>
             </div>
         </div>
         <!-- living-spaces -->
         <div class="living-spaces">
             <div class="container">
                 <div class="row">
-                    <div class="col col-12 col-md-6 position-relative  py-5">
-                        <div class="living-spaces__service text-center bg-secondary position-absolute z-3">
-                            <span class="fw-semibold text-white">text</span>
-                        </div>
+                    <div class="col col-12 col-md-6 position-relative  pt-5">
                         <div
-                            class="living-spaces__border d-none d-md-block border border-primary border-4 position-absolute ms-4 bottom-0 mb-4">
+                            class="living-spaces__service text-center bg-secondary position-absolute z-3 d-flex align-items-center">
+                            <div class="p-2 text-white bg-primary">
+                                <i class="fa-solid fs-2 fa-award text-white"></i>
+                            </div>
+                            <div class="text-white d-flex flex-column text-start ms-3">
+                                <span class="fw-semibold fs-4">36+</span>
+                                <span class="fs-sm">Services We Provide</span>
+                            </div>
                         </div>
-                        <div class="living-spaces__img z-1 position-relative bg-warning ms-md-auto"></div>
-                        <div class="living-spaces__foto z-2 d-none d-md-block position-absolute bg-primary bottom-0">
+                        <div>
+                            <div
+                                class="living-spaces__border d-none d-md-block border border-primary border-4 position-absolute ms-4 bottom-0 mb-4">
+                            </div>
+                            <div class="living-spaces__img z-1 position-relative overflow-hidden ms-md-auto">
+                                <img class="w-100 h-100" src="/public/img/luke-van-zyl-koH7IVuwRLw-unsplash.jpg" alt="">
+                            </div>
+                            <div
+                                class="living-spaces__foto z-2 d-none d-md-block position-absolute overflow-hidden bottom-0">
+                                <img class="w-100 h-100" src="/public/img/naomi-ellsworth-EMPLSuvDuhQ-unsplash.jpg"
+                                    alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="col col-12 col-md-6 py-5">
-                        <span>subtitle</span>
-                        <h2>title</h2>
-                        <div>
-                            <ul class="list-unstyled">list</ul>
+                    <div class="col col-12 col-md-6 pt-5">
+                        <div class="c-title-start text-start mb-3">
+                            <span class=" title-start ms-4 text-primary position-relative mb-3">
+                                We can help realize you
+                            </span>
+                            <h2 class="fs-1 text-capitalize fw-bolder">
+                                dream living spaces setting new build storage
+                            </h2>
                         </div>
-                        <div>range</div>
+                        <p class="color-dark">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolores voluptatem culpa atque cumque vel earum alias
+                            perferendis architecto reiciendis quos, hic pariatur
+                            nobis dignissimos quod error iure cupiditate expedita ratione!
+                        </p>
+                        <div>
+                            <div class="row row-cols-1 row-cols-md-2">
+                                <div class="col d-flex flex-column">
+                                    <span class=" living-spaces__element ms-4">smart home design</span>
+                                    <span class=" living-spaces__element ms-4">get building permission</span>
+                                    <span class=" living-spaces__element ms-4">smart home design</span>
+                                </div>
+                                <div class="col d-flex flex-column">
+                                    <span class=" living-spaces__element ms-4">smart home design</span>
+                                    <span class=" living-spaces__element ms-4">get building permission</span>
+                                    <span class=" living-spaces__element ms-4">smart home design</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <div class="d-flex justify-content-between">
+                                <span>City development</span>
+                                <span>79%</span>
+                            </div>
+                            <input class="w-100" type="range">
+                        </div>
                         <div class="d-flex align-items-center">
-                            <button class="rounded-0 btn btn-primary">learn more</button>
-                            <div>person</div>
+                            <button
+                                class="c-button position-relative align-self-start d-flex btn btn-primary py-2 px-5 me-4">
+                                Learn More
+                            </button>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <div class="rounded-circle overflow-hidden border border-primary border-2 me-1"
+                                        style="height: 40px; width: 40px;">
+                                        <img class="" src="public/img/joe-holland-80zZ1s24Nag-unsplash.jpg" width="70px"
+                                            alt="">
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <span class="ms-2 fw-bold">Bradley Grady</span>
+                                        <span class="ms-2 fs-sm">City Mayor</span>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -206,35 +273,422 @@
         <!-- popular properties -->
         <section class="popular-properties py-5">
             <div class="container text-center">
-                <div>
-                    <span>subtitle</span>
-                    <h2>discover popular properties</h2>
+                <!-- c-title-center -->
+                <div class="c-title-center mb-3 text-capitalize">
+                    <span class="title-center text-primary position-relative mb-3">browse our dream house</span>
+                    <h2 class="fs-1 text-capitalize fw-bolder">discover popular properties</h2>
                 </div>
-                <section class="splide pb-4" id="news" aria-label="Basic Structure Example">
+                <section class="splide" id="properties" aria-label="Basic Structure Example">
+                    <!-- arrow -->
+                    <div class="splide__arrows splide__arrows--ltr">
+                        <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide"
+                            aria-controls="splide01-track">
+                            <i class="fa-solid fa-angles-left"></i>
+                        </button>
+                        <button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide"
+                            aria-controls="splide01-track">
+                            <i class="fa-solid fa-angles-right"></i>
+                        </button>
+                    </div>
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <li class="splide__slide">Slide 01</li>
-                            <li class="splide__slide">Slide 02</li>
-                            <li class="splide__slide">Slide 03</li>
+                            <!-- item -->
+                            <li class="splide__slide d-flex justify-content-center px-md-3 mb-2 mb-md-5 mb-md-5">
+                                <div class="card card-popularly shadow-lg my-5" style="width: 20rem-;">
+                                    <div class="card-head position-relative">
+                                        <img src="/public/img/naomi-ellsworth-EMPLSuvDuhQ-unsplash.jpg"
+                                            class="card-img-top" alt="">
+                                        <div class="badge py-2 px-3 bg-primary position-absolute bottom-0 start-0">
+                                            <span class="fs-4 fw-medium">$987</span>
+                                            <span class="fs-6 fw-normal">/Mounth</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title text-start text-secondary fw-bold">New Apartament Nice
+                                            View</h4>
+                                        <p class="card-text text-start">Some quick example text to build on the card
+                                            title and
+                                            make
+                                            up
+                                            the bulk of the
+                                            card's content.</p>
+                                        <div class="card-description d-flex justify-content-between fs-sm mb-4">
+                                            <div class="d-flex border-bottom border-end">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-car"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    4 Room
+                                                </span>
+                                            </div>
+                                            <div class="d-flex border-bottom border-end border-primary">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-bath"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    Bathroom
+                                                </span>
+                                            </div>
+                                            <div class="d-flex border-bottom border-end">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-house"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    Garage
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="card-address fs-sm">
+                                                <i class="fa-solid fa-location-dot text-primary"></i>
+                                                <span>777 Panama City, FL</span>
+                                            </div>
+                                            <div class="text-primary">
+                                                <span class="rounded-circle me-2 border p-2 border-light-subtle">
+                                                    <i class="fa-regular fa-heart"></i>
+
+                                                </span>
+                                                <span class="rounded-circle  border p-2 border-light-subtle">
+                                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- item -->
+                            <li class="splide__slide d-flex justify-content-center px-md-3 mb-2 mb-md-5">
+                                <div class="card card-popularly shadow-lg my-5" style="width: 20rem-;">
+                                    <div class="card-head position-relative">
+                                        <img src="/public/img/mark-champs-Id2IIl1jOB0-unsplash.jpg" class="card-img-top"
+                                            alt="">
+                                        <div class="badge py-2 px-3 bg-primary position-absolute bottom-0 start-0">
+                                            <span class="fs-4 fw-medium">$987</span>
+                                            <span class="fs-6 fw-normal">/Mounth</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title text-capitalize text-start text-secondary fw-bold">
+                                            single family home view
+                                        </h4>
+                                        <p class="card-text text-start">Some quick example text to build on the card
+                                            title and
+                                            make
+                                            up
+                                            the bulk of the
+                                            card's content.</p>
+                                        <div class="card-description d-flex justify-content-between fs-sm mb-4">
+                                            <div class="d-flex border-bottom border-end">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-car"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    4 Room
+                                                </span>
+                                            </div>
+                                            <div class="d-flex border-bottom border-end border-primary">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-bath"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    Bathroom
+                                                </span>
+                                            </div>
+                                            <div class="d-flex border-bottom border-end">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-house"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    Garage
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="card-address fs-sm">
+                                                <i class="fa-solid fa-location-dot text-primary"></i>
+                                                <span>777 Panama City, FL</span>
+                                            </div>
+                                            <div class="text-primary">
+                                                <span class="rounded-circle me-2 border p-2 border-light-subtle">
+                                                    <i class="fa-regular fa-heart"></i>
+
+                                                </span>
+                                                <span class="rounded-circle  border p-2 border-light-subtle">
+                                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- item -->
+                            <li class="splide__slide d-flex justify-content-center px-md-3 mb-2 mb-md-5">
+                                <div class="card card-popularly shadow-lg my-5" style="width: 20rem-;">
+                                    <div class="card-head position-relative">
+                                        <img src="/public/img/vu-anh-TiVPTYCG_3E-unsplash.jpg" class="card-img-top"
+                                            alt="">
+                                        <div class="badge py-2 px-3 bg-primary position-absolute bottom-0 start-0">
+                                            <span class="fs-4 fw-medium">$987</span>
+                                            <span class="fs-6 fw-normal">/Mounth</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title text-capitalize text-start text-secondary fw-bold">
+                                            apartament luxury family home
+                                        </h4>
+                                        <p class="card-text text-start">Some quick example text to build on the card
+                                            title and
+                                            make
+                                            up
+                                            the bulk of the
+                                            card's content.</p>
+                                        <div class="card-description d-flex justify-content-between fs-sm mb-4">
+                                            <div class="d-flex border-bottom border-end">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-car"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    4 Room
+                                                </span>
+                                            </div>
+                                            <div class="d-flex border-bottom border-end border-primary">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-bath"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    Bathroom
+                                                </span>
+                                            </div>
+                                            <div class="d-flex border-bottom border-end">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-house"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    Garage
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="card-address fs-sm">
+                                                <i class="fa-solid fa-location-dot text-primary"></i>
+                                                <span>777 Panama City, FL</span>
+                                            </div>
+                                            <div class="text-primary">
+                                                <span class="rounded-circle me-2 border p-2 border-light-subtle">
+                                                    <i class="fa-regular fa-heart"></i>
+
+                                                </span>
+                                                <span class="rounded-circle  border p-2 border-light-subtle">
+                                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- item-->
+                            <li class="splide__slide d-flex justify-content-center px-md-3 mb-2 mb-md-5">
+                                <div class="card card-popularly shadow-lg my-5" style="width: 20rem-;">
+                                    <div class="card-head position-relative">
+                                        <img src="/public/img/avi-werde-hHz4yrvxwlA-unsplash.jpg" class="card-img-top"
+                                            alt="">
+                                        <div class="badge py-2 px-3 bg-primary position-absolute bottom-0 start-0">
+                                            <span class="fs-4 fw-medium">$987</span>
+                                            <span class="fs-6 fw-normal">/Mounth</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title text-start text-capitalize text-secondary fw-bold">
+                                            economical but no less comfortable
+                                        </h4>
+                                        <p class="card-text text-start">Some quick example text to build on the card
+                                            title and
+                                            make
+                                            up
+                                            the bulk of the
+                                            card's content.</p>
+                                        <div class="card-description d-flex justify-content-between fs-sm mb-4">
+                                            <div class="d-flex border-bottom border-end">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-car"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    4 Room
+                                                </span>
+                                            </div>
+                                            <div class="d-flex border-bottom border-end border-primary">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-bath"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    Bathroom
+                                                </span>
+                                            </div>
+                                            <div class="d-flex border-bottom border-end">
+                                                <span class="text-primary p-1 d-flex align-items-center">
+                                                    <i class="fa-solid fa-house"></i>
+                                                </span>
+                                                <span class="p-1">
+                                                    Garage
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="card-address fs-sm">
+                                                <i class="fa-solid fa-location-dot text-primary"></i>
+                                                <span>777 Panama City, FL</span>
+                                            </div>
+                                            <div class="text-primary">
+                                                <span class="rounded-circle me-2 border p-2 border-light-subtle">
+                                                    <i class="fa-regular fa-heart"></i>
+
+                                                </span>
+                                                <span class="rounded-circle  border p-2 border-light-subtle">
+                                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </section>
             </div>
         </section>
         <!-- team -->
-        <div class="team py-5">
+        <div class="team pb-5">
             <div class="container">
-                <span>team</span>
-                <h2>title</h2>
+                <div class="c-title-center text-center text-capitalize mb-3">
+                    <span class="title-center text-primary position-relative mb-3">our dream most team</span>
+                    <h2 class="fs-1 text-capitalize fw-bolder">meet our awesome member!</h2>
+                </div>
                 <div class="row">
-                    <div class="col col-12 col-md-4">
-                        card
+                    <div class="col col-12 col-md-6 col-lg-4 my-3">
+                        <div class="c-team w-100">
+                            <div class="team__wrapper ms-auto d-flex p-3">
+                                <div class="team__inner d-flex- pt-3">
+                                    <div class="team__img w-100- position-relative">
+                                        <img class="h-100 w-100" src="/public/img/buissnes-man.jpg" alt="">
+                                    </div>
+                                    <div class="team__name my-3 text-lg-start">
+                                        <h4 class="fs-6 fw-bold text-secondary m-0">Md Sofekul Islam</h4>
+                                        <span class="fs-sm text-dark">Chief Enginer</span>
+                                    </div>
+                                </div>
+                                <div class="team__social mt-4 me-2">
+                                    <div class="c-socials">
+                                        <ul class="c-socials__list list-unstyled">
+                                            <li class="c-socials__item ">
+                                                <a href="#" class="c-socials__element  m-2 p-2-">
+                                                    <i class="c-socials__brand fa-brands fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li class="c-socials__item ">
+                                                <a href="#" class="c-socials__element m-2 p-2-">
+                                                    <i class="c-socials__brand fa-solid  fa-v"></i>
+                                                </a>
+                                            </li>
+                                            <li class="c-socials__item ">
+                                                <a href="#" class="c-socials__element m-2 p-2-">
+                                                    <i class="c-socials__brand fa-brands  fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                            <li class="c-socials__item ">
+                                                <a href="#" class="c-socials__element m-2 p-2-">
+                                                    <i
+                                                        class="c-socials__brand fa-solid pe-1  c-socials__brands fa-share-nodes"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col col-12 col-md-4">
-                        card
+                    <div class="col col-12 col-md-6 col-lg-4 my-3">
+                        <div class="c-team w-100">
+                            <div class="team__wrapper ms-auto d-flex p-3">
+                                <div class="team__inner d-flex- pt-3">
+                                    <div class="team__img w-100- position-relative">
+                                        <img class="h-100 w-100" src="/public/img/buissnes-man-1.jpg" alt="">
+                                    </div>
+                                    <div class="team__name my-3 text-lg-start">
+                                        <h4 class="fs-6 fw-bold text-secondary m-0">Md Sofekul Islam</h4>
+                                        <span class="fs-sm text-dark">Chief Enginer</span>
+                                    </div>
+                                </div>
+                                <div class="team__social mt-4 me-2">
+                                    <div class="c-socials">
+                                        <ul class="c-socials__list list-unstyled">
+                                            <li class="c-socials__item ">
+                                                <a href="#" class="c-socials__element  m-2 p-2-">
+                                                    <i class="c-socials__brand fa-brands fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li class="c-socials__item ">
+                                                <a href="#" class="c-socials__element m-2 p-2-">
+                                                    <i class="c-socials__brand fa-solid  fa-v"></i>
+                                                </a>
+                                            </li>
+                                            <li class="c-socials__item ">
+                                                <a href="#" class="c-socials__element m-2 p-2-">
+                                                    <i class="c-socials__brand fa-brands  fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                            <li class="c-socials__item ">
+                                                <a href="#" class="c-socials__element m-2 p-2-">
+                                                    <i
+                                                        class="c-socials__brand fa-solid pe-1  c-socials__brands fa-share-nodes"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col col-12 col-md-4">
-                        card
+                    <div class="col col-12 col-md-6 col-lg-4 mx-auto my-3">
+                        <div class="c-team w-100">
+                            <div class="team__wrapper ms-auto d-flex p-3">
+                                <div class="team__inner d-flex- pt-3">
+                                    <div class="team__img w-100- position-relative">
+                                        <img class="h-100 w-100" src="/public/img/buissnes-man-2.jpg" alt="">
+                                    </div>
+                                    <div class="team__name my-3 text-lg-start">
+                                        <h4 class="fs-6 fw-bold text-secondary m-0">Md Sofekul Islam</h4>
+                                        <span class="fs-sm text-dark">Chief Enginer</span>
+                                    </div>
+                                </div>
+                                <div class="team__social mt-4 me-2">
+                                    <div class="c-socials">
+                                        <ul class="c-socials__list list-unstyled">
+                                            <li class="c-socials__item ">
+                                                <a href="#" class="c-socials__element  m-2 p-2-">
+                                                    <i class="c-socials__brand fa-brands fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li class="c-socials__item ">
+                                                <a href="#" class="c-socials__element m-2 p-2-">
+                                                    <i class="c-socials__brand fa-solid  fa-v"></i>
+                                                </a>
+                                            </li>
+                                            <li class="c-socials__item ">
+                                                <a href="#" class="c-socials__element m-2 p-2-">
+                                                    <i class="c-socials__brand fa-brands  fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                            <li class="c-socials__item ">
+                                                <a href="#" class="c-socials__element m-2 p-2-">
+                                                    <i
+                                                        class="c-socials__brand fa-solid pe-1  c-socials__brands fa-share-nodes"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -243,18 +697,79 @@
         <div class="reviews py-5">
             <div class="container">
                 <div class="text-center text-lg-start">
-                    <span>reviews</span>
-                <h2>title</h2>
+                    <div class="c-title-start text-start text-capitalize mb-3">
+                        <span class=" title-start ms-4 text-white position-relative mb-3">browse testimonial our</span>
+                        <h2 class="fs-1 text-white text-capitalize fw-bolder">what our client say abut us</h2>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col col-12 col-md-4">
-                        card
+                        <div class="card position-relative px-2 py-4 my-2">
+                            <div class="card-header d-flex align-items-center">
+                                <div class="card-img overflow-hidden">
+                                    <img class="w-100 h-100" src="/public/img/jeremy-mcgilvrey-Mum-4dB0VsE-unsplash.jpg"
+                                        alt="business-man">
+                                </div>
+                                <div class="card-name my-3  ms-3 text-lg-start">
+                                    <h4 class="fs-6 fw-bold text-capitalize text-secondary m-0">fiorinio savinio</h4>
+                                    <span class="fs-sm text-dark">Dramatically enhance</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="fs-sm lh-base text-dark">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Neque incidunt tenetur, eum voluptatem sit, perferendis
+                                    vero animi reiciendis quam explicabo
+
+                                </p>
+                                <i class="card-quote position-absolute fa-solid fa-quote-left"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="col col-12 col-md-4">
-                        card
+                        <div class="card position-relative px-2 py-4 my-2">
+                            <div class="card-header d-flex align-items-center">
+                                <div class="card-img overflow-hidden">
+                                    <img class="w-100 h-100" src="/public/img/constructor.jpg" alt="business-man">
+                                </div>
+                                <div class="card-name my-3  ms-3 text-lg-start">
+                                    <h4 class="fs-6 fw-bold text-capitalize text-secondary m-0">catello adolfo</h4>
+                                    <span class="fs-sm text-dark">Dramatically enhance</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="fs-sm lh-base text-dark">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Neque incidunt tenetur, eum voluptatem sit, perferendis
+                                    vero animi reiciendis quam explicabo
+
+                                </p>
+                                <i class="card-quote position-absolute fa-solid fa-quote-left"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="col col-12 col-md-4">
-                        card
+                        <div class="card position-relative px-2 py-4 my-2">
+                            <div class="card-header d-flex align-items-center">
+                                <div class="card-img overflow-hidden">
+                                    <img class="w-100 h-100" src="/public/img/ph-m-duy-quang-QGr6H7pri-Q-unsplash.jpg"
+                                        alt="business-man">
+                                </div>
+                                <div class="card-name my-3  ms-3 text-lg-start">
+                                    <h4 class="fs-6 fw-bold text-capitalize text-secondary m-0">fiorinio savinio</h4>
+                                    <span class="fs-sm text-dark">Dramatically enhance</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="fs-sm lh-base text-dark">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Neque incidunt tenetur, eum voluptatem sit, perferendis
+                                    vero animi reiciendis quam explicabo
+
+                                </p>
+                                <i class="card-quote position-absolute fa-solid fa-quote-left"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -262,75 +777,294 @@
         <!-- latest-articles -->
         <div class="latest-articles py-5">
             <div class="container">
-                <div class="text-center">
-                    <span>latest-articles</span>
-                <h2>title</h2>
+                <div class="c-title-center mb-3">
+                    <span class="title-center text-primary position-relative mb-3">Views all 329 New Listings</span>
+                    <h2 class="fs-1 text-capitalize fw-bolder">title</h2>
                 </div>
                 <div class="row">
-                    <div class="col col-12 col-md-4">
-                        card
+                    <div class="col col-12 col-md-6 col-lg-4 mx-auto">
+                        <div class="card h-100 position-relative">
+                            <img class="card-img--top" src="/public/img/luke-van-zyl-koH7IVuwRLw-unsplash.jpg"
+                                alt="home">
+                            <div
+                                class="c-latest-articles__body text-secondary p-3 card-body position-absolute bg-white rounded-top shadow">
+                                <div class="d-flex">
+                                    <div class="d-flex align-items-center fs-sm me-4">
+                                        <i class="fa-regular me-2 fa-user"></i>
+                                        <span class="text-nowrap">
+                                            By Admin
+                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center fs-sm me-4">
+                                        <i class="fa-regular me-2 fa-calendar-days"></i>
+                                        <span class="text-nowrap">
+                                            August 17 2023
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="fw-bolder my-2 text-nowrap">Retail banks wakeup to digital</p>
+                                <div class="c-latest-articles__btns rounded d-flex ">
+                                    <a class="c-latest-articles__btn btn fs-sm rounded" href="#">
+                                        Learn More
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                    <a class="c-latest-articles__btn-last btn fs-sm" href="#">
+                                        Share Post
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col col-12 col-md-4">
-                        card
+                    <div class="col col-12 col-md-6 col-lg-4 mx-auto">
+                        <div class="card card-top card-top--middle position-relative">
+                            <img class="card-img--top" src="/public/img/naomi-ellsworth-EMPLSuvDuhQ-unsplash.jpg"
+                                alt="home">
+                            <div
+                                class="c-latest-articles__body text-secondary p-3 card-body position-absolute bg-white rounded-top shadow">
+                                <div class="d-flex">
+                                    <div class="d-flex align-items-center fs-sm me-4">
+                                        <i class="fa-regular me-2 fa-user"></i>
+                                        <span class="text-nowrap">
+                                            By Admin
+                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center fs-sm me-4">
+                                        <i class="fa-regular me-2 fa-calendar-days"></i>
+                                        <span class="text-nowrap">
+                                            August 17 2023
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="fw-bolder my-2 text-nowrap">Retail banks wakeup to digital</p>
+                                <div class="c-latest-articles__btns rounded d-flex ">
+                                    <a class="c-latest-articles__btn btn fs-sm rounded" href="#">
+                                        Learn More
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                    <a class="c-latest-articles__btn-last btn fs-sm" href="#">
+                                        Share Post
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col col-12 col-md-4">
-                        card
+                    <div class="col col-12 col-md-6 col-lg-4 mx-auto">
+                        <div class="card card-top position-relative">
+                            <img class="card-img--top" src="/public/img/collov-home-design-4_jQL4JCS98-unsplash.jpg"
+                                alt="home">
+                            <div
+                                class="c-latest-articles__body text-secondary p-3 card-body position-absolute bg-white rounded-top shadow">
+                                <div class="d-flex">
+                                    <div class="d-flex align-items-center fs-sm me-4">
+                                        <i class="fa-regular me-2 fa-user"></i>
+                                        <span class="text-nowrap">
+                                            By Admin
+                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center fs-sm me-4">
+                                        <i class="fa-regular me-2 fa-calendar-days"></i>
+                                        <span class="text-nowrap">
+                                            August 17 2023
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="fw-bolder my-2 text-nowrap">Retail banks wakeup to digital</p>
+                                <div class="c-latest-articles__btns rounded d-flex ">
+                                    <a class="c-latest-articles__btn btn fs-sm rounded" href="#">
+                                        Learn More
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                    <a class="c-latest-articles__btn-last btn fs-sm" href="#">
+                                        Share Post
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </main>
-    <div class="" style="height: 9rem;"></div>
-    <!-- 
-    <footer class="footer py-5">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-4">
-                <div class="col">
-                    <div>
-                        logo
-                    </div>
-                    <p> fraze fraze fraze fraze fraze fraze fraze fraze fraze fraze</p>
-                    <div>
-                        social Info
-                    </div>
-                </div>
-                <div class="col">
-                    <h4>title</h4>
-                    <ul class="list-unstyled">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4>title</h4>
-                    <ul class="list-unstyled">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4>title</h4>
-                    <p> fraze fraze fraze fraze fraze fraze fraze fraze fraze</p>
+    <!-- footer -->
+    <footer class="footer position-relative py-5 mt-5">
+        <div class="footer-wrapper position-absolute top-0 w-100 h-100"></div>
 
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder=""
-                            aria-label="Example text with button addon" aria-describedby="button-addon1">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+        <div class="container z-3 position-relative text-white">
+            <div class="text-white  d-flex justify-content-between mb-4">
+                <div>
+                    <div class="c-title-start text-start text-capitalize mb-3">
+                        <h2 class="fs-1 text-capitalize fw-bolder">looking for the beast dream house solutions? </h2>
                     </div>
+                    <span class="fs-sm">As app web crawler expert, We will help too organize</span>
+                </div>
+                <div class="">
+                    <button class="c-button position-relative align-self-start d-flex btn btn-primary py-2 px-5">
+                        get a quote
+                    </button>
                 </div>
             </div>
-        </div>
-    </footer> -->
+            <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4">
+                <div class="col">
+                    <div class="footer-logo d-flex justify-content-start mb-3">
+                        <img src="/SVG/head-logo-footer.svg" style="height: 55px;" alt="">
+                        <div class="d-flex flex-column ms-2">
+                            <span class="text-white fs-5 fw-semibold">Hamilton</span>
+                            <span class="text-primary fs-sm">Estate Rental</span>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus
+                    </p>
+                    <div class="footer-social">
+                        <div class="border-start border-primary ps-2">
+                            <h6>Social Info</h6>
+                        </div>
+                        <div class="c-socials">
+                            <ul class="socials__list list-unstyled d-flex">
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element  m-2 p-2-">
+                                        <i class="socials__brand fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element m-2 p-2-">
+                                        <i class="socials__brand fa-solid  fa-v"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element m-2 p-2-">
+                                        <i class="socials__brand fa-brands  fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element m-2 p-2-">
+                                        <i class="socials__brand fa-solid pe-1  socials__brands fa-share-nodes"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col footer-block">
+                    <h4 class="footer-subtitle text-capitalize">
+                        our navigation
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                airplane fright
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                about ports
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                meet the team
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                news & team
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                our projects
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col footer-block">
+                    <h4 class="footer-subtitle text-capitalize">
+                        our sevices
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                reliability & punctuality
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                trusted franchise
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                warehouses storage
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                real time tracing
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                transparent pricing
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col footer-block ">
+                    <h4 class="footer-subtitle text-capitalize">
+                        our gallery
+                    </h4>
+                    <div class="row ">
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery" src="/public/img/footer-img/adam-kring-uqCMurxrzZc-unsplash.jpg"
+                                alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/angelina-litvin-52R7t7x8CPI-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/asier-pais-martins-VUIQxik_PQU-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/bilal-mansuri-3r9HlCYTtLU-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/bilal-mansuri-R8F3tLZUWRs-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/karolina-bobek-rFM9u9mYptA-unsplash.jpg" alt="">
+                        </div>
+
+
+                    </div>
+                </div>
+                <div
+                    class="text-white d-flex flex-column flex-md-row w-100 mt-5 align-items-center justify-content-center py-4  border-top border-primary">
+                    <span>cCopyrights 2003</span>
+                    <a href="#">Website_Stock</a>
+                    <span>All right reserved</span>
+                </div>
+            </div>
+    </footer>
 
     <!-- Modal Contact-->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -373,8 +1107,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script type="module" src="js/main.js"></script>
 </body>

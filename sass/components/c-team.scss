@@ -1,0 +1,56 @@
+.c-team {
+    width: 30%;
+
+    .team {
+        &__wrapper {
+            background-color: #F2F6F7FF;
+            width: 85%;
+        }
+
+        &__img {
+            right: 40px;
+            width: 200px;
+            height: 200px;
+        }
+
+        &__inner {
+            width: 180px;
+        }
+
+    }
+
+    .c-socials {
+        &__item {
+            background-color: $white;
+            margin: 15px 0;
+        }
+
+        &__element {
+            border: none;
+        }
+
+        &__brand {
+            color: $secondary;
+        }
+
+        &__item:hover {
+            background-color: $primary;
+
+            .c-socials__brand {
+                color: $white;
+            }
+        }
+    }
+
+}
+
+@media (min-width: $width-x-desktop) {
+    .c-team {
+
+        .team {
+            &__wrapper {
+                width: 65%;
+            }
+        }
+    }
+}
