@@ -1,5 +1,7 @@
 .header {
-
+    .header-svg-element {
+        display: none;
+    }
 
 
     .navbar {
@@ -11,10 +13,12 @@
             margin: 10px;
             padding: 0;
         }
-        .btn{
+
+        .btn {
             width: max-content;
             border-radius: 0;
-            }
+        }
+
         .dropdown-item {
             color: $secondary;
         }
@@ -35,6 +39,10 @@
         }
     }
 
+    .nav-logo {
+        width: max-content;
+    }
+
     .collapse {
         .btn {
             padding: 8px 30px;
@@ -45,8 +53,4 @@
         }
     }
 
-    .contact-header {
-        height: 34px;
-        margin-top: 15px;
-    }
 }

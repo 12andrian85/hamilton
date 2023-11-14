@@ -41,6 +41,10 @@
     
 @media (min-width: $width-tablet) {
     .living-spaces {
+        &__block{
+            height: 520px;
+        }
+
         &__img {
             width: 90%;
         }
@@ -51,4 +55,12 @@
 
         }
     }
+}
+@media (min-width: $width-xx-desktop){
+    .living-spaces{
+        &__block{
+            height: 710px;
+        }
+    }
+
 }

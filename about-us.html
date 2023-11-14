@@ -28,7 +28,7 @@
         <!-- contact-header -->
         <div class="contact-header d-none d-lg-flex">
             <ul class="justify-content-between list-unstyled d-flex w-100">
-                <li class="text-secondary d-flex align-items-center">
+                <li class="text-secondary d-flex align-items-center d-none d-xl-block">
                     <img src="/SVG/headleft-sfg.svg" alt="">
                 </li>
                 <div class="container d-flex justify-content-between px-0">
@@ -52,7 +52,7 @@
                         <i class="fa-solid pe-2 fa-magnifying-glass"></i>
                     </li>
                 </div>
-                <li class="text-secondary d-flex align-items-center">
+                <li class="text-secondary d-flex align-items-center d-none d-xl-block">
                     <img src="/SVG/head-right.svg" alt="">
                 </li>
             </ul>
@@ -164,49 +164,52 @@
     </header>
     <main>
         <!-- banner -->
-        <div class="banner  position-relative">
+        <div class="banner-about  position-relative">
             <div class="position-absolute w-100 h-100 opacity-75" style="background-color: black;"></div>
             <div class="container banner-block text-center text-lg-start z-1 position-relative">
                 <div class=" text-white text-center py-5">
                     <span class="fs-3">Business Models you can Consider</span>
                     <h1 class="fw-medium display-2 mt-2">About Us</h1>
                 </div>
-                <nav class="c-breadcrumb d-flex justify-content-center d-md-block" aria-label="breadcrumb ">
-                    <ol class="breadcrumb rounded-top py-3 mb-0 px-4 bg-primary">
-                        <li class="breadcrumb-item">
-                            <a href="index.html" class="text-white text-decoration-none">Home</a>
-                        </li>
-                        <li class="breadcrumb-item active text-white" aria-current="page">About-Us</li>
-                    </ol>
-                </nav>
             </div>
+            <nav class="c-breadcrumb d-flex justify-content-center d-md-block" aria-label="breadcrumb ">
+                <ol class="breadcrumb rounded-top py-3 mb-0 px-4 bg-primary">
+                    <li class="breadcrumb-item">
+                        <a href="index.html" class="text-white text-decoration-none">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">About-Us</li>
+                </ol>
+            </nav>
         </div>
         <!-- living-spaces -->
         <div class="living-spaces">
             <div class="container">
                 <div class="row">
-                    <div class="col col-12 col-md-6 position-relative  pt-5">
-                        <div
-                            class="living-spaces__service text-center bg-secondary position-absolute z-3 d-flex align-items-center">
-                            <div class="p-2 text-white bg-primary">
-                                <i class="fa-solid fs-2 fa-award text-white"></i>
-                            </div>
-                            <div class="text-white d-flex flex-column text-start ms-3">
-                                <span class="fw-semibold fs-4">36+</span>
-                                <span class="fs-sm">Services We Provide</span>
-                            </div>
-                        </div>
-                        <div>
+                    <div class="col col-12 col-md-6  pt-5">
+                        <div class="living-spaces__block  position-relative">
                             <div
-                                class="living-spaces__border d-none d-md-block border border-primary border-4 position-absolute ms-4 bottom-0 mb-4">
+                                class="living-spaces__service text-center bg-secondary position-absolute z-3 d-flex align-items-center">
+                                <div class="p-2 text-white bg-primary">
+                                    <i class="fa-solid fs-2 fa-award text-white"></i>
+                                </div>
+                                <div class="text-white d-flex flex-column text-start ms-3">
+                                    <span class="fw-semibold fs-4">36+</span>
+                                    <span class="fs-sm">Services We Provide</span>
+                                </div>
                             </div>
-                            <div class="living-spaces__img z-1 position-relative overflow-hidden ms-md-auto">
-                                <img class="w-100 h-100" src="/public/img/luke-van-zyl-koH7IVuwRLw-unsplash.jpg" alt="">
-                            </div>
-                            <div
-                                class="living-spaces__foto z-2 d-none d-md-block position-absolute overflow-hidden bottom-0">
-                                <img class="w-100 h-100" src="/public/img/naomi-ellsworth-EMPLSuvDuhQ-unsplash.jpg"
-                                    alt="">
+                            <div>
+                                <div
+                                    class="living-spaces__border d-none d-md-block border border-primary border-4 position-absolute ms-4 bottom-0 mb-4">
+                                </div>
+                                <div class="living-spaces__img z-1 position-relative overflow-hidden ms-md-auto">
+                                    <img class="w-100 h-100" src="/public/img/luke-van-zyl-koH7IVuwRLw-unsplash.jpg"
+                                        alt="">
+                                </div>
+                                <div
+                                    class="living-spaces__foto z-2 d-none d-md-block position-absolute overflow-hidden bottom-0">
+                                    <img class="w-100 h-100" src="/public/img/naomi-ellsworth-EMPLSuvDuhQ-unsplash.jpg"
+                                        alt="">
+                                </div>
                             </div>
                         </div>
                     </div>

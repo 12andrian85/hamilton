@@ -1,6 +1,9 @@
 .footer {
     background-image: url("/public/img/avi-werde-hHz4yrvxwlA-unsplash.jpg");
     background-size: cover;
+    .footer-logo img{
+        width: min-content;
+    }
 
     .footer-wrapper {
         background-color: $black;
@@ -39,11 +42,13 @@
         overflow: hidden;
         height: 50px;
         margin-top: 15px;
+        display: flex;
+        justify-content: center;
     }
 
     .footer-gallery {
-        height: 55px;
-        width: 55px;
+        max-height: 65px;
+        max-width: 65px;
     }
 }
 

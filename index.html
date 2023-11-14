@@ -45,7 +45,7 @@
     </symbol>
 </svg>
 <!-- card -->
-<svg width="0" height="0" class="hidden">
+<svg width="0" height="0" class="d-none">
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" id="credit-card-regular">
         <path
             d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z">
@@ -78,7 +78,7 @@
         <!-- contact-header -->
         <div class="contact-header d-none d-lg-flex border-bottom">
             <ul class="justify-content-between list-unstyled d-flex w-100">
-                <li class="text-secondary d-flex align-items-center">
+                <li class="text-secondary align-items-center d-none d-xl-block">
                     <img src="/SVG/headleft-sfg.svg" alt="">
                 </li>
                 <div class="container d-flex justify-content-between px-0">
@@ -102,7 +102,7 @@
                         <i class="fa-solid pe-2 fa-magnifying-glass"></i>
                     </li>
                 </div>
-                <li class="text-secondary d-flex align-items-center">
+                <li class="text-secondary d-none d-xl-block align-items-center">
                     <img src="/SVG/head-right.svg" alt="">
                 </li>
             </ul>
@@ -153,7 +153,9 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="components.html">Component</a></li>
-                                        <li><a class="dropdown-item" target="_blank" href="https://themeforest.net/item/hamiltonreal-estate-property-psd-template/screenshots/47976971?index=7">Original Template</a></li>
+                                        <li><a class="dropdown-item" target="_blank"
+                                                href="https://themeforest.net/item/hamiltonreal-estate-property-psd-template/screenshots/47976971?index=7">Original
+                                                Template</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
@@ -320,7 +322,8 @@
                         <form class="form-find-estate p-4" action="">
                             <h3 class="text-start">Find home for rent</h3>
                             <div class="mb-3">
-                                <input type="text" class="form-control rounded-0" -->
+                                <input type="text" class="form-control rounded-0" 
+                    </div>-->
                     <div class="col col-12 col-md-6 col-lg-5 ps-md-4 d-lg-flex align-items-center">
                         <!-- form -->
                         <form class="form-find-estate position-relative bg-white p-4 mb-5" action="">
@@ -447,21 +450,8 @@
                     </div>
                 </div>
             </div>
+            <!-- </div> -->
         </div>
-          <!-- <div class="title title--center title--left">
-                    <span class="title__sub">text</span>
-                    <h2 class="title__label">subtitle</h2>
-                </div> -->
-                <!--<div class="title title--left title-all-center">
-                    <span class="title__sub">text</span>
-                    <h2 class="title__label">subtitle</h2>
-                </div> -->
-        <!-- Think to separate in components  -->
-        <!-- card-feature -->
-        <!-- card-property -->
-        <!-- card-project -->
-        <!-- etc -->
-
         <!-- popularly -->
         <section class="popularly bg-light py-5">
             <div class="container">
@@ -734,7 +724,6 @@
                         </ul>
                     </div>
                 </section>
-
             </div>
         </section>
         <!-- consulting -->
@@ -783,28 +772,29 @@
                             <div class="col col-12 col-lg-6">
                                 <div class="card text-bg-dark border-0">
                                     <img class="consulting-img rounded"
-                                    src="/public//img/sidekix-media-I_QC1JICzA0-unsplash.jpg" alt="">
+                                        src="/public//img/sidekix-media-I_QC1JICzA0-unsplash.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col col-12 col-md-6">
                                 <div class="card text-bg-dark border-0">
-                                    <img class="consulting-img rounded"
-                                    src="/public//img/recently-works/interior-3.jpg" alt="">
+                                    <img class="consulting-img rounded" src="/public//img/recently-works/interior-3.jpg"
+                                        alt="">
                                 </div>
                             </div>
                             <div class="col col-12 col-md-6 col-lg-12">
                                 <div class="card text-bg-dark border-0">
                                     <img class="consulting-img rounded"
-                                    src="/public//img/mostafa-safadel-cHjAxnJk_wQ-unsplash.jpg" alt="">
+                                        src="/public//img/mostafa-safadel-cHjAxnJk_wQ-unsplash.jpg" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
         <!-- availability -->
         <section class="availability">
-            <div class="container-fluid-">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col col-12 col-lg-6 d-none d-md-block px-0">
                         <div class="availability__img overflow-hidden">
@@ -832,7 +822,8 @@
                                                 <use xlink:href="#home"></use>
                                             </svg>
                                             <span class="availability-line"></span>
-                                            <span class="availability-text fw-bold text-capitalize">trusted by thousands</span>
+                                            <span class="availability-text fw-bold text-capitalize">trusted by
+                                                thousands</span>
                                         </a>
                                     </div>
                                 </div>
@@ -844,7 +835,8 @@
                                                 <use xlink:href="#home"></use>
                                             </svg>
                                             <span class="availability-line"></span>
-                                            <span class="availability-text fw-bold text-capitalize">built-in storage cupboards</span>
+                                            <span class="availability-text fw-bold text-capitalize">built-in storage
+                                                cupboards</span>
                                         </a>
                                     </div>
                                 </div>
@@ -857,7 +849,8 @@
                                                     <use xlink:href="#home"></use>
                                                 </svg>
                                                 <span class="availability-line"></span>
-                                                <span class="availability-text fw-bold text-capitalize">global architect experts</span>
+                                                <span class="availability-text fw-bold text-capitalize">global architect
+                                                    experts</span>
                                             </a>
                                         </div>
                                     </div>
@@ -870,7 +863,8 @@
                                                 <use xlink:href="#home"></use>
                                             </svg>
                                             <span class="availability-line"></span>
-                                            <span class="availability-text fw-bold text-capitalize">find your dream home</span>
+                                            <span class="availability-text fw-bold text-capitalize">find your dream
+                                                home</span>
                                         </a>
                                     </div>
                                 </div>
@@ -882,7 +876,8 @@
                                                 <use xlink:href="#home"></use>
                                             </svg>
                                             <span class="availability-line"></span>
-                                            <span class="availability-text fw-bold text-capitalize">list your own Property</span>
+                                            <span class="availability-text fw-bold text-capitalize">list your own
+                                                Property</span>
                                         </a>
                                     </div>
                                 </div>
@@ -894,7 +889,8 @@
                                                 <use xlink:href="#home"></use>
                                             </svg>
                                             <span class="availability-line"></span>
-                                            <span class="availability-text fw-bold text-capitalize">meeting with agent</span>
+                                            <span class="availability-text fw-bold text-capitalize">meeting with
+                                                agent</span>
                                         </a>
                                     </div>
                                 </div>
@@ -906,7 +902,8 @@
                                                 <use xlink:href="#home"></use>
                                             </svg>
                                             <span class="availability-line"></span>
-                                            <span class="availability-text fw-bold text-capitalize">select the best place</span>
+                                            <span class="availability-text fw-bold text-capitalize">select the best
+                                                place</span>
                                         </a>
                                     </div>
                                 </div>
@@ -919,7 +916,8 @@
                                                     <use xlink:href="#home"></use>
                                                 </svg>
                                                 <span class="availability-line"></span>
-                                                <span class="availability-text fw-bold text-capitalize">go out & explore now</span>
+                                                <span class="availability-text fw-bold text-capitalize">go out & explore
+                                                    now</span>
                                             </a>
                                         </div>
                                     </div>
@@ -932,7 +930,8 @@
                                                 <use xlink:href="#home"></use>
                                             </svg>
                                             <span class="availability-line"></span>
-                                            <span class="availability-text fw-bold text-capitalize">strategy & development</span>
+                                            <span class="availability-text fw-bold text-capitalize">strategy &
+                                                development</span>
                                         </a>
                                     </div>
                                 </div>
@@ -945,7 +944,8 @@
                                                     <use xlink:href="#home"></use>
                                                 </svg>
                                                 <span class="availability-line"></span>
-                                                <span class="availability-text fw-bold text-capitalize">The Perfect Residency
+                                                <span class="availability-text fw-bold text-capitalize">The Perfect
+                                                    Residency
                                                     Home</span>
                                             </a>
                                         </div>
@@ -1023,14 +1023,13 @@
                     </div>
                 </div>
             </div>
-
         </section>
         <!-- new-items-->
         <div class="new-items category d-flex mb-5 px-4 py-5">
-            <div class="container-fluid">
-                <div class="w-100" style="overflow: auto;">
+            <div class="container">
+                <div class="w-100">
                     <!-- tabulation -->
-                    <div class="table overflow-auto d-md-flex justify-content-between align-items-center">
+                    <div class="d-md-flex justify-content-between align-items-center">
                         <div class="c-title-start text-start mb-3">
                             <span class=" title-start ms-4 text-primary position-relative mb-3">Views all 329 New
                                 Listings</span>
@@ -1038,51 +1037,54 @@
                                 recently completed works
                             </h2>
                         </div>
-                        <ul class="nav nav-tabs overflow-auto flex-nowrap justify-content-md-end border-0 mb-4"
-                            id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="btn-tab btn btn-link  px-4 text-nowrap active" id="home-tab"
-                                    data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab"
-                                    aria-controls="home-tab-pane" aria-selected="true">
-                                    All Projects
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="btn-tab btn btn-link px-4 text-nowrap" id="profile-tab"
-                                    data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab"
-                                    aria-controls="profile-tab-pane" aria-selected="false">
-                                    Industrial
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="btn-tab btn btn-link px-4 text-nowrap" id="contact-tab"
-                                    data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab"
-                                    aria-controls="contact-tab-pane" aria-selected="false">
-                                    Massproject
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="btn-tab btn btn-link px-4 text-nowrap" id="work-tab" data-bs-toggle="tab"
-                                    data-bs-target="#work-tab-pane" type="button" role="tab"
-                                    aria-controls="work-tab-pane" aria-selected="false">
-                                    Interior
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="btn-tab btn btn-link px-4 text-nowrap" id="factory-tab"
-                                    data-bs-toggle="tab" data-bs-target="#factory-tab-pane" type="button" role="tab"
-                                    aria-controls="factory-tab-pane" aria-selected="false">
-                                    Factory
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="btn-tab btn btn-link px-4 text-nowrap" id="project-tab"
-                                    data-bs-toggle="tab" data-bs-target="#project-tab-pane" type="button" role="tab"
-                                    aria-controls="project-tab-pane" aria-selected="false">
-                                    New Project
-                                </button>
-                            </li>
-                        </ul>
+                        <div class="overflow-auto">
+                            <ul class="nav table nav-tabs overflow-auto flex-nowrap justify-content-md-end border-0 mb-4"
+                                id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="btn-tab btn btn-link  px-4 text-nowrap active" id="home-tab"
+                                        data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab"
+                                        aria-controls="home-tab-pane" aria-selected="true">
+                                        All Projects
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="btn-tab btn btn-link px-4 text-nowrap" id="profile-tab"
+                                        data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                        aria-controls="profile-tab-pane" aria-selected="false">
+                                        Industrial
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="btn-tab btn btn-link px-4 text-nowrap" id="contact-tab"
+                                        data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                        aria-controls="contact-tab-pane" aria-selected="false">
+                                        Massproject
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="btn-tab btn btn-link px-4 text-nowrap" id="work-tab"
+                                        data-bs-toggle="tab" data-bs-target="#work-tab-pane" type="button" role="tab"
+                                        aria-controls="work-tab-pane" aria-selected="false">
+                                        Interior
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="btn-tab btn btn-link px-4 text-nowrap" id="factory-tab"
+                                        data-bs-toggle="tab" data-bs-target="#factory-tab-pane" type="button" role="tab"
+                                        aria-controls="factory-tab-pane" aria-selected="false">
+                                        Factory
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="btn-tab btn btn-link px-4 text-nowrap" id="project-tab"
+                                        data-bs-toggle="tab" data-bs-target="#project-tab-pane" type="button" role="tab"
+                                        aria-controls="project-tab-pane" aria-selected="false">
+                                        New Project
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
                     <!-- items -->
                     <div class="tab-content" id="myTabContent">
@@ -1110,7 +1112,8 @@
                                                         class="new-works__inner position-absolute z-1 start-50 translate-middle-x text-center">
                                                         <span class="new-works__text new-works__text--text">Duplex
                                                             Foue</span> <br>
-                                                        <h4 class="new-works__text new-works__text--title">Noe Valley
+                                                        <h4 class="new-works__text new-works__text--title">Noe
+                                                            Valley
                                                             Zones</h4>
                                                     </div>
                                                 </div>

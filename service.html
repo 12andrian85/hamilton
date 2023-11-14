@@ -36,7 +36,7 @@
         <!-- contact-header -->
         <div class="contact-header d-none d-lg-flex">
             <ul class="justify-content-between list-unstyled d-flex w-100">
-                <li class="text-secondary d-flex align-items-center">
+                <li class="text-secondary d-flex align-items-center d-none d-xl-block">
                     <img src="/SVG/headleft-sfg.svg" alt="">
                 </li>
                 <div class="container d-flex justify-content-between px-0">
@@ -60,7 +60,7 @@
                         <i class="fa-solid pe-2 fa-magnifying-glass"></i>
                     </li>
                 </div>
-                <li class="text-secondary d-flex align-items-center">
+                <li class="text-secondary d-flex align-items-center d-none d-xl-block">
                     <img src="/SVG/head-right.svg" alt="">
                 </li>
             </ul>
@@ -173,101 +173,212 @@
     <!-- main -->
     <main>
         <!-- banner -->
-        <div class="banner">
-            <div class="container text-center text-lg-start">
-                <div class="text-center py-5">
-                    <span>text text text text</span>
-                    <h1>Service</h1>
+        <div class="banner-service  position-relative">
+            <div class="position-absolute w-100 h-100 opacity-75" style="background-color: black;"></div>
+            <div class="container banner-block text-center text-lg-start z-1 position-relative">
+                <div class=" text-white text-center py-5">
+                    <span class="fs-3">Business Models you can Consider</span>
+                    <h1 class="fw-medium display-2 mt-2">Service</h1>
                 </div>
-                <!-- breadcrumb -->
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb rounded-top py-3 px-4 bg-primary">
-                        <li class="breadcrumb-item"><a href="#" class="text-white text-decoration-none">Home</a></li>
-                        <li class="breadcrumb-item active text-white" aria-current="page">Services</li>
-                    </ol>
-                </nav>
-                <!-- <button class="btn btn-primary btn-lg">Home / Service</button> -->
             </div>
+            <nav class="c-breadcrumb d-flex justify-content-center d-md-block" aria-label="breadcrumb ">
+                <ol class="breadcrumb rounded-top py-3 mb-0 px-4 bg-primary">
+                    <li class="breadcrumb-item">
+                        <a href="index.html" class="text-white text-decoration-none">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">About-Us</li>
+                </ol>
+            </nav>
         </div>
         <!-- feature -->
         <div class="feature py-5">
             <div class="container text-center">
-                <!-- <div class="title title--center title--left">
-                        <span class="title__sub">text</span>
-                        <h2 class="title__label">subtitle</h2>
-                    </div> -->
-                <!-- <div class="title title--left title-all-center">
-                        <span class="title__sub">text</span>
-                        <h2 class="title__label">subtitle</h2>
-                    </div> -->
-
-                <div class="title feature-title title-center position-relative d-inline-block">
-                    <span class="feature-title text-primary position-relative">Views all 329 New Listings</span>
-                    <h2 class="title__label">subtitle</h2>
+                <div class="c-title-center">
+                    <span class="title-center text-primary position-relative mb-3">Views all 329 New Listings</span>
+                    <h2 class="fw-bolder m-4 text-capitalize ">see how realton can help</h2>
                 </div>
 
-                <div class="row row-cols-1 row-cols-md-3 gx-4">
-                    <div class="col my-2">
-                        <div class="card card-feature h-100">
-                            <img src="" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content. This content is a little bit longer.</p>
+                <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+                    <div class="col">
+                        <div class="card c-card-feature shadow-lg d-flex justify-content-center align-items-center"
+                            style="width: 18rem-;">
+                            <div class="w-25 h-25 border border-light-subtle m-5 p-3">
+                                <img src="/SVG/home.svg" class="card-img-top" alt="">
+                            </div>
+                            <div class="card-body mb-4">
+                                <h4 class="card-title text-secondary fw-bold">Buy a Property</h4>
+                                <p class="card-text">
+                                    over 1 million+ homes for sales on the website, we can you with
+                                    a house you will want to call home
+                                </p>
+                                <a href="#"
+                                    class="d-flex card-btn btn btn-outline-primary fw-medium d-flex  border-0 rounded-0">Find
+                                    A Home
+                                    <i class="fa-solid fa-arrow-right ms-auto align-self-end mb-1"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col my-2">
-                        <div class="card card-feature h-100">
-                            <img src="" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content.</p>
+                    <div class="col">
+                        <div class="card c-card-feature shadow-lg d-flex justify-content-center align-items-center"
+                            style="width: 18rem-;">
+                            <div class="w-25 h-25 border border-light-subtle m-5 p-3">
+                                <img src="/SVG/credit-card-regular.svg" class="card-img-top text-secondary" alt="">
+                            </div>
+                            <div class="card-body mb-4">
+                                <h4 class="card-title text-secondary fw-bold">Sell a Property</h4>
+                                <p class="card-text">
+                                    over 1 million+ homes for sales on the website, we can you with
+                                    a house you will want to call home
+                                </p>
+                                <a href="#"
+                                    class="d-flex card-btn btn btn-outline-primary fw-medium d-flex  border-0 rounded-0">Find
+                                    A Home
+                                    <i class="fa-solid fa-arrow-right ms-auto align-self-end mb-1"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col my-2">
-                        <div class="card card-feature h-100">
-                            <img src="" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content.</p>
+                    <div class="col">
+                        <div class="card c-card-feature shadow-lg d-flex justify-content-center align-items-center"
+                            style="width: 18rem-;">
+                            <div class="w-25 h-25 border border-light-subtle m-5 p-3">
+                                <img src="/SVG/rectangle-list-regular.svg" class="card-img-top" alt="">
+                            </div>
+                            <div class="card-body mb-4">
+                                <h4 class="card-title text-secondary fw-bold">Rent a Property</h4>
+                                <p class="card-text">
+                                    over 1 million+ homes for sales on the website, we can you with
+                                    a house you will want to call home
+                                </p>
+                                <a href="#"
+                                    class="d-flex card-btn btn btn-outline-primary fw-medium d-flex  border-0 rounded-0">Find
+                                    A Home
+                                    <i class="fa-solid fa-arrow-right ms-auto align-self-end mb-1"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- </div> -->
         </div>
         <!-- gallery -->
-        <div class="gallery py-5">
-            <div class="container">
-                <section class="splide position-relative" id="gallery" aria-label="Basic Structure Example">
+        <div class="gallery position-relative py-5 mb-5">
+            <div class="container d-flex justify-content-center">
+                <section class="splide" id="gallery" aria-label="Basic Structure Example">
                     <div class="splide__arrows">
                         <button class="splide__arrow splide__arrow--prev">
+                            <div
+                                class="splide__text--left text-white d-flex flex-column position-absolute align-items-end">
+                                <span class="fs-sm">prev</span>
+                                <span class="fs-5">Photo</span>
+                            </div>
                             <i class="fa-solid fa-angles-left"></i>
                         </button>
                         <button class="splide__arrow splide__arrow--next">
+                            <div
+                                class="splide__text--right text-white d-flex flex-column position-absolute align-items-start">
+                                <span class="fs-sm">next</span>
+                                <span class="fs-5">Photo</span>
+                            </div>
                             <i class="fa-solid fa-angles-right"></i>
                         </button>
                     </div>
-
-                    <div class="splide__track">
+                    <div class="splide__track position-relative">
+                        <button
+                            class="splide__play btn btn-lg border-2 rounded-0 btn-outline-light position-absolute">Play</button>
                         <ul class="splide__list">
-                            <li class="splide__slide">Slide 01</li>
-                            <li class="splide__slide">Slide 02</li>
-                            <li class="splide__slide">Slide 03</li>
+                            <li class="splide__slide">
+                                <img src="public/img/mark-champs-Id2IIl1jOB0-unsplash.jpg" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="public/img/mark-champs-Id2IIl1jOB0-unsplash.jpg" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="public/img/mark-champs-Id2IIl1jOB0-unsplash.jpg" alt="">
+                            </li>
                         </ul>
                     </div>
                 </section>
             </div>
         </div>
         <!-- plans -->
+        <!-- plans -->
         <section class="plans py-5">
+            <div class="container">
+                <div class="c-title-center text-center mb-3">
+                    <span class="title-center text-primary position-relative mb-3">Views all 329 New Listings</span>
+                    <h2 class="fs-1 text-capitalize fw-bolder my-3">title</h2>
+                </div>
+                <div class="row">
+                    <div class="col col-12 col-md-6 form-wrapper p-5 order-2 order-md-1">
+                        <div class="text-start mb-3">
+                            <h4 class="fw-bolder mb-3">Contact us today</h4>
+                            <span class="fs-sm text-dark">We are happy to help. Anytime</span>
+                        </div>
+                        <form action="" class="form">
+                            <div class="row">
+                                <div class="col col-12 col-md-6 my-3">
+                                    <div class="field form__inner d-flex align-items-center">
+                                        <i class="fa-solid fa-user"></i>
+                                        <input class="form__input w-100" id="name" type="text" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-md-6 my-3">
+                                    <div class="field form__inner d-flex align-items-center">
+                                        <i class="fa-solid fa-tty"></i>
+                                        <input class="form__input w-100" id="email" type="text"
+                                            placeholder="Email Address">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-md-6 my-3">
+                                    <div class="field form__inner d-flex align-items-center">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <input class="form__input w-100" id="phone" type="tel" placeholder="phone">
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-md-6 my-3">
+                                    <div class="field form__inner d-flex align-items-center">
+                                        <i class="fa-solid fa-info"></i>
+                                        <input class="form__input w-100" id="details" type="text" placeholder="subject">
+                                    </div>
+                                </div>
+                                <div class="form-floating my-3">
+                                    <div class="field form__inner d-flex align-items-center-">
+                                        <i class="fa-solid fa-pen mt-2"></i>
+                                        <textarea class="form-control form__input ms-0"
+                                            placeholder="How can help you? Feel free to get in touch!"
+                                            id="floatingTextarea"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between my-3">
+                                <button class="btn btn-primary rounded-0 px-4" type="submit">
+                                    Get In Touch
+                                </button>
+                                <div class="d-flex align-items-center">
+                                    <input class="me-2" type="checkbox" id="cheked">
+                                    <label for="cheked">I agree my data is
+                                        <a href="#">collected</a>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col col-12 col-md-6 order-1 order-md-2">
+                        <div>
+                            <img class="w-100" src="/public/img/home-plan.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- <section class="plans py-5">
             <div class="container">
                 <div class="row">
                     <div class="col col-12 col-md-6">
@@ -313,55 +424,184 @@
                     <div class="col col-12 col-md-6"></div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
     <!-- footer -->
-    <footer class="footer py-5">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-4">
-                <div class="col">
-                    <div>
-                        logo
-                    </div>
-                    <p> fraze fraze fraze fraze fraze fraze fraze fraze fraze fraze</p>
-                    <div>
-                        social Info
-                    </div>
-                </div>
-                <div class="col">
-                    <h4>title</h4>
-                    <ul class="list-unstyled">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4>title</h4>
-                    <ul class="list-unstyled">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4>title</h4>
-                    <p> fraze fraze fraze fraze fraze fraze fraze fraze fraze</p>
+    <footer class="footer position-relative py-5 mt-5">
+        <div class="footer-wrapper position-absolute top-0 w-100 h-100"></div>
 
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder=""
-                            aria-label="Example text with button addon" aria-describedby="button-addon1">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+        <div class="container z-3 position-relative text-white">
+            <div class="text-white  d-flex justify-content-between mb-4">
+                <div>
+                    <div class="c-title-start text-start text-capitalize mb-3">
+                        <h2 class="fs-1 text-capitalize fw-bolder">looking for the beast dream house solutions? </h2>
                     </div>
+                    <span class="fs-sm">As app web crawler expert, We will help too organize</span>
+                </div>
+                <div class="">
+                    <button class="c-button position-relative align-self-start d-flex btn btn-primary py-2 px-5">
+                        get a quote
+                    </button>
                 </div>
             </div>
-        </div>
+            <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4">
+                <div class="col">
+                    <div class="footer-logo d-flex justify-content-start mb-3">
+                        <img src="/SVG/head-logo-footer.svg" style="height: 55px;" alt="">
+                        <div class="d-flex flex-column ms-2">
+                            <span class="text-white fs-5 fw-semibold">Hamilton</span>
+                            <span class="text-primary fs-sm">Estate Rental</span>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus
+                    </p>
+                    <div class="footer-social">
+                        <div class="border-start border-primary ps-2">
+                            <h6>Social Info</h6>
+                        </div>
+                        <div class="c-socials">
+                            <ul class="socials__list list-unstyled d-flex">
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element  m-2 p-2-">
+                                        <i class="socials__brand fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element m-2 p-2-">
+                                        <i class="socials__brand fa-solid  fa-v"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element m-2 p-2-">
+                                        <i class="socials__brand fa-brands  fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element m-2 p-2-">
+                                        <i class="socials__brand fa-solid pe-1  socials__brands fa-share-nodes"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col footer-block">
+                    <h4 class="footer-subtitle text-capitalize">
+                        our navigation
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                airplane fright
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                about ports
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                meet the team
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                news & team
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                our projects
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col footer-block">
+                    <h4 class="footer-subtitle text-capitalize">
+                        our sevices
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                reliability & punctuality
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                trusted franchise
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                warehouses storage
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                real time tracing
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                transparent pricing
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col footer-block ">
+                    <h4 class="footer-subtitle text-capitalize">
+                        our gallery
+                    </h4>
+                    <div class="row ">
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery" src="/public/img/footer-img/adam-kring-uqCMurxrzZc-unsplash.jpg"
+                                alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/angelina-litvin-52R7t7x8CPI-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/asier-pais-martins-VUIQxik_PQU-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/bilal-mansuri-3r9HlCYTtLU-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/bilal-mansuri-R8F3tLZUWRs-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/karolina-bobek-rFM9u9mYptA-unsplash.jpg" alt="">
+                        </div>
+
+
+                    </div>
+                </div>
+                <div
+                    class="text-white d-flex flex-column flex-md-row w-100 mt-5 align-items-center justify-content-center py-4  border-top border-primary">
+                    <span>cCopyrights 2003</span>
+                    <a href="#">Website_Stock</a>
+                    <span>All right reserved</span>
+                </div>
+            </div>
     </footer>
 
     <!-- Modal Contact-->

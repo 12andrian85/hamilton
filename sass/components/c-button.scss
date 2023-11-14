@@ -5,8 +5,9 @@
     background-size: cover;
     height: 45px;
     width: 40px;
-    right: -2px;
-    top: -3px;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 0px;
 }
 .c-button::before{
     position: absolute;
@@ -15,6 +16,7 @@
     background-size: cover;
     height: 45px;
     width: 40px;
-    left: -2px;
-    top: -3px;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0px;
 }
