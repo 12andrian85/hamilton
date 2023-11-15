@@ -31,7 +31,7 @@
 
 <body>
     <!-- heder -->
-    <header class="header">
+    <header class="header d-flex flex-column align-items-center">
         <h1 class="d-none">Hamilton</h1>
         <!-- logo -->
         <div class="nav-logo d-flex justify-content-center d-lg-none">
@@ -45,7 +45,7 @@
         <!-- contact-header -->
         <div class="contact-header d-none d-lg-flex">
             <ul class="justify-content-between list-unstyled d-flex w-100">
-                <li class="text-secondary d-flex align-items-center">
+                <li class="text-secondary d-flex align-items-center d-none d-xl-block">
                     <img src="/SVG/headleft-sfg.svg" alt="">
                 </li>
                 <div class="container d-flex justify-content-between px-0">
@@ -69,14 +69,14 @@
                         <i class="fa-solid pe-2 fa-magnifying-glass"></i>
                     </li>
                 </div>
-                <li class="text-secondary d-flex align-items-center">
+                <li class="text-secondary d-flex align-items-center d-none d-xl-block">
                     <img src="/SVG/head-right.svg" alt="">
                 </li>
             </ul>
         </div>
 
         <!-- navigation -->
-        <div class="main-nav">
+        <div class="main-nav w-100">
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid d-flex ">
@@ -112,7 +112,7 @@
 
                             <!-- main nav -->
                             <ul class="navbar-nav nav-underline">
-                              
+
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="index.html" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -182,122 +182,140 @@
     <!-- main -->
     <main>
         <!-- banner -->
-        <div class="banner mb-4">
-            <div class="container text-center text-lg-start">
-                <div class="text-center py-5">
-                    <span>text text text text</span>
-                    <h1>Project Details</h1>
+        <div class="banner-service  position-relative">
+            <div class="position-absolute w-100 h-100 opacity-75" style="background-color: black;"></div>
+            <div class="container banner-block text-center text-lg-start z-1 position-relative">
+                <div class=" text-white text-center py-5">
+                    <span class="fs-3">Business Models you can Consider</span>
+                    <h1 class="fw-medium display-2 mt-2">Project Details</h1>
                 </div>
-                <button class="btn btn-primary btn-lg">Home / Project Details</button>
             </div>
+            <nav class="c-breadcrumb d-flex justify-content-center d-md-block" aria-label="breadcrumb ">
+                <ol class="breadcrumb rounded-top py-3 mb-0 px-4 bg-primary">
+                    <li class="breadcrumb-item">
+                        <a href="index.html" class="text-white text-decoration-none">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">About-Us</li>
+                </ol>
+            </nav>
         </div>
         <!-- projects -->
-        <div class="projects">
+        <div class="projects py-5">
             <div class="container">
                 <!-- screen -->
                 <div class="team-details__hightlight">
-                    <img src="" alt="big-foto">
+                    <img src="public/img/mostafa-safadel-cHjAxnJk_wQ-unsplash.jpg" alt="big-foto">
                 </div>
-                <div>
-                    <h4>sutitle</h4>
+                <div class="py-4 text-secondary ">
+                    <h4 class="fw-semibold">Project Details</h4>
                     <p>
-                        pharagraph pharagraph pharagraph pharagraph pharagraph pharagraph pharagraph pharagraph
-                        pharagraph
-                        pharagraph pharagraph pharagraph pharagraph
-                        pharagraph pharagraph pharagraph pharagraph pharagraph pharagraph pharagraph pharagraph
-                        pharagraph
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequuntur ipsam, sapiente sint eveniet atque iste non
+                        impedit minus quo vitae dolor iure provident repellendus
+                        fugiat ullam minima, beatae aliquid. Cumque!
+                        impedit minus quo vitae dolor iure provident repellendus
+                        fugiat ullam minima, beatae aliquid. Cumque!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequuntur ipsam, sapiente sint eveniet atque iste non
+                        impedit minus quo vitae dolor iure provident repellendus
+                        fugiat ullam minima, beatae aliquid. Cumque!
                     </p>
                 </div>
                 <div class="row">
-                    <div class="col col-12 col-md-6">
-                        img
+                    <div class="col col-12 col-md-6 py-3">
+                        <img class="projects-img h-100" src="public/img/sidekix-media-I_QC1JICzA0-unsplash.jpg" alt="">
                     </div>
-                    <div class=" col col-12 col-md-6 py-4">
+                    <div class=" col col-12 col-md-6">
                         <!-- accordion -->
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Accordion Item #1
+                                    <button class="accordion-button fw-bold text-capitalize" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        1. is it full transport & logistics company?
                                     </button>
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <strong>This is the first item's accordion body.</strong> It is shown by
-                                        default, until the collapse plugin adds the appropriate classes that we use to
-                                        style each element. These classes control the overall appearance, as well as the
-                                        showing and hiding via CSS transitions. You can modify any of this with custom
-
+                                    <div class="accordion-body fs-sm">
+                                        The time it takes to repair a roof depends on the extent of the damage.
+                                        For minor repairs, it might take an hour or two. For significant repairs,
+                                        A or team might be at your home for half day.
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Accordion Item #2
+                                    <button class="accordion-button collapsed fw-bold text-capitalize" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        2. How to create my project in company?
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <strong>This is the second item's accordion body.</strong> It is hidden by
-                                        default, until the collapse plugin adds the appropriate classes that we use to
-                                        style each element. These classes control the overall appearance, as well as the
-                                        showing and hiding via CSS transitions. You can modify any of this with custom
-
+                                    <div class="accordion-body fs-sm">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Minima corporis illum iste minus consectetur eaque error
+                                            possimus accusantium assumenda hic commodi inventore mollitia
+                                            quos et dicta, eos quasi molestiae nam.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                    <button class="accordion-button collapsed fw-bold text-capitalize" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                                         aria-controls="collapseThree">
-                                        Accordion Item #3
+                                        3. how to work in process of transport company?
                                     </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <strong>This is the third item's accordion body.</strong> It is hidden by
-                                        default, until the collapse plugin adds the appropriate classes that we use to
-                                        style each element. These classes control the overall appearance, as well as the
-                                        showing and hiding via CSS transitions. You can modify any of this with custom
-
+                                    <div class="accordion-body fs-sm">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Minima corporis illum iste minus consectetur eaque error
+                                            possimus accusantium assumenda hic commodi inventore mollitia
+                                            quos et dicta, eos quasi molestiae nam.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapsefour" aria-expanded="false"
+                                    <button class="accordion-button collapsed fw-bold text-capitalize" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false"
                                         aria-controls="collapsefour">
-                                        Accordion Item #4
+                                        4. what warranties do i have for installation?
                                     </button>
                                 </h2>
                                 <div id="collapsefour" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <strong>This is the third item's accordion body.</strong> It is hidden by
-                                        default, until the collapse plugin adds the appropriate classes that we use to
-                                        style each element. These classes control the overall appearance, as well as the
-                                        showing and hiding via CSS transitions. You can modify any of this with custom
-
+                                    <div class="accordion-body fs-sm">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Minima corporis illum iste minus consectetur eaque error
+                                            possimus accusantium assumenda hic commodi inventore mollitia
+                                            quos et dicta, eos quasi molestiae nam.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <p class="text-center text-md-start">
-                            paragraph paragraph paragraph paragraph paragraph
-                            paragraph paragraph paragraph paragraph paragraph paragraph
-                            paragraph paragraph paragraph paragraph paragraph paragraph
-                            paragraph paragraph paragraph paragraph paragraph paragraph
-                            paragraph paragraph paragraph paragraph paragraph paragraph
+                        <p class="text-center text-md-start fs-sm">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Minima corporis illum iste minus consectetur eaque error
+                            possimus accusantium assumenda hic commodi inventore mollitia
+                            quos et dicta, eos quasi molestiae nam. possimus accusantium assumenda 
+                            hic commodi inventore mollitia
                         </p>
                     </div>
                 </div>
@@ -305,52 +323,181 @@
         </div>
     </main>
     <!-- footer -->
-    <footer class="footer py-5">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-4">
-                <div class="col">
-                    <div>
-                        logo
-                    </div>
-                    <p> fraze fraze fraze fraze fraze fraze fraze fraze fraze fraze</p>
-                    <div>
-                        social Info
-                    </div>
-                </div>
-                <div class="col">
-                    <h4>title</h4>
-                    <ul class="list-unstyled">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4>title</h4>
-                    <ul class="list-unstyled">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4>title</h4>
-                    <p> fraze fraze fraze fraze fraze fraze fraze fraze fraze</p>
+    <footer class="footer position-relative py-5 mt-5">
+        <div class="footer-wrapper position-absolute top-0 w-100 h-100"></div>
 
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder=""
-                            aria-label="Example text with button addon" aria-describedby="button-addon1">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+        <div class="container z-3 position-relative text-white">
+            <div class="text-white  d-flex justify-content-between mb-5">
+                <div>
+                    <div class="c-title-start text-start text-capitalize mb-3">
+                        <h2 class="fs-2 text-capitalize fw-bolder">looking for the beast dream house solutions? </h2>
                     </div>
+                    <span class="fs-sm">As app web crawler expert, We will help too organize</span>
+                </div>
+                <div class="">
+                    <button class="c-button position-relative align-self-start d-flex btn btn-primary py-2 px-5">
+                        get a quote
+                    </button>
                 </div>
             </div>
-        </div>
+            <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4 border-top border-dark pt-5">
+                <div class="col">
+                    <div class="footer-logo d-flex justify-content-start mb-3">
+                        <img src="/SVG/head-logo-footer.svg" style="height: 55px;" alt="">
+                        <div class="d-flex flex-column ms-2">
+                            <span class="text-white fs-5 fw-semibold">Hamilton</span>
+                            <span class="text-primary fs-sm">Estate Rental</span>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus
+                    </p>
+                    <div class="footer-social">
+                        <div class="border-start border-primary ps-2">
+                            <h6>Social Info</h6>
+                        </div>
+                        <div class="c-socials">
+                            <ul class="socials__list list-unstyled d-flex">
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element  m-2 p-2-">
+                                        <i class="socials__brand fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element m-2 p-2-">
+                                        <i class="socials__brand fa-solid  fa-v"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element m-2 p-2-">
+                                        <i class="socials__brand fa-brands  fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element m-2 p-2-">
+                                        <i class="socials__brand fa-solid pe-1  socials__brands fa-share-nodes"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col footer-block">
+                    <h4 class="footer-subtitle text-capitalize">
+                        our navigation
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                airplane fright
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                about ports
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                meet the team
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                news & team
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                our projects
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col footer-block">
+                    <h4 class="footer-subtitle text-capitalize">
+                        our sevices
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                reliability & punctuality
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                trusted franchise
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                warehouses storage
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                real time tracing
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                transparent pricing
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col footer-block ">
+                    <h4 class="footer-subtitle text-capitalize">
+                        our gallery
+                    </h4>
+                    <div class="row ">
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery" src="/public/img/footer-img/adam-kring-uqCMurxrzZc-unsplash.jpg"
+                                alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/angelina-litvin-52R7t7x8CPI-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/asier-pais-martins-VUIQxik_PQU-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/bilal-mansuri-3r9HlCYTtLU-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/bilal-mansuri-R8F3tLZUWRs-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/karolina-bobek-rFM9u9mYptA-unsplash.jpg" alt="">
+                        </div>
+
+
+                    </div>
+                </div>
+                <div
+                    class="text-white d-flex flex-column flex-md-row w-100 mt-5 align-items-center justify-content-center py-4  border-top border-primary">
+                    <span>cCopyrights 2003</span>
+                    <a href="#">Website_Stock</a>
+                    <span>All right reserved</span>
+                </div>
+            </div>
     </footer>
 
     <!-- Modal Contact-->

@@ -10209,7 +10209,6 @@ article,
 section,
 nav,
 form {
-  outline-style: dashed;
   outline-color: tomato;
   outline-width: 1px;
 }
@@ -10461,6 +10460,72 @@ img {
     position: relative;
     bottom: -20px;
   }
+}
+.team-details input[type=range] {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  /*  slider progress trick  */
+  overflow: hidden;
+  border-radius: none;
+  border-bottom-width: 50px;
+}
+.team-details input[type=range]::-webkit-slider-runnable-track {
+  height: 12px;
+  background: #003d4e;
+  border-bottom-width: 50px;
+  border-radius: none;
+}
+.team-details .team-details-range::-webkit-slider-thumb {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  height: 12px;
+  width: 12px;
+  background-color: #1684b5;
+  border-radius: none;
+  border: 2px solid #1684b5;
+  border-bottom-width: 50px;
+  /*  slider progress trick  */
+  box-shadow: -407px 0 0 400px #1684b5;
+}
+.team-details__information {
+  background-color: #f7f6f1;
+}
+.team-details .c-socials__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+.team-details .c-socials__item:hover {
+  background-color: #1684b5;
+}
+.team-details .c-socials__item:hover .c-socials__brand {
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .team-details {
+    height: 550px;
+    overflow: hidden;
+  }
+  .team-details__information {
+    position: relative;
+    margin-left: -90px;
+  }
+}
+.projects .projects-img {
+  object-position: left;
 }
 .projects .accordion .accordion-item {
   background-color: #d0e6f0;
@@ -10753,6 +10818,11 @@ img {
   margin: 15px 0;
 }
 .c-team .c-socials__element {
+  height: 25px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
 }
 .c-team .c-socials__brand {
