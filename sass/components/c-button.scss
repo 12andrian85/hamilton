@@ -1,22 +1,12 @@
-.c-button::after{
-    position: absolute;
-    content: "";
-    background-image: url("/SVG/triangle-right.svg");
-    background-size: cover;
-    height: 45px;
-    width: 40px;
-    transform: translateY(-50%);
-    top: 50%;
-    right: 0px;
-}
-.c-button::before{
-    position: absolute;
-    content: "";
-    background-image: url("/SVG/triangle-left.svg");
-    background-size: cover;
-    height: 45px;
-    width: 40px;
-    transform: translateY(-50%);
-    top: 50%;
-    left: 0px;
+.c-button{
+    .icon{
+        width: 32px;
+        height: 40px;
+    }
+    .icon-left{
+        left: -1px;
+    }
+    .icon-right{
+     right: -1px;
+    }
 }

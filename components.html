@@ -52,6 +52,19 @@
             fill=""></path>
     </symbol>
 </svg>
+<!-- triangle-left -->
+<svg width="0" height="0" class="d-none">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 36" id="triangle-left">
+        <path d="M5.67436e-05 0.679506L30.0001 18L5.74013e-05 35.3205L5.67436e-05 0.679506Z" fill="#2492C3"></path>
+    </symbol>
+</svg>
+<!-- triangle-right -->
+<svg width="0" height="0" class="d-none">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 36" id="triangle-right">
+        <path d="M-1.52588e-05 18L30 0.679499L30 35.3205L-1.52588e-05 18Z" fill="#2492C3"></path>
+    </symbol>
+</svg>
+
 
 <body>
     <header>
@@ -62,6 +75,7 @@
         </div>
     </header>
     <main>
+
         <div class="container text-center bg-dark- py-5">
             <!-- Component breadcrumb -->
             <h3>breadcrumbs</h3>
@@ -71,14 +85,20 @@
                     <li class="breadcrumb-item active text-white" aria-current="page">Services</li>
                 </ol>
             </nav>
-
-            <!-- c-button -->
-            <h3>button</h3>
-            <div class="">
-                <button class="c-button position-relative align-self-start d-flex btn btn-primary py-2 px-5">
-                    Get a quote
-                </button>
-            </div>
+        </div>
+        <!-- c-button -->
+        <h3>button</h3>
+        <div class="">
+            <button
+                class="c-button btn btn-primary position-relative px-5 d-flex align-items-center justify-content-between">
+                <svg class="icon icon-left position-absolute">
+                    <use xlink:href="#triangle-left"></use>
+                </svg>
+                get a quote
+                <svg class="icon icon-right position-absolute">
+                    <use xlink:href="#triangle-right"></use>
+                </svg>
+            </button>
         </div>
         <h3>title</h3>
         <!-- c-title-center -->
@@ -90,6 +110,13 @@
         <div class="c-title-start text-start text-capitalize mb-3">
             <span class=" title-start ms-4 text-primary position-relative mb-3">Views all 329 New Listings</span>
             <h2 class="fs-1 text-capitalize fw-bolder">title</h2>
+        </div>
+        <!-- sub-title -->
+        <div class="c-sub-title position-relative text-secondary mb-4">
+            <h4 class=" fw-semibold">
+                <span class="border-primary pb-2">Sub</span>
+                Title
+            </h4>
         </div>
 
         <!-- card-feature -->

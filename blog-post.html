@@ -20,6 +20,18 @@
         </path>
     </symbol>
 </svg>
+<!-- triangle-left -->
+<svg width="0" height="0" class="hidden">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 36" id="triangle-left">
+        <path d="M5.67436e-05 0.679506L30.0001 18L5.74013e-05 35.3205L5.67436e-05 0.679506Z" fill="#2492C3"></path>
+    </symbol>
+</svg>
+<!-- triangle-right -->
+<svg width="0" height="0" class="hidden">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 36" id="triangle-right">
+        <path d="M-1.52588e-05 18L30 0.679499L30 35.3205L-1.52588e-05 18Z" fill="#2492C3"></path>
+    </symbol>
+</svg>
 
 <!-- style="display:none" -->
 <svg width="0" height="0" class="d-none">
@@ -31,7 +43,7 @@
 
 <body>
     <!-- heder -->
-    <header class="header">
+    <header class="header mb-5">
         <h1 class="d-none">Hamilton</h1>
         <!-- logo -->
         <div class="nav-logo d-flex justify-content-center d-lg-none">
@@ -170,7 +182,7 @@
                                 </li>
                             </ul>
                             <!-- button quote -->
-                            <button class="btn btn-lg btn-secondary fs-6">Get a Quout</button>
+                            <button class="btn btn-lg btn-secondary fs-6 ms-5">Get a Quout</button>
                         </div>
                     </div>
                 </nav>
@@ -180,53 +192,76 @@
     <!-- main -->
     <main>
         <!-- banner -->
-        <div class="banner">
-            <div class="container text-center text-lg-start">
-                <div class="text-center py-5">
-                    <span>text text text text</span>
-                    <h1>Blog Post</h1>
+        <div class="banner-service  position-relative my-5">
+            <div class="position-absolute w-100 h-100 opacity-75" style="background-color: black;"></div>
+            <div class="container banner-block text-center text-lg-start z-1 position-relative">
+                <div class=" text-white text-center py-5">
+                    <span class="fs-3">Business Models you can Consider</span>
+                    <h1 class="fw-medium display-2 mt-2">Blog Post</h1>
                 </div>
-                <button class="btn btn-primary btn-lg">Home /Blog Post</button>
             </div>
+            <!-- breadcrumb -->
+            <nav class="c-breadcrumb d-flex justify-content-center d-md-block" aria-label="breadcrumb ">
+                <ol class="breadcrumb rounded-top py-3 mb-0 px-4 bg-primary">
+                    <li class="breadcrumb-item">
+                        <a href="index.html" class="text-white text-decoration-none">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Blog Post</li>
+                </ol>
+            </nav>
         </div>
         <!-- highlight -->
 
         <div class="container mt-5">
             <article>
                 <div class="row">
-                    <div class="col col-12 col-md-8">
+                    <div class="col col-12 col-md-8 pe-md-5">
                         <!-- post -->
                         <div class="blog-post__post mb-4">
-                            <div style="height: 16rem;">
-                                <img src="" alt="highlight" style="height: 300px;">
+                            <div class="blog-post__inner overflow-hidden mb-4">
+                                <img class="blog-post__img" src="public/img/isometric-room.jpg" alt="highlight">
                             </div>
-                            <div class="blog-post__share ">
-                                <div classd="d-flex justify-content-between">
-                                    <div>
-                                        <span>Admin</span>
+                            <div class="blog-post__admin">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div class="fs-sm text-dark d-flex">
+                                        <span class="me-3">
+                                            <i class="fa-regular fa-user text-primary me-2"></i>
+                                            By Admin
+                                        </span>
                                         <span>
-                                            <a href="#">comments</a>
+                                            <a href="#" class="text-decoration-none text-dark">
+                                                <i class="fa-regular fa-comments text-primary me-2"></i>
+                                                (6)comments</a>
                                         </span>
                                     </div>
-                                    <span>share</span>
+                                    <span class="blog-post__share d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-share-nodes text-primary"></i>
+                                    </span>
                                 </div>
-                                <div class="text-center text-md-start">
-                                    <h3>title</h3>
-                                    <p>
-                                        text text text text text text text text text text text text
-                                        text text text text text text text text text text text text text
-                                        text text text text text text text text text text text text text
-                                        text text text text text text text text text text text text text
-                                        text text text text text text text text text text text text text
-                                        text text text text text text text text text text text text
-
+                                <div class="text-center text-secondary text-md-start bm-4">
+                                    <h2 class="text-capitalize fw-bold mb-4">
+                                        making informed decisions for home financing
+                                    </h2>
+                                    <p class="mb-4">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                                        magni obcaecati fugiat qui sit provident ratione quibusdam
+                                        odit dolorem asperiores aliquam maiores? Libero esse
+                                        est dolorum perspiciatis accusamus accusantium nihil.
+                                        dolorum perspiciatis accusamus accusantium nihil.
+                                    </p>
+                                    <p class="">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                                        magni obcaecati fugiat qui sit provident ratione quibusdam
+                                        odit dolorem asperiores aliquam maiores? Libero esse
+                                        est dolorum perspiciatis accusamus accusantium nihil.
+                                        dolorum perspiciatis accusamus accusantium nihil.
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <!-- tags -->
-                        <div class="blog-post__tags d-flex justify-content-start align-items-center mb-4 p-3">
-                            <span>Tags:</span>
+                        <div class="blog-post__tags mb-4 p-4">
+                            <h5 class="fw-bolder me-3">Tags:</h5>
                             <div>
                                 <a href="#" class="btn btn-outline-white rounded-0">Logistic</a>
                                 <a href="#" class="btn btn-outline-white rounded-0">Cargo</a>
@@ -236,21 +271,36 @@
                         <!-- sugestion -->
                         <div class="blog-post__sugestion mb-4">
                             <div>
-                                <div class="card mb-3" style="max-width: 540px;">
+                                <div class="card mb-3">
                                     <div class="row g-0">
-                                        <div class="col-md-4">
-                                            <img src="..." class="img-fluid rounded-start" alt="...">
+                                        <div class="col-md-3 card-head">
+                                            <img src="public/img/josh-hild-ZsuqlSxrjRk-unsplash.jpg"
+                                                class="card-img rounded-0 img-fluid" alt="...">
                                         </div>
                                         <div class="col-md-8">
-                                            <div class="card-body">
-                                                <h5 class="card-title">name</h5>
+                                            <div
+                                                class="card-body d-flex flex-column justify-content-evenly text-secondary">
+                                                <h5 class="fw-bolder mb-3">
+                                                    Kevin Martin
+                                                </h5>
                                                 <p class="card-text">This is a wider card with supporting text below as
                                                     a natural lead-in to additional content. This content is a little
                                                     bit longer.</p>
                                                 <div class="d-flex ">
-                                                    <span>share:</span>
+                                                    <span class="text-primary fw-medium me-3">Share:</span>
                                                     <div>
-                                                        socials
+                                                        <a class="card-socials" href="#">
+                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        </a>
+                                                        <a class="card-socials" href="#">
+                                                            <i class="fa-brands fa-instagram"></i>
+                                                        </a>
+                                                        <a class="card-socials" href="#">
+                                                            <i class="fa-brands fa-skype"></i>
+                                                        </a>
+                                                        <a class="card-socials" href="#">
+                                                            <i class="fa-brands fa-twitter"></i>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -258,41 +308,62 @@
                                     </div>
                                 </div>
                                 <!-- slide -->
-                                <section class="splide pb-4" id="sugestion" aria-label="Basic Structure Example">
-                                    <div class="splide__track mx-5">
-                                        <ul class="splide__list">
-                                            <li class="splide__slide">Slide 01</li>
-                                            <li class="splide__slide">Slide 02</li>
-                                            <li class="splide__slide">Slide 03</li>
-                                            <li class="splide__slide">Slide 04</li>
-                                            <li class="splide__slide">Slide 05</li>
-                                        </ul>
-                                    </div>
-                                </section>
                             </div>
+                        </div>
+                        <!-- cargo -->
+                        <div class="blog-post__cargo">
+                            <section class="splide py-3 mb-4" id="sugestion" aria-label="Basic Structure Example">
+                                <div class="splide__arrows">
+                                    <button class="splide__arrow rounded-0 text-secondary splide__arrow--prev">
+                                        <i class="fa-solid fa-angles-left fs-5"></i>
+                                    </button>
+                                    <button class="splide__arrow rounded-0 text-secondary splide__arrow--next">
+                                        <i class="fa-solid fa-angles-right fs-5"></i>
+                                    </button>
+                                </div>
+                                <div class="splide__track mx-5">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide px-3">
+                                            <span class="text-secondary fw-bolder">
+                                                Cargo flow through better supply in UK
+                                            </span>
+                                        </li>
+                                        <li class="splide__slide px-3">
+                                            <span class="text-secondary fw-bolder">
+                                                Why is supply chain visibility so important?
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
                         </div>
                         <!-- comments -->
                         <div class="blog-post__comments mb-3">
-                            <h4>Recent Comments</h4>
-                            <div>
+                            <h4 class="fw-semibold mb-4">
+                                <span class="border-bottom border-primary pb-2">Recent</span>
+                                Comments
+                            </h4>
+                            <div class="">
                                 <!-- card -->
-                                <div class="card mb-3" style="max-width: 540px;">
+                                <div class="card mb-3">
                                     <div class="row g-0">
-                                        <div class="col-md-4 rounded-circle">
-                                            <img src="..." class="img-fluid rounded-start" alt="...">
+                                        <div class="card-wrapper col-md-4 rounded-circle overflow-hidden">
+                                            <img class="card-img img-fluid rounded-start"
+                                                src="public/img/jeremy-mcgilvrey-Mum-4dB0VsE-unsplash.jpg" alt="avatar">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
-                                                <div class="d-flex justify-content-between">
+                                                <div class="d-flex justify-content-between mb-3">
                                                     <div>
-                                                        <h5 class="card-title">Name</h5>
+                                                        <h5 class="card-title">Richard Smith</h5>
                                                         <span>september 19, 2023</span>
                                                     </div>
-                                                    <div>
-                                                        <a href="#">replay</a>
+                                                    <div class="fs-sm">
+                                                        <a class="text-primary text-decoration-none" href="#">replay</a>
                                                     </div>
                                                 </div>
-                                                <p class="card-text">This is a wider card with supporting text below as
+                                                <p class="card-text text-secondary fs-sm fw-medium">This is a wider card
+                                                    with supporting text below as
                                                     a natural lead-in to additional content. This content is a little
                                                     bit longer.</p>
                                             </div>
@@ -300,137 +371,208 @@
                                     </div>
                                 </div>
                                 <!-- card -->
-                                <div class="card ms-4 mb-3" style="max-width: 540px;">
+                                <div class="card ms-md-4 mb-5">
                                     <div class="row g-0">
-                                        <div class="col-md-4 rounded-circle">
-                                            <img src="..." class="img-fluid rounded-start" alt="...">
+                                        <div class="card-wrapper col-md-4 rounded-circle overflow-hidden">
+                                            <img class="card-img img-fluid rounded-start"
+                                                src="public/img/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg"
+                                                alt="avatar">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
-                                                <div class="d-flex justify-content-between">
+                                                <div class="d-flex justify-content-between mb-3">
                                                     <div>
-                                                        <h5 class="card-title">Name</h5>
+                                                        <h5 class="card-title">Laura Johnson</h5>
                                                         <span>september 19, 2023</span>
                                                     </div>
-                                                    <div>
-                                                        <a href="#">replay</a>
+                                                    <div class="fs-sm">
+                                                        <a class="text-primary text-decoration-none" href="#">replay</a>
                                                     </div>
                                                 </div>
-                                                <p class="card-text">This is a wider card with supporting text below as
+                                                <p class="card-text text-secondary fs-sm fw-medium">This is a wider card
+                                                    with supporting text below as
                                                     a natural lead-in to additional content. This content is a little
                                                     bit longer.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <form action="">
-                                    <div class="row gy-3">
-                                        <div class="col col-12 col-md-6">
-                                            <input type="text" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name">
-                                        </div>
-                                        <div class="col col-12 col-md-6">
-                                            <input type="text" class="form-control" id="Email" placeholder="email">
-                                        </div>
-                                        <div class="col col-12">
-                                            <textarea name="" id="" class="w-100" rows="10"
-                                                placeholder="Your Comments*"></textarea>
+                                <!-- form -->
+                                <form class="form" action="">
+                                    <h4 class="fw-semibold mb-4">
+                                        <span class="border-bottom border-primary pb-2">Leave A </span>
+                                        Comment
+                                    </h4>
+                                    <div>
+                                        <div class="row gy-3 mb-5">
+                                            <div class="col col-12 col-md-6">
+                                                <div class="form__field">
+                                                    <input type="text" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="name*">
+                                                </div>
+                                            </div>
+                                            <div class="col col-12 col-md-6">
+                                                <div class="form__field">
+                                                    <input type="text" class="form-control" id="Email"
+                                                        placeholder="email*">
+                                                </div>
+                                            </div>
+                                            <div class="col col-12">
+                                                <div class="form__field">
+                                                    <textarea class="p-2" name="" id="" class="w-100" rows="10"
+                                                        placeholder="Your Comments*"></textarea>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary px-5 py-3 rounded-0">Get a
-                                        quote</button>
+                                    <div class="">
+                                        <button
+                                            class="c-button btn btn-primary position-relative px-5 d-flex align-items-center justify-content-between">
+                                            <svg class="icon icon-left position-absolute">
+                                                <use xlink:href="#triangle-left"></use>
+                                            </svg>
+                                            Get a quote
+                                            <svg class="icon icon-right position-absolute">
+                                                <use xlink:href="#triangle-right"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
                     </div>
-                    <div class="col col-12 col-md-4">
-                        <section>
+
+                    <div class="col col-12 col-md-4 ms-auto">
+                        <section class="blog-post__block fs-sm">
                             <!-- search -->
-                            <form class="d-flex p-4" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <form class="blog-post__search d-flex mb-4" role="search">
+                                <div class="field form-field position-relative w-100">
+                                    <input class=" form-control me-2 fs-sm border-0" type="search" placeholder="Search Keyword"
+                                        aria-label="Search">
+                                    <a class="btn form-btn position-absolute top-50 translate-middle" type="search"
+                                        href="#">
+                                        <i class="form-icon fa-solid text-primary fa-magnifying-glass"></i>
+                                    </a>
+                                </div>
                             </form>
                             <!-- blog-post__latest -->
                             <div class="blog-post__latest p-4">
                                 <div class="my-3">
-                                    <h4>Latest Post</h4>
-                                    <div class="d-flex">
-                                        <img src="" alt="mini-img">
+                                    <div class="c-sub-title position-relative text-secondary mb-4">
+                                        <h4 class=" fw-semibold">
+                                            <span class="border-primary pb-2">Latest</span>
+                                            Post
+                                        </h4>
+                                    </div>
+                                    <div class="d-flex bg-white p-3">
+                                       <div class="latest-img overflow-hidden me-2">
+                                        <img src="public/img/jennifer-r-sZ9F_XkGJfI-unsplash.jpg" alt="mini-img">
+                                       </div>
                                         <div>
-                                            <span>july 24, 2023</span>
-                                            <p>text text text text text text text </p>
+                                            <span class="text-dark">
+                                                <i class="fa-regular fa-calendar text-primary"></i>
+                                                july 24, 2023
+                                            </span>
+                                            <h6 class="text-secondary fs-sm mt-2 mb-0">
+                                                Top crypto exchange in influencer
+                                            </h6>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="my-3">
-                                    <h4>Latest Post</h4>
-                                    <div class="d-flex">
-                                        <img src="" alt="mini-img">
+                                <div class="my-4">
+                                    <div class="d-flex bg-white p-3">
+                                       <div class="latest-img overflow-hidden me-2">
+                                        <img src="public/img/jonathan-borba-oR_cCAa7Lsg-unsplash (1).jpg" alt="mini-img">
+                                       </div>
                                         <div>
-                                            <span>july 24, 2023</span>
-                                            <p>text text text text text text text </p>
+                                            <span class="text-dark">
+                                                <i class="fa-regular fa-calendar text-primary"></i>
+                                                july 24, 2023
+                                            </span>
+                                            <h6 class="text-secondary fs-sm mt-2 mb-0">
+                                                Top crypto exchange in influencer
+                                            </h6>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="my-3">
-                                    <h4>Latest Post</h4>
-                                    <div class="d-flex">
-                                        <img src="" alt="mini-img">
+                                <div class="my-4">
+                                    <div class="d-flex bg-white p-3">
+                                       <div class="latest-img overflow-hidden me-2">
+                                        <img class="h-100" src="public/img/christian-C-Bq54Wl-z0-unsplash.jpg" alt="mini-img">
+                                       </div>
                                         <div>
-                                            <span>july 24, 2023</span>
-                                            <p>text text text text text text text </p>
+                                            <span class="text-dark">
+                                                <i class="fa-regular fa-calendar text-primary"></i>
+                                                july 24, 2023
+                                            </span>
+                                            <h6 class="text-secondary fs-sm mt-2 mb-0">
+                                                Top crypto exchange in influencer
+                                            </h6>
                                         </div>
                                     </div>
                                 </div>
+                               
                             </div>
                             <!-- blog-post__categories -->
-                            <div class="blog-post__categories p-4">
-                                <h4>Categories</h4>
-                                <ul class="list-unstyled">
-                                    <li class="d-flex justify-content-between mt-3">
-                                        <span>new technilogies</span>
+                            <div class="blog-post__categories p-4 mb-4">
+                                <div class="c-sub-title position-relative text-secondary mb-4">
+                                    <h4 class=" fw-semibold">
+                                        <span class="border-primary pb-2">Categories</span>
+                                        
+                                    </h4>
+                                </div>
+                                <ul class="list-unstyled text-dark">
+                                    <li class="d-flex justify-content-between border-bottom text-capitalize pb-2 mt-3">
+                                        <span>new technologies</span>
                                         <span class="me-0">(07)</span>
                                     </li>
-                                    <li class="d-flex justify-content-between mt-3">
-                                        <span>new technilogies</span>
+                                    <li class="d-flex justify-content-between border-bottom text-capitalize pb-2 mt-3">
+                                        <span>construction introduction</span>
+                                        <span class="me-0">(05)</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between border-bottom text-capitalize pb-2 mt-3">
+                                        <span>financial investment</span>
+                                        <span class="me-0">(03)</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between border-bottom text-capitalize pb-2 mt-3">
+                                        <span>parallax effects</span>
                                         <span class="me-0">(07)</span>
                                     </li>
-                                    <li class="d-flex justify-content-between mt-3">
-                                        <span>new technilogies</span>
+                                    <li class="d-flex justify-content-between border-bottom text-capitalize pb-2 mt-3">
+                                        <span>payment processing</span>
+                                        <span class="me-0">(08)</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between border-bottom text-capitalize pb-2 mt-3">
+                                        <span>quality materials</span>
                                         <span class="me-0">(07)</span>
                                     </li>
-                                    <li class="d-flex justify-content-between mt-3">
-                                        <span>new technilogies</span>
-                                        <span class="me-0">(07)</span>
-                                    </li>
-                                    <li class="d-flex justify-content-between mt-3">
-                                        <span>new technilogies</span>
-                                        <span class="me-0">(07)</span>
-                                    </li>
-                                    <li class="d-flex justify-content-between mt-3">
-                                        <span>new technilogies</span>
-                                        <span class="me-0">(07)</span>
-                                    </li>
+                                   
                                 </ul>
                             </div>
                             <!-- blog-post__suport -->
-                            <div class="blog-post__suport p-5 text-center">
+                            <div class="blog-post__suport bg-dark text-white p-5 text-center mb-4 fs-sm">
                                 <h2>Have Any Query?</h2>
                                 <p class="mt-3">
-                                    text text text text text text text text text text text
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                                 </p>
-                                <button type="submit" class="btn btn-primary">Send Message</button>
+                                <button type="submit" class="btn btn-primary fs-sm px-4">Send Message</button>
                             </div>
-                            <!-- blog-post__category -->
-                            <div class="blog-post__category mt-4 p-4 bg-dark">
-                                <h4>Tags Post</h4>
+                            <!-- blog-post__options -->
+                            <div class="blog-post__options mt-4 p-4">
+                                <div class="c-sub-title position-relative text-secondary mb-4">
+                                    <h4 class=" fw-semibold">
+                                        <span class="border-primary pb-2">Tags</span>
+                                        Post
+                                    </h4>
+                                </div>
                                 <div class="my-3">
-                                    <a href="#" class="btn btn-white bg-white m-1 p-2 px-4 rounded-0">werehouses</a>
-                                    <a href="#" class="btn btn-white bg-white m-1 p-2 px-4 rounded-0">Transport</a>
-                                    <a href="#" class="btn btn-white bg-white m-1 p-2 px-4 rounded-0">buisness</a>
-                                    <a href="#" class="btn btn-white bg-white m-1 p-2 px-4 rounded-0">logistic</a>
-                                    <a href="#" class="btn btn-white bg-white m-1 p-2 px-4 rounded-0">cargo</a>
-                                    <a href="#" class="btn btn-white bg-white m-1 p-2 px-4 rounded-0">Maintenance</a>
-                                    <a href="#" class="btn btn-white bg-white m-1 p-2 px-4 rounded-0">Consulting</a>
+                                    <a href="#" class="options-btn btn">werehouses</a>
+                                    <a href="#" class="options-btn btn">Transport</a>
+                                    <a href="#" class="options-btn btn">buisness</a>
+                                    <a href="#" class="options-btn btn">logistic</a>
+                                    <a href="#" class="options-btn btn">cargo</a>
+                                    <a href="#" class="options-btn btn">Maintenance</a>
+                                    <a href="#" class="options-btn btn">Consulting</a>
                                 </div>
                             </div>
                         </section>
@@ -440,52 +582,188 @@
         </div>
     </main>
     <!-- footer -->
-    <footer class="footer py-5">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-4">
-                <div class="col">
-                    <div>
-                        logo
-                    </div>
-                    <p> fraze fraze fraze fraze fraze fraze fraze fraze fraze fraze</p>
-                    <div>
-                        social Info
-                    </div>
-                </div>
-                <div class="col">
-                    <h4>title</h4>
-                    <ul class="list-unstyled">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4>title</h4>
-                    <ul class="list-unstyled">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4>title</h4>
-                    <p> fraze fraze fraze fraze fraze fraze fraze fraze fraze</p>
+    <footer class="footer position-relative py-5 mt-5">
+        <div class="footer-wrapper position-absolute top-0 w-100 h-100"></div>
 
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder=""
-                            aria-label="Example text with button addon" aria-describedby="button-addon1">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+        <div class="container z-3 position-relative text-white">
+            <div class="text-white  d-flex justify-content-between mb-4">
+                <div>
+                    <div class="c-title-start text-start text-capitalize mb-3">
+                        <h2 class="fs-1 text-capitalize fw-bolder">looking for the beast dream house solutions? </h2>
                     </div>
+                    <span class="fs-sm">As app web crawler expert, We will help too organize</span>
+                </div>
+                <div class="">
+                    <button
+                        class="c-button btn btn-primary position-relative px-5 d-flex align-items-center justify-content-between">
+                        <svg class="icon icon-left position-absolute">
+                            <use xlink:href="#triangle-left"></use>
+                        </svg>
+                        Get a quote
+                        <svg class="icon icon-right position-absolute">
+                            <use xlink:href="#triangle-right"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
-        </div>
+            <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4">
+                <div class="col">
+                    <div class="footer-logo d-flex justify-content-start mb-3">
+                        <img src="/SVG/head-logo-footer.svg" style="height: 55px;" alt="">
+                        <div class="d-flex flex-column ms-2">
+                            <span class="text-white fs-5 fw-semibold">Hamilton</span>
+                            <span class="text-primary fs-sm">Estate Rental</span>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus
+                    </p>
+                    <div class="footer-social">
+                        <div class="border-start border-primary ps-2">
+                            <h6>Social Info</h6>
+                        </div>
+                        <div class="c-socials">
+                            <ul class="socials__list list-unstyled d-flex">
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element  m-2 p-2-">
+                                        <i class="socials__brand fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element m-2 p-2-">
+                                        <i class="socials__brand fa-solid  fa-v"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element m-2 p-2-">
+                                        <i class="socials__brand fa-brands  fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element m-2 p-2-">
+                                        <i class="socials__brand fa-solid pe-1  socials__brands fa-share-nodes"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col footer-block">
+                    <h4 class="footer-subtitle text-capitalize">
+                        our navigation
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                airplane fright
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                about ports
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                meet the team
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                news & team
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                our projects
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col footer-block">
+                    <h4 class="footer-subtitle text-capitalize">
+                        our sevices
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                reliability & punctuality
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                trusted franchise
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                warehouses storage
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                real time tracing
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                transparent pricing
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col footer-block ">
+                    <h4 class="footer-subtitle text-capitalize">
+                        our gallery
+                    </h4>
+                    <div class="row ">
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery" src="/public/img/footer-img/adam-kring-uqCMurxrzZc-unsplash.jpg"
+                                alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/angelina-litvin-52R7t7x8CPI-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/asier-pais-martins-VUIQxik_PQU-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/bilal-mansuri-3r9HlCYTtLU-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/bilal-mansuri-R8F3tLZUWRs-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/karolina-bobek-rFM9u9mYptA-unsplash.jpg" alt="">
+                        </div>
+
+
+                    </div>
+                </div>
+                <div
+                    class="text-white d-flex flex-column flex-md-row w-100 mt-5 align-items-center justify-content-center py-4  border-top border-primary">
+                    <span>cCopyrights 2003</span>
+                    <a href="#">Website_Stock</a>
+                    <span>All right reserved</span>
+                </div>
+            </div>
     </footer>
 
     <!-- Modal Contact-->

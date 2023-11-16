@@ -12,6 +12,17 @@
 
 </head>
 <!-- svg -->
+<svg width="0" height="0" class="d-none">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 36" id="triangle-left">
+        <path d="M5.67436e-05 0.679506L30.0001 18L5.74013e-05 35.3205L5.67436e-05 0.679506Z" fill="#2492C3"></path>
+    </symbol>
+</svg>
+<!-- triangle-right -->
+<svg width="0" height="0" class="d-none">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 36" id="triangle-right">
+        <path d="M-1.52588e-05 18L30 0.679499L30 35.3205L-1.52588e-05 18Z" fill="#2492C3"></path>
+    </symbol>
+</svg>
 <!-- style="display:none" -->
 <svg width="0" height="0" class="d-none">
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 50" id="headleft-sfg">
@@ -163,7 +174,7 @@
                                 </li>
                             </ul>
                             <!-- button quote -->
-                            <button class="btn btn-lg btn-secondary fs-6">Get a Quout</button>
+                            <button class="btn btn-lg btn-secondary fs-6 ms-4">Get a Quout</button>
                         </div>
                     </div>
                 </nav>
@@ -438,8 +449,14 @@
                     <span class="fs-sm">As app web crawler expert, We will help too organize</span>
                 </div>
                 <div class="">
-                    <button class="c-button position-relative align-self-start d-flex btn btn-primary py-2 px-5">
-                        get a quote
+                    <button class="c-button btn btn-primary position-relative px-5 d-flex align-items-center justify-content-between">
+                        <svg class="icon icon-left position-absolute">
+                            <use xlink:href="#triangle-left"></use>
+                        </svg>
+                        Get a quote
+                        <svg class="icon icon-right position-absolute">
+                            <use xlink:href="#triangle-right"></use>
+                        </svg>
                     </button>
                 </div>
             </div>

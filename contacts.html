@@ -13,13 +13,26 @@
 </head>
 <!-- svg -->
 <!-- double arrow -->
-<svg width="0" height="0" class="hidden">
+<svg width="0" height="0" class="d-none">
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="angles-up-solid">
         <path
             d="M246.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 109.3 361.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 301.3 361.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z">
         </path>
     </symbol>
 </svg>
+<!-- triangle-right -->
+<svg width="0" height="0" class="d-none">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 36" id="triangle-right">
+        <path d="M-1.52588e-05 18L30 0.679499L30 35.3205L-1.52588e-05 18Z" fill="#2492C3"></path>
+    </symbol>
+</svg>
+<!-- triangle-left -->
+<svg width="0" height="0" class="d-none">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 36" id="triangle-left">
+        <path d="M5.67436e-05 0.679506L30.0001 18L5.74013e-05 35.3205L5.67436e-05 0.679506Z" fill="#2492C3"></path>
+    </symbol>
+</svg>
+
 
 <!-- style="display:none" -->
 <svg width="0" height="0" class="d-none">
@@ -78,7 +91,7 @@
         <!-- navigation -->
         <div class="main-nav">
             <div class="container">
-                <nav class="navbar navbar-expand-lg">
+                <nav class="navbar navbar-expand-lg justify-content-between">
                     <div class="container-fluid d-flex ">
                         <div class="d-flex flex-row-reverse justify-content-between w-100">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -112,7 +125,7 @@
 
                             <!-- main nav -->
                             <ul class="navbar-nav nav-underline">
-                              
+
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="index.html" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -172,7 +185,7 @@
                                 </li>
                             </ul>
                             <!-- button quote -->
-                            <button class="btn btn-lg btn-secondary fs-6">Get a Quout</button>
+                            <button class="btn btn-lg btn-secondary fs-6 ms-5">Get a Quout</button>
                         </div>
                     </div>
                 </nav>
@@ -180,27 +193,34 @@
         </div>
     </header>
     <!-- main -->
-
-
-
     <main>
         <!-- banner -->
-        <div class="banner">
-            <div class="container text-center text-lg-start">
-                <div class="text-center py-5">
-                    <span>text text text text</span>
-                    <h1>Contact Page</h1>
+        <div class="banner-service  position-relative my-5">
+            <div class="position-absolute w-100 h-100 opacity-75" style="background-color: black;"></div>
+            <div class="container banner-block text-center text-lg-start z-1 position-relative">
+                <div class=" text-white text-center py-5">
+                    <span class="fs-3">Business Models you can Consider</span>
+                    <h1 class="fw-medium display-2 mt-2">Contact Page</h1>
                 </div>
-                <button class="btn btn-primary btn-lg">Home / Contact Page</button>
             </div>
+            <!-- breadcrumb -->
+            <nav class="c-breadcrumb d-flex justify-content-center d-md-block" aria-label="breadcrumb ">
+                <ol class="breadcrumb rounded-top py-3 mb-0 px-4 bg-primary">
+                    <li class="breadcrumb-item">
+                        <a href="index.html" class="text-white text-decoration-none">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Contact Page</li>
+                </ol>
+            </nav>
         </div>
         <!-- contacts -->
         <div class="contacts my-5">
             <div class="container p-3">
                 <div class="row">
+                    <!-- contact-information -->
                     <div class="col col-12 col-md-5">
-                        <div class="contact-information p-md-3 px-md-5 bg-primary">
-                            <h3 class="text-white">Contact Information</h3>
+                        <div class="contact-information px-md-4 p-md-5 bg-primary mt-md-3">
+                            <h3 class="text-white border-bottom border-light pb-3">Contact Information</h3>
                             <div>
                                 <div class="contacts-information bg-primary py-3">
                                     <div class="bg-white p-2 d-flex align-items-center">
@@ -208,129 +228,303 @@
                                             <i class="fa-solid fa-location-dot fs-4 bg-secondary text-white p-3"></i>
                                         </span>
                                         <div class="d-flex flex-column ms-2">
-                                            <span class="fw-semibold fs-3 text-secondary">Address</span>
-                                            <span class="fs-sm">7515 Stefan cel Mare si Sfint. La UNIC (la intrarea in piata)</span>
+                                            <span class="fw-semibold fs-5 text-secondary">Address</span>
+                                            <span class="fs-sm text-dark">7515 Stefan cel Mare si Sfint. La UNIC (la
+                                                intrarea in
+                                                piata)</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="contacts-information bg-primary py-3">
                                     <div class="bg-white p-2 d-flex align-items-center">
                                         <span class="contacts-information__location bg-white">
-                                            <i class="fa-solid fa-location-dot fs-4 bg-secondary text-white p-3"></i>
+                                            <i
+                                                class="fa-solid fa-mobile-screen-button fs-4 bg-secondary text-white p-3"></i>
                                         </span>
                                         <div class="d-flex flex-column ms-2">
-                                            <span class="fw-semibold fs-3 text-secondary">Address</span>
-                                            <span class="fs-sm">7515 Stefan cel Mare si Sfint. La UNIC (la intrarea in piata)</span>
+                                            <span class="fw-semibold fs-5 text-secondary">Contact Number</span>
+                                            <span class="fs-sm text-dark">+(6656)1598596969</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="contacts-information bg-primary py-3">
                                     <div class="bg-white p-2 d-flex align-items-center">
                                         <span class="contacts-information__location bg-white">
-                                            <i class="fa-solid fa-location-dot fs-4 bg-secondary text-white p-3"></i>
+                                            <i class="fa-regular fa-envelope fs-4 bg-secondary text-white p-3"></i>
                                         </span>
                                         <div class="d-flex flex-column ms-2">
-                                            <span class="fw-semibold fs-3 text-secondary">Address</span>
-                                            <span class="fs-sm">7515 Stefan cel Mare si Sfint. La UNIC (la intrarea in piata)</span>
+                                            <span class="fw-semibold fs-5 text-secondary">Email Us</span>
+                                            <span class="fs-sm text-dark">youremail@gmail.com</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- form -->
                     <div class="col col-12 col-md-7">
-                        <form>
-                            <legend>Get A Quote</legend>
+                        <form class="form">
+                            <div class="c-sub-title position-relative text-secondary mb-4">
+                                <h3 class="text-secondary fw-bold pb-2">
+                                    <span class=" pb-2">Get A</span>
+                                    Quote
+                                </h3>
+                            </div>
                             <div class="row row-cols-2">
                                 <div class="container text-center">
                                     <div class="row row-cols-2">
-                                        <div class="col mb-3">
-                                            <input type="text" class="form-control" id="name" placeholder="your name">
+                                        <div class="col mb-4">
+                                            <div class="form__field">
+                                                <input type="text" class="form-control fs-sm" id="input-name"
+                                                    placeholder="Your Name">
+                                            </div>
                                         </div>
-                                        <div class="col mb-3">
-                                            <input type="text" class="form-control" id="name" placeholder="your name">
+                                        <div class="col mb-4">
+                                            <div class="form__field">
+                                                <input type="email" class="form-control fs-sm" id="input-email"
+                                                    placeholder="Email Address">
+                                            </div>
                                         </div>
-                                        <div class="col mb-3">
-                                            <input type="text" class="form-control" id="name" placeholder="your name">
+                                        <div class="col mb-4">
+                                            <div class="form__field">
+                                                <input type="phone" class="form-control fs-sm" id="input-phone"
+                                                    placeholder="Phone Number">
+                                            </div>
                                         </div>
-                                        <div class="col mb-3">
-                                            <input type="text" class="form-control" id="name" placeholder="your name">
+                                        <div class="col mb-4">
+                                            <div class="form__field">
+                                                <input type="text" class="form-control fs-sm" id="input-subject"
+                                                    placeholder="Subject">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col col-12  mb-3">
-                                    <input type="text" class="form-control" id="name" placeholder="your name">
+                                <div class="col col-12  mb-4">
+                                    <div class="form__field">
+                                        <input type="text" class="form-control fs-sm" id="input-subject"
+                                            placeholder="Your Company Name">
+                                    </div>
                                 </div>
-                                <div class="col col-12 mb-3">
-                                    <textarea name="" id="" cols="" rows="4" style="width: 100%;"></textarea>
+                                <div class="col col-12 mb-4">
+                                    <div class="form__field text-dark">
+                                        <textarea class="form-control fs-sm" placeholder="Write your question here"
+                                            name="" id="" cols="" rows="6" style="width: 100%;"></textarea>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="">
-                                <button type="submit" class="btn btn-primary">Get a quote</button>
+                            <div class="mt-3">
+                                <button
+                                    class="c-button btn btn-primary position-relative px-5 d-flex align-items-center justify-content-between">
+                                    <svg class="icon icon-left position-absolute">
+                                        <use xlink:href="#triangle-left"></use>
+                                    </svg>
+                                    Get a quote
+                                    <svg class="icon icon-right position-absolute">
+                                        <use xlink:href="#triangle-right"></use>
+                                    </svg>
+                                </button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- map -->
         <div class="map">
             <map name="" class="w-100">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147549.82228475346!2d-75.92384677744178!3d45.530679187628024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd1e235c3cb1d23%3A0x5040cadae4d5930!2sChelsea%2C%20QC%2C%20Canada!5e0!3m2!1sen!2s!4v1698867250414!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147549.82228475346!2d-75.92384677744178!3d45.530679187628024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd1e235c3cb1d23%3A0x5040cadae4d5930!2sChelsea%2C%20QC%2C%20Canada!5e0!3m2!1sen!2s!4v1698867250414!5m2!1sen!2s"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </map>
         </div>
-
-
-
     </main>
     <!-- footer -->
-    <footer class="footer py-5">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-4">
-                <div class="col">
-                    <div>
-                        logo
-                    </div>
-                    <p> fraze fraze fraze fraze fraze fraze fraze fraze fraze fraze</p>
-                    <div>
-                        social Info
-                    </div>
-                </div>
-                <div class="col">
-                    <h4>title</h4>
-                    <ul class="list-unstyled">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4>title</h4>
-                    <ul class="list-unstyled">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4>title</h4>
-                    <p> fraze fraze fraze fraze fraze fraze fraze fraze fraze</p>
+    <footer class="footer position-relative py-5 mt-5">
+        <div class="footer-wrapper position-absolute top-0 w-100 h-100"></div>
 
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder=""
-                            aria-label="Example text with button addon" aria-describedby="button-addon1">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+        <div class="container z-3 position-relative text-white">
+            <div class="text-white  d-flex justify-content-between mb-4">
+                <div>
+                    <div class="c-title-start text-start text-capitalize mb-3">
+                        <h2 class="fs-1 text-capitalize fw-bolder">looking for the beast dream house solutions? </h2>
                     </div>
+                    <span class="fs-sm">As app web crawler expert, We will help too organize</span>
+                </div>
+                <div class="">
+                    <button
+                        class="c-button btn btn-primary position-relative px-5 d-flex align-items-center justify-content-between">
+                        <svg class="icon icon-left position-absolute">
+                            <use xlink:href="#triangle-left"></use>
+                        </svg>
+                        Get a quote
+                        <svg class="icon icon-right position-absolute">
+                            <use xlink:href="#triangle-right"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
-        </div>
+            <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4">
+                <div class="col">
+                    <div class="footer-logo d-flex justify-content-start mb-3">
+                        <img src="/SVG/head-logo-footer.svg" style="height: 55px;" alt="">
+                        <div class="d-flex flex-column ms-2">
+                            <span class="text-white fs-5 fw-semibold">Hamilton</span>
+                            <span class="text-primary fs-sm">Estate Rental</span>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus
+                    </p>
+                    <div class="footer-social">
+                        <div class="border-start border-primary ps-2">
+                            <h6>Social Info</h6>
+                        </div>
+                        <div class="c-socials">
+                            <ul class="socials__list list-unstyled d-flex">
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element  m-2 p-2-">
+                                        <i class="socials__brand fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element m-2 p-2-">
+                                        <i class="socials__brand fa-solid  fa-v"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element m-2 p-2-">
+                                        <i class="socials__brand fa-brands  fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item ">
+                                    <a href="#" class="socials__element m-2 p-2-">
+                                        <i class="socials__brand fa-solid pe-1  socials__brands fa-share-nodes"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col footer-block">
+                    <h4 class="footer-subtitle text-capitalize">
+                        our navigation
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                airplane fright
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                about ports
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                meet the team
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                news & team
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                our projects
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col footer-block">
+                    <h4 class="footer-subtitle text-capitalize">
+                        our sevices
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                reliability & punctuality
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                trusted franchise
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                warehouses storage
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                real time tracing
+                            </a>
+                        </li>
+                        <li class="text-capitalize my-3">
+                            <a href="" class="footer-list text-decoration-none">
+                                <i class="footer-svg fa-solid fa-angles-right"></i>
+                                transparent pricing
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col footer-block ">
+                    <h4 class="footer-subtitle text-capitalize">
+                        our gallery
+                    </h4>
+                    <div class="row ">
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery" src="/public/img/footer-img/adam-kring-uqCMurxrzZc-unsplash.jpg"
+                                alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/angelina-litvin-52R7t7x8CPI-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/asier-pais-martins-VUIQxik_PQU-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/bilal-mansuri-3r9HlCYTtLU-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/bilal-mansuri-R8F3tLZUWRs-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col col-4 footer-inner">
+                            <img class="footer-gallery"
+                                src="/public/img/footer-img/karolina-bobek-rFM9u9mYptA-unsplash.jpg" alt="">
+                        </div>
+
+
+                    </div>
+                </div>
+                <div
+                    class="text-white d-flex flex-column flex-md-row w-100 mt-5 align-items-center justify-content-center py-4  border-top border-primary">
+                    <span>cCopyrights 2003</span>
+                    <a href="#">Website_Stock</a>
+                    <span>All right reserved</span>
+                </div>
+            </div>
     </footer>
 
     <!-- Modal Contact-->
