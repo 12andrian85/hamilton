@@ -47,6 +47,10 @@ $width-desktop: 992px;
 $width-x-desktop: 1200px;
 $width-xx-desktop: 1400px;
 
+$container-max-widths: (
+  xxl: 1380px
+);
+
 // ex
 // @media (min-width: $width-tablet) {}
 // @media (min-width: $width-desktop) {}
