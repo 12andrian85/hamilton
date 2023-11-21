@@ -33,54 +33,53 @@
 
 <body>
     <!-- heder -->
-    <header class="header d-flex flex-column align-items-center">
-        <h1 class="d-none">Hamilton</h1>
-        <!-- logo -->
-        <div class="nav-logo d-flex justify-content-center d-lg-none">
-            <img src="/SVG/head-logo.svg" style="height: 55px;" alt="">
-            <div class="d-flex flex-column ms-2">
-                <span class="text-primary fs-5 fw-semibold">Hamilton</span>
-                <span class="text-secondary fs-sm">Estate Rental</span>
+    <header class="header position-relative">
+        <!-- <h1 class="d-none">Hamilton</h1> -->
+        <!-- logo-mobile -->
+        <div class="container d-flex justify-content-center d-lg-none">
+            <div class="nav-logo">
+                <img src="/SVG/head-logo.svg" style="height: 55px;" alt="">
+                <div class="d-flex flex-column ms-2">
+                    <span class="text-primary fs-5 fw-semibold">Hamilton</span>
+                    <span class="text-secondary fs-sm">Estate Rental</span>
+                </div>
             </div>
         </div>
-
-        <!-- contact-header -->
-        <div class="contact-header d-none d-lg-flex">
-            <ul class="justify-content-between list-unstyled d-flex w-100">
-                <li class="text-secondary d-flex align-items-center d-none d-xl-block">
-                    <img src="/SVG/headleft-sfg.svg" alt="">
-                </li>
-                <div class="container d-flex justify-content-between px-0">
-                    <li class="text-secondary px-2 d-flex align-items-center">
+        <div class="container-fluid  d-none d-lg-flex align-items-center justify-content-center border-bottom">
+            <!-- contact-header -->
+            <div class="contact-header d-none d-lg-flex">
+                <ul class="justify-content-center list-unstyled d-flex text-secondary fs-sm m-0">
+                    <li class="text-secondary px-4 d-flex align-items-center">
                         <i class="fa-solid pe-2 fa-location-dot"></i>
                         <span>588 road broklyan - </span><span class="text-primary">London</span>
                     </li>
-                    <li class="text-secondary px-2 d-flex align-items-center">
+                    <li class="text-secondary px-4 d-flex align-items-center border-end border-start">
                         <i class="fa-solid pe-2 fa-phone"></i>
                         <span>+199(980)6915</span>
                     </li>
                     </li>
-                    <li class="text-secondary px-2 d-flex align-items-center">
+                    <li class="text-secondary px-4 d-flex align-items-center">
                         <i class="fa-regular pe-2 fa-envelope"></i>
                         <span>shifamoni@gmail.com</span>
                     </li>
-                    <li class="text-secondary px-2 d-flex align-items-center ">
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        </form>
-                        <i class="fa-solid pe-2 fa-magnifying-glass"></i>
-                    </li>
-                </div>
-                <li class="text-secondary d-flex align-items-center d-none d-xl-block">
-                    <img src="/SVG/head-right.svg" alt="">
-                </li>
-            </ul>
+                </ul>
+            </div>
+            <div class="header-block text-secondary px-4 d-flex align-items-center border-start">
+                <form class="form" role="search">
+                    <div class="field d-flex position-relative">
+                        <input class="form-control text-secondary form__search fs-sm me-2" type="search"
+                            placeholder="Search..." aria-label="Search">
+                        <button class="btn form__submit" type="submit">
+                            <i class="fa-solid pe-2 fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
-
         <!-- navigation -->
         <div class="main-nav">
             <div class="container">
-                <nav class="navbar navbar-expand-lg">
+                <nav class="navbar navbar-expand-lg my-2">
                     <div class="container-fluid d-flex ">
                         <div class="d-flex flex-row-reverse justify-content-between w-100">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -90,18 +89,25 @@
                             </button>
                             <!-- logo -->
                             <div class="nav-logo d-none d-lg-flex justify-content-center me-auto">
-                                <img src="/SVG/head-logo.svg" style="height: 55px;" alt="">
-                                <div class="d-flex flex-column ms-2">
-                                    <span class="text-primary fs-5 fw-semibold">Hamilton</span>
-                                    <span class="text-secondary fs-sm">Estate Rental</span>
-                                </div>
+                                <a class="nav-logo d-none d-lg-flex justify-content-center text-decoration-none"
+                                    href="index.html">
+                                    <img src="/SVG/head-logo.svg" style="height: 55px;" alt="">
+                                    <div class="d-flex flex-column ms-2">
+                                        <span class="text-primary fs-5 fw-semibold">Hamilton</span>
+                                        <span class="text-secondary fs-sm">Estate Rental</span>
+                                    </div>
+                                </a>
                             </div>
                             <div class="text-secondary px-2 d-flex align-items-center d-lg-none">
-                                <form class="d-flex" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Search"
-                                        aria-label="Search">
+                                <form class="form" role="search">
+                                    <div class="field d-flex position-relative">
+                                        <input class="form-control text-secondary form__search fs-sm me-2" type="search"
+                                            placeholder="Search..." aria-label="Search">
+                                        <button class="btn form__submit" type="submit">
+                                            <i class="fa-solid pe-2 fa-magnifying-glass"></i>
+                                        </button>
+                                    </div>
                                 </form>
-                                <i class="fa-solid pe-2 fa-magnifying-glass"></i>
                             </div>
                             <div class="d-flex justify-content-center d-lg-none">
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
@@ -110,19 +116,19 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
-
+                        <div class="collapse navbar-collapse py-2 justify-content-between" id="navbarNavDropdown">
                             <!-- main nav -->
-                            <ul class="navbar-nav nav-underline">
-
+                            <ul class="navbar-nav nav-underline justify-content-start">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="index.html" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         Home
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="index.html">Home</a></li>
                                         <li><a class="dropdown-item" href="components.html">Component</a></li>
+                                        <li><a class="dropdown-item" target="_blank"
+                                                href="https://themeforest.net/item/hamiltonreal-estate-property-psd-template/screenshots/47976971?index=7">Original
+                                                Template</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
@@ -174,7 +180,9 @@
                                 </li>
                             </ul>
                             <!-- button quote -->
-                            <button class="btn btn-lg btn-secondary fs-6 ms-4">Get a Quout</button>
+                            <div class="c-btn">
+                                <button class="btn btn-secondary ms-5 py-2 px-4" type="submit">Get a Quote</button>
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -184,25 +192,25 @@
     <!-- main -->
     <main>
         <!-- banner -->
-        <div class="banner-service  position-relative">
+        <div class="banner-about  position-relative mb-5">
             <div class="position-absolute w-100 h-100 opacity-75" style="background-color: black;"></div>
-            <div class="container banner-block text-center text-lg-start z-1 position-relative">
+            <div class="container  z-1">
                 <div class=" text-white text-center py-5">
-                    <span class="fs-3">Business Models you can Consider</span>
-                    <h1 class="fw-medium display-2 mt-2">Service</h1>
+                    <span class="fs-5">Business Models you can Consider</span>
+                    <h2 class="fw-medium display-5 mt-2">Service</h2>
                 </div>
+                <nav class="c-breadcrumb  d-md-block" aria-label="breadcrumb ">
+                    <ul class="breadcrumb d-flex justify-content-center rounded-top mb-0 px-4 bg-primary">
+                        <li class="breadcrumb-item">
+                            <a href="index.html" class="text-white text-decoration-none">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active text-white" aria-current="page">Service</li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="c-breadcrumb d-flex justify-content-center d-md-block" aria-label="breadcrumb ">
-                <ol class="breadcrumb rounded-top py-3 mb-0 px-4 bg-primary">
-                    <li class="breadcrumb-item">
-                        <a href="index.html" class="text-white text-decoration-none">Home</a>
-                    </li>
-                    <li class="breadcrumb-item active text-white" aria-current="page">About-Us</li>
-                </ol>
-            </nav>
         </div>
         <!-- feature -->
-        <div class="feature py-5">
+        <div class="feature py-5 my-5">
             <div class="container text-center">
                 <div class="c-title-center">
                     <span class="title-center text-primary position-relative mb-3">Views all 329 New Listings</span>
@@ -211,19 +219,21 @@
 
                 <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
                     <div class="col">
-                        <div class="card c-card-feature shadow-lg d-flex justify-content-center align-items-center"
+                        <div class="card c-card-feature shadow-lg rounded-0 border-0 align-items-center"
                             style="width: 18rem-;">
-                            <div class="w-25 h-25 border border-light-subtle m-5 p-3">
+                            <div class="card-wrapper">
                                 <img src="/SVG/home.svg" class="card-img-top" alt="">
                             </div>
-                            <div class="card-body mb-4">
-                                <h4 class="card-title text-secondary fw-bold">Buy a Property</h4>
-                                <p class="card-text">
-                                    over 1 million+ homes for sales on the website, we can you with
+                            <div class="card-body p-0">
+                                <h4 class="card-title text-secondary text-center fw-bold">Sell a property</h4>
+                                <p class="card-text text-center fs-sm">
+                                    over 1 million+ homes for sales on the website,
+                                    we can you with
+                                    a house you will want to call home
                                     a house you will want to call home
                                 </p>
                                 <a href="#"
-                                    class="d-flex card-btn btn btn-outline-primary fw-medium d-flex  border-0 rounded-0">Find
+                                    class="card-btn btn btn-outline-primary fw-medium d-flex p-2 border-0 rounded-0">Find
                                     A Home
                                     <i class="fa-solid fa-arrow-right ms-auto align-self-end mb-1"></i>
                                 </a>
@@ -231,19 +241,21 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card c-card-feature shadow-lg d-flex justify-content-center align-items-center"
+                        <div class="card c-card-feature shadow-lg rounded-0 border-0 align-items-center"
                             style="width: 18rem-;">
-                            <div class="w-25 h-25 border border-light-subtle m-5 p-3">
-                                <img src="/SVG/credit-card-regular.svg" class="card-img-top text-secondary" alt="">
+                            <div class="card-wrapper">
+                                <img src="/SVG/credit-card-regular.svg" class="card-img-top" alt="">
                             </div>
-                            <div class="card-body mb-4">
-                                <h4 class="card-title text-secondary fw-bold">Sell a Property</h4>
-                                <p class="card-text">
-                                    over 1 million+ homes for sales on the website, we can you with
+                            <div class="card-body p-0">
+                                <h4 class="card-title text-secondary text-center fw-bold">Sell a property</h4>
+                                <p class="card-text text-center fs-sm">
+                                    over 1 million+ homes for sales on the website,
+                                    we can you with
+                                    a house you will want to call home
                                     a house you will want to call home
                                 </p>
                                 <a href="#"
-                                    class="d-flex card-btn btn btn-outline-primary fw-medium d-flex  border-0 rounded-0">Find
+                                    class="card-btn btn btn-outline-primary fw-medium d-flex p-2 border-0 rounded-0">Find
                                     A Home
                                     <i class="fa-solid fa-arrow-right ms-auto align-self-end mb-1"></i>
                                 </a>
@@ -251,19 +263,21 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card c-card-feature shadow-lg d-flex justify-content-center align-items-center"
+                        <div class="card c-card-feature shadow-lg rounded-0 border-0 align-items-center"
                             style="width: 18rem-;">
-                            <div class="w-25 h-25 border border-light-subtle m-5 p-3">
+                            <div class="card-wrapper">
                                 <img src="/SVG/rectangle-list-regular.svg" class="card-img-top" alt="">
                             </div>
-                            <div class="card-body mb-4">
-                                <h4 class="card-title text-secondary fw-bold">Rent a Property</h4>
-                                <p class="card-text">
-                                    over 1 million+ homes for sales on the website, we can you with
+                            <div class="card-body p-0">
+                                <h4 class="card-title text-secondary text-center fw-bold">Sell a property</h4>
+                                <p class="card-text text-center fs-sm">
+                                    over 1 million+ homes for sales on the website,
+                                    we can you with
+                                    a house you will want to call home
                                     a house you will want to call home
                                 </p>
                                 <a href="#"
-                                    class="d-flex card-btn btn btn-outline-primary fw-medium d-flex  border-0 rounded-0">Find
+                                    class="card-btn btn btn-outline-primary fw-medium d-flex p-2 border-0 rounded-0">Find
                                     A Home
                                     <i class="fa-solid fa-arrow-right ms-auto align-self-end mb-1"></i>
                                 </a>
@@ -275,7 +289,7 @@
             <!-- </div> -->
         </div>
         <!-- gallery -->
-        <div class="gallery position-relative py-5 mb-5">
+        <div class="gallery position-relative pt-md-5- mb-md-5-">
             <div class="container d-flex justify-content-center">
                 <section class="splide" id="gallery" aria-label="Basic Structure Example">
                     <div class="splide__arrows">
@@ -317,14 +331,14 @@
         <!-- plans -->
         <section class="plans py-5">
             <div class="container">
-                <div class="c-title-center text-center mb-3">
+                <div class="c-title-center  text-center mb-3">
                     <span class="title-center text-primary position-relative mb-3">Views all 329 New Listings</span>
                     <h2 class="fs-1 text-capitalize fw-bolder my-3">title</h2>
                 </div>
                 <div class="row">
                     <div class="col col-12 col-md-6 form-wrapper p-5 order-2 order-md-1">
                         <div class="text-start mb-3">
-                            <h4 class="fw-bolder mb-3">Contact us today</h4>
+                            <h4 class="fw-bolder text-secondary mb-3">Contact us today</h4>
                             <span class="fs-sm text-dark">We are happy to help. Anytime</span>
                         </div>
                         <form action="" class="form">
@@ -369,7 +383,7 @@
                                 </button>
                                 <div class="d-flex align-items-center">
                                     <input class="me-2" type="checkbox" id="cheked">
-                                    <label for="cheked">I agree my data is
+                                    <label class="text-dark" for="cheked">I agree my data is
                                         <a href="#">collected</a>
                                     </label>
                                 </div>
@@ -438,18 +452,17 @@
     </main>
     <!-- footer -->
     <footer class="footer position-relative py-5 mt-5">
-        <div class="footer-wrapper position-absolute top-0 w-100 h-100"></div>
-
         <div class="container z-3 position-relative text-white">
             <div class="text-white  d-flex justify-content-between mb-4">
-                <div>
+                <div class="footer-title">
                     <div class="c-title-start text-start text-capitalize mb-3">
-                        <h2 class="fs-1 text-capitalize fw-bolder">looking for the beast dream house solutions? </h2>
+                        <h2 class="fs-2 text-capitalize fw-bolder">looking for the beast dream house solutions? </h2>
                     </div>
                     <span class="fs-sm">As app web crawler expert, We will help too organize</span>
                 </div>
                 <div class="">
-                    <button class="c-button btn btn-primary position-relative px-5 d-flex align-items-center justify-content-between">
+                    <button
+                        class="c-button btn btn-primary position-relative px-5 d-flex align-items-center justify-content-between">
                         <svg class="icon icon-left position-absolute">
                             <use xlink:href="#triangle-left"></use>
                         </svg>
@@ -460,12 +473,15 @@
                     </button>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4">
-                <div class="col">
+            <div class="row ">
+                <div class="col col-12 col-md-4 col-lg-3">
                     <div class="footer-logo d-flex justify-content-start mb-3">
                         <img src="/SVG/head-logo-footer.svg" style="height: 55px;" alt="">
                         <div class="d-flex flex-column ms-2">
-                            <span class="text-white fs-5 fw-semibold">Hamilton</span>
+                            <span class="text-white fs-5 fw-semibold">
+                                Hamil
+                                <span class="text-primary">ton</span>
+                            </span>
                             <span class="text-primary fs-sm">Estate Rental</span>
                         </div>
                     </div>
@@ -479,35 +495,35 @@
                             <h6>Social Info</h6>
                         </div>
                         <div class="c-socials">
-                            <ul class="socials__list list-unstyled d-flex">
-                                <li class="socials__item ">
-                                    <a href="#" class="socials__element  m-2 p-2-">
-                                        <i class="socials__brand fa-brands fa-facebook-f"></i>
+                            <ul class="c-socials__list list-unstyled d-flex">
+                                <li class="c-socials__item ">
+                                    <a href="#" class="c-socials__element m-2">
+                                        <i class="c-socials__brand fa-brands fa-facebook-f"></i>
                                     </a>
                                 </li>
-                                <li class="socials__item ">
-                                    <a href="#" class="socials__element m-2 p-2-">
-                                        <i class="socials__brand fa-solid  fa-v"></i>
+                                <li class="c-socials__item ">
+                                    <a href="#" class="c-socials__element m-2">
+                                        <i class="c-socials__brand fa-solid  fa-v"></i>
                                     </a>
                                 </li>
-                                <li class="socials__item ">
-                                    <a href="#" class="socials__element m-2 p-2-">
-                                        <i class="socials__brand fa-brands  fa-instagram"></i>
+                                <li class="c-socials__item ">
+                                    <a href="#" class="c-socials__element m-2">
+                                        <i class="c-socials__brand fa-brands  fa-instagram"></i>
                                     </a>
                                 </li>
-                                <li class="socials__item ">
-                                    <a href="#" class="socials__element m-2 p-2-">
-                                        <i class="socials__brand fa-solid pe-1  socials__brands fa-share-nodes"></i>
+                                <li class="c-socials__item ">
+                                    <a href="#" class="c-socials__element m-2">
+                                        <i class="c-socials__brand fa-solid fa-share-nodes"></i>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col footer-block">
-                    <h4 class="footer-subtitle text-capitalize">
+                <div class="col col-12 col-md-4 col-lg-3 footer-block">
+                    <h5 class="footer-subtitle text-capitalize">
                         our navigation
-                    </h4>
+                    </h5>
                     <ul class="list-unstyled">
                         <li class="text-capitalize my-3">
                             <a href="" class="footer-list text-decoration-none">
@@ -541,10 +557,10 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col footer-block">
-                    <h4 class="footer-subtitle text-capitalize">
-                        our sevices
-                    </h4>
+                <div class="col col-12 col-md-4 col-lg-3 footer-block">
+                    <h5 class="footer-subtitle text-capitalize">
+                        our services
+                    </h5>
                     <ul class="list-unstyled">
                         <li class="text-capitalize my-3">
                             <a href="" class="footer-list text-decoration-none">
@@ -578,46 +594,38 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col footer-block ">
-                    <h4 class="footer-subtitle text-capitalize">
+                <div class="col col-12 col-md-4 col-lg-3 mx-auto footer-block overflow-hidden">
+                    <h5 class="footer-subtitle text-capitalize">
                         our gallery
-                    </h4>
-                    <div class="row ">
-                        <div class="col col-4 footer-inner">
-                            <img class="footer-gallery" src="/public/img/footer-img/adam-kring-uqCMurxrzZc-unsplash.jpg"
+                    </h5>
+
+                    <div class="d-flex mt-2">
+                            <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
                                 alt="">
-                        </div>
-                        <div class="col col-4 footer-inner">
-                            <img class="footer-gallery"
-                                src="/public/img/footer-img/angelina-litvin-52R7t7x8CPI-unsplash.jpg" alt="">
-                        </div>
-                        <div class="col col-4 footer-inner">
-                            <img class="footer-gallery"
-                                src="/public/img/footer-img/asier-pais-martins-VUIQxik_PQU-unsplash.jpg" alt="">
-                        </div>
-                        <div class="col col-4 footer-inner">
-                            <img class="footer-gallery"
-                                src="/public/img/footer-img/bilal-mansuri-3r9HlCYTtLU-unsplash.jpg" alt="">
-                        </div>
-                        <div class="col col-4 footer-inner">
-                            <img class="footer-gallery"
-                                src="/public/img/footer-img/bilal-mansuri-R8F3tLZUWRs-unsplash.jpg" alt="">
-                        </div>
-                        <div class="col col-4 footer-inner">
-                            <img class="footer-gallery"
-                                src="/public/img/footer-img/karolina-bobek-rFM9u9mYptA-unsplash.jpg" alt="">
-                        </div>
-
-
+                            <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
+                                alt="">
+                            <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
+                                alt="">
                     </div>
+                    <div class="d-flex ">
+                            <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
+                                alt="">
+                            <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
+                                alt="">
+                            <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
+                                alt="">
+                    </div>
+                   
                 </div>
-                <div
-                    class="text-white d-flex flex-column flex-md-row w-100 mt-5 align-items-center justify-content-center py-4  border-top border-primary">
-                    <span>cCopyrights 2003</span>
-                    <a href="#">Website_Stock</a>
-                    <span>All right reserved</span>
-                </div>
+
             </div>
+            <div
+                class="text-white d-flex flex-column flex-md-row w-100 mt-5 align-items-center justify-content-center py-4  border-top border-primary">
+                <span>© Copyrights 2003</span>
+                <a href="#">Website_Stock</a>
+                <span>All right reserved</span>
+            </div>
+        </div>
     </footer>
 
     <!-- Modal Contact-->

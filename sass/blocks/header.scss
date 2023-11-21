@@ -1,16 +1,51 @@
 .header {
+    background-color: #F4F4F4FF;
+    .container-fluid{
+        height: 50px;
+    }
     .header-svg-element {
         display: none;
     }
 
+    .icon-header {
+        width: 200px;
+        height: 50px;
+    }
 
+    .form {
+        &__search {
+            background-color: transparent;
+            border: none;
+            max-width: 150px;
+        }
+
+        &__submit {
+
+            position: absolute;
+            right: 0;
+        }
+
+    }
+
+    .header-block {
+        height: 50px;
+    }
+
+    .nav-item {
+        font-size: small;
+        font-weight: 700;
+    }
+
+
+
+    // are wrong
     .navbar {
         .nav-link {
             display: flex;
             align-items: center;
             color: $secondary;
             font-weight: 600;
-            margin: 10px;
+            margin: 15px 10px;
             padding: 0;
         }
 
@@ -37,9 +72,10 @@
             border-bottom: 1px solid $primary;
 
         }
-        
+
     }
-    .navbar-nav{
+
+    .navbar-nav {
         // margin-right: 50px;
     }
 
@@ -57,4 +93,35 @@
         }
     }
 
+}
+
+.header::before {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 50px;
+    background-image: url("/SVG/head-left.svg");
+    left: 0;
+    top: 0;
+
+    @media (min-width: $width-x-desktop) {
+        display: block;
+    }
+
+}
+
+.header::after {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 50px;
+    background-image: url("/SVG/head-right.svg");
+    right: 0;
+    top: 0;
+
+    @media (min-width: $width-x-desktop) {
+        display: block;
+    }
 }

@@ -12,7 +12,9 @@
         &__wrapper{
             padding: 24px 0px;
         }
-
+            &__arrows{
+                display: none;
+            }
 
         &__img{
             object-fit: contain;
@@ -20,7 +22,7 @@
             opacity: 25%;
         }
         &__slide{
-            padding: 0 25px;
+            padding: 0 30px;
         }
         &__slide:hover{
             .splide__wrapper{

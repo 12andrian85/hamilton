@@ -1,16 +1,21 @@
 .c-team {
-    width: 30%;
+    // width: 30%;
 
     .team {
         &__wrapper {
-            background-color: #F2F6F7FF;
-            width: 85%;
+            background-color: #f2f6f7;
+            width: 250px;
+            height: 370px;
         }
 
         &__img {
             right: 40px;
             width: 200px;
-            height: 200px;
+            height: 260px;
+
+            img {
+                object-position: top;
+            }
         }
 
         &__inner {
@@ -32,6 +37,7 @@
             justify-content: center;
             align-items: center;
             border: none;
+            text-decoration: none;
         }
 
         &__brand {
@@ -52,10 +58,8 @@
 @media (min-width: $width-x-desktop) {
     .c-team {
 
-        .team {
-            &__wrapper {
-                width: 65%;
-            }
+        .c-socilas{
+            margin-left: 10px;
         }
     }
 }

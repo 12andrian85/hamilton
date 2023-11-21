@@ -24,56 +24,56 @@
         <path d="M-1.52588e-05 18L30 0.679499L30 35.3205L-1.52588e-05 18Z" fill="#2492C3"></path>
     </symbol>
 </svg>
+
 <body>
     <!-- header -->
-    <header class="header d-flex flex-column align-items-center">
-        <h1 class="d-none">Hamilton</h1>
-        <!-- logo -->
-        <div class="nav-logo d-flex justify-content-center d-lg-none">
-            <img src="/SVG/head-logo.svg" style="height: 55px;" alt="">
-            <div class="d-flex flex-column ms-2">
-                <span class="text-primary fs-5 fw-semibold">Hamilton</span>
-                <span class="text-secondary fs-sm">Estate Rental</span>
+    <header class="header position-relative">
+        <!-- <h1 class="d-none">Hamilton</h1> -->
+        <!-- logo-mobile -->
+        <div class="container d-flex justify-content-center d-lg-none">
+            <div class="nav-logo">
+                <img src="/SVG/head-logo.svg" style="height: 55px;" alt="">
+                <div class="d-flex flex-column ms-2">
+                    <span class="text-primary fs-5 fw-semibold">Hamilton</span>
+                    <span class="text-secondary fs-sm">Estate Rental</span>
+                </div>
             </div>
         </div>
-
-        <!-- contact-header -->
-        <div class="contact-header d-none d-lg-flex">
-            <ul class="justify-content-between list-unstyled d-flex w-100">
-                <li class="text-secondary d-flex align-items-center d-none d-xl-block">
-                    <img src="/SVG/headleft-sfg.svg" alt="">
-                </li>
-                <div class="container d-flex justify-content-between px-0">
-                    <li class="text-secondary px-2 d-flex align-items-center">
+        <div class="container-fluid  d-none d-lg-flex align-items-center justify-content-center border-bottom">
+            <!-- contact-header -->
+            <div class="contact-header d-none d-lg-flex">
+                <ul class="justify-content-center list-unstyled d-flex text-secondary fs-sm m-0">
+                    <li class="text-secondary px-4 d-flex align-items-center">
                         <i class="fa-solid pe-2 fa-location-dot"></i>
                         <span>588 road broklyan - </span><span class="text-primary">London</span>
                     </li>
-                    <li class="text-secondary px-2 d-flex align-items-center">
+                    <li class="text-secondary px-4 d-flex align-items-center border-end border-start">
                         <i class="fa-solid pe-2 fa-phone"></i>
                         <span>+199(980)6915</span>
                     </li>
                     </li>
-                    <li class="text-secondary px-2 d-flex align-items-center">
+                    <li class="text-secondary px-4 d-flex align-items-center">
                         <i class="fa-regular pe-2 fa-envelope"></i>
                         <span>shifamoni@gmail.com</span>
                     </li>
-                    <li class="text-secondary px-2 d-flex align-items-center ">
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        </form>
-                        <i class="fa-solid pe-2 fa-magnifying-glass"></i>
-                    </li>
-                </div>
-                <li class="text-secondary d-flex align-items-center d-none d-xl-block">
-                    <img src="/SVG/head-right.svg" alt="">
-                </li>
-            </ul>
+                </ul>
+            </div>
+            <div class="header-block text-secondary px-4 d-flex align-items-center border-start">
+                <form class="form" role="search">
+                    <div class="field d-flex position-relative">
+                        <input class="form-control text-secondary form__search fs-sm me-2" type="search"
+                            placeholder="Search..." aria-label="Search">
+                        <button class="btn form__submit" type="submit">
+                            <i class="fa-solid pe-2 fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
-
         <!-- navigation -->
         <div class="main-nav">
             <div class="container">
-                <nav class="navbar navbar-expand-lg">
+                <nav class="navbar navbar-expand-lg my-2">
                     <div class="container-fluid d-flex ">
                         <div class="d-flex flex-row-reverse justify-content-between w-100">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -83,18 +83,25 @@
                             </button>
                             <!-- logo -->
                             <div class="nav-logo d-none d-lg-flex justify-content-center me-auto">
-                                <img src="/SVG/head-logo.svg" style="height: 55px;" alt="">
-                                <div class="d-flex flex-column ms-2">
-                                    <span class="text-primary fs-5 fw-semibold">Hamilton</span>
-                                    <span class="text-secondary fs-sm">Estate Rental</span>
-                                </div>
+                                <a class="nav-logo d-none d-lg-flex justify-content-center text-decoration-none"
+                                    href="index.html">
+                                    <img src="/SVG/head-logo.svg" style="height: 55px;" alt="">
+                                    <div class="d-flex flex-column ms-2">
+                                        <span class="text-primary fs-5 fw-semibold">Hamilton</span>
+                                        <span class="text-secondary fs-sm">Estate Rental</span>
+                                    </div>
+                                </a>
                             </div>
                             <div class="text-secondary px-2 d-flex align-items-center d-lg-none">
-                                <form class="d-flex" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Search"
-                                        aria-label="Search">
+                                <form class="form" role="search">
+                                    <div class="field d-flex position-relative">
+                                        <input class="form-control text-secondary form__search fs-sm me-2" type="search"
+                                            placeholder="Search..." aria-label="Search">
+                                        <button class="btn form__submit" type="submit">
+                                            <i class="fa-solid pe-2 fa-magnifying-glass"></i>
+                                        </button>
+                                    </div>
                                 </form>
-                                <i class="fa-solid pe-2 fa-magnifying-glass"></i>
                             </div>
                             <div class="d-flex justify-content-center d-lg-none">
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
@@ -103,19 +110,19 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
-
+                        <div class="collapse navbar-collapse py-2 justify-content-between" id="navbarNavDropdown">
                             <!-- main nav -->
-                            <ul class="navbar-nav nav-underline">
-
+                            <ul class="navbar-nav nav-underline justify-content-start">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="index.html" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         Home
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="index.html">Home</a></li>
                                         <li><a class="dropdown-item" href="components.html">Component</a></li>
+                                        <li><a class="dropdown-item" target="_blank"
+                                                href="https://themeforest.net/item/hamiltonreal-estate-property-psd-template/screenshots/47976971?index=7">Original
+                                                Template</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
@@ -167,7 +174,9 @@
                                 </li>
                             </ul>
                             <!-- button quote -->
-                            <button class="btn btn-lg btn-secondary fs-6 ms-5">Get a Quout</button>
+                            <div class="c-btn">
+                                <button class="btn btn-secondary ms-5 py-2 px-4" type="submit">Get a Quote</button>
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -176,31 +185,31 @@
     </header>
     <main>
         <!-- banner -->
-        <div class="banner-about  position-relative">
+        <div class="banner-about  position-relative mb-5">
             <div class="position-absolute w-100 h-100 opacity-75" style="background-color: black;"></div>
-            <div class="container banner-block text-center text-lg-start z-1 position-relative">
+            <div class="container  z-1">
                 <div class=" text-white text-center py-5">
-                    <span class="fs-3">Business Models you can Consider</span>
-                    <h1 class="fw-medium display-2 mt-2">About Us</h1>
+                    <span class="fs-5">Business Models you can Consider</span>
+                    <h2 class="fw-medium display-5 mt-2">About Us</h2>
                 </div>
+                <nav class="c-breadcrumb  d-md-block" aria-label="breadcrumb ">
+                    <ul class="breadcrumb d-flex justify-content-center rounded-top mb-0 px-4 bg-primary">
+                        <li class="breadcrumb-item">
+                            <a href="index.html" class="text-white text-decoration-none">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active text-white" aria-current="page">About-Us</li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="c-breadcrumb d-flex justify-content-center d-md-block" aria-label="breadcrumb ">
-                <ol class="breadcrumb rounded-top py-3 mb-0 px-4 bg-primary">
-                    <li class="breadcrumb-item">
-                        <a href="index.html" class="text-white text-decoration-none">Home</a>
-                    </li>
-                    <li class="breadcrumb-item active text-white" aria-current="page">About-Us</li>
-                </ol>
-            </nav>
         </div>
         <!-- living-spaces -->
         <div class="living-spaces">
             <div class="container">
                 <div class="row">
-                    <div class="col col-12 col-md-6  pt-5">
+                    <div class="col col-12 col-lg-6  pt-5">
                         <div class="living-spaces__block  position-relative">
                             <div
-                                class="living-spaces__service text-center bg-secondary position-absolute z-3 d-flex align-items-center">
+                                class="living-spaces__service text-center position-absolute z-3 d-flex align-items-center">
                                 <div class="p-2 text-white bg-primary">
                                     <i class="fa-solid fs-2 fa-award text-white"></i>
                                 </div>
@@ -211,25 +220,28 @@
                             </div>
                             <div>
                                 <div
-                                    class="living-spaces__border d-none d-md-block border border-primary border-4 position-absolute ms-4 bottom-0 mb-4">
+                                    class="living-spaces__border d-none d-md-block border border-primary border-4 position-absolute ms-4 mb-4">
                                 </div>
                                 <div class="living-spaces__img z-1 position-relative overflow-hidden ms-md-auto">
-                                    <img class="w-100 h-100" src="/public/img/luke-van-zyl-koH7IVuwRLw-unsplash.jpg"
+                                    <img class="w-100 h-100" src="/public/img/timo-makelainen-89p1tAQlOkw-unsplash.jpg"
                                         alt="">
                                 </div>
                                 <div
-                                    class="living-spaces__foto z-2 d-none d-md-block position-absolute overflow-hidden bottom-0">
+                                    class="living-spaces__foto z-2 d-none d-md-block position-absolute overflow-hidden">
                                     <img class="w-100 h-100" src="/public/img/naomi-ellsworth-EMPLSuvDuhQ-unsplash.jpg"
                                         alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col col-12 col-md-6 pt-5">
+                    <div class="col col-12 col-lg-6 pt-5 ps-4">
                         <div class="c-title-start text-start mb-3">
-                            <span class=" title-start ms-4 text-primary position-relative mb-3">
-                                We can help realize you
-                            </span>
+                            <div class="c-title-start text-start text-capitalize mb-3">
+                                <span class=" title-start text-primary position-relative mb-3">
+                                    We can help you realize your
+                                </span>
+                                <h2 class="fs-1 text-capitalize fw-bolder">title</h2>
+                            </div>
                             <h2 class="fs-1 text-capitalize fw-bolder">
                                 dream living spaces setting new build storage
                             </h2>
@@ -255,16 +267,24 @@
                             </div>
                         </div>
                         <div class="my-3">
-                            <div class="d-flex justify-content-between">
-                                <span>City development</span>
-                                <span>79%</span>
+                            <div class="c-progress">
+                                <div class="c-progress__wrapper">
+                                    <label for="file">City developement</label>
+                                    <span>79%</span>
+                                </div>
+                                <progress class="w-100" id="file" max="100" value="10">70%</progress>
                             </div>
-                            <input class="w-100" type="range">
                         </div>
                         <div class="d-flex align-items-center">
                             <button
-                                class="c-button position-relative align-self-start d-flex btn btn-primary py-2 px-5 me-4">
-                                Learn More
+                                class="c-button btn btn-primary position-relative me-4 px-5 d-flex align-items-center justify-content-between">
+                                <svg class="icon icon-left position-absolute">
+                                    <use xlink:href="#triangle-left"></use>
+                                </svg>
+                                get a quote
+                                <svg class="icon icon-right position-absolute">
+                                    <use xlink:href="#triangle-right"></use>
+                                </svg>
                             </button>
                             <div class="d-flex justify-content-between">
                                 <div class="d-flex align-items-center">
@@ -308,21 +328,21 @@
                     <div class="splide__track">
                         <ul class="splide__list">
                             <!-- item -->
-                            <li class="splide__slide d-flex justify-content-center px-md-3 mb-2 mb-md-5 mb-md-5">
-                                <div class="card card-popularly shadow-lg my-5" style="width: 20rem-;">
-                                    <div class="card-head position-relative">
-                                        <img src="/public/img/naomi-ellsworth-EMPLSuvDuhQ-unsplash.jpg"
-                                            class="card-img-top" alt="">
-                                        <div class="badge py-2 px-3 bg-primary position-absolute bottom-0 start-0">
+                            <li class="splide__slide d-flex justify-content-center px-md-3 mb-2">
+                                <div class="card c-populary border-0 rounded-0 shadow my-5">
+                                    <div class="position-relative">
+                                        <img class="card-img-top"
+                                            src="/public/img/naomi-ellsworth-EMPLSuvDuhQ-unsplash.jpg" alt="">
+                                        <div class="badge bg-primary position-absolute bottom-0 start-0">
                                             <span class="fs-4 fw-medium">$987</span>
                                             <span class="fs-6 fw-normal">/Mounth</span>
                                         </div>
                                     </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title text-start text-secondary fw-bold">New Apartament Nice
-                                            View</h4>
-                                        <p class="card-text text-start">Some quick example text to build on the card
-                                            title and
+                                    <div class="card-body mt-4">
+                                        <h5 class="card-title text-start text-secondary fw-bold">New Apartament Nice
+                                            View</h5>
+                                        <p class="card-text fs-sm text-start">Some quick example text to build on the
+                                            card title and
                                             make
                                             up
                                             the bulk of the
@@ -358,12 +378,14 @@
                                                 <i class="fa-solid fa-location-dot text-primary"></i>
                                                 <span>777 Panama City, FL</span>
                                             </div>
-                                            <div class="text-primary">
-                                                <span class="rounded-circle me-2 border p-2 border-light-subtle">
+                                            <div class="text-primary d-flex align-items-center">
+                                                <span
+                                                    class="rounded-circle me-2 border d-flex align-items-center p-2 border-light-subtle">
                                                     <i class="fa-regular fa-heart"></i>
 
                                                 </span>
-                                                <span class="rounded-circle  border p-2 border-light-subtle">
+                                                <span
+                                                    class="rounded-circle d-flex align-items-center border p-2 border-light-subtle">
                                                     <i class="fa-solid fa-arrow-right-arrow-left"></i>
                                                 </span>
                                             </div>
@@ -372,22 +394,21 @@
                                 </div>
                             </li>
                             <!-- item -->
-                            <li class="splide__slide d-flex justify-content-center px-md-3 mb-2 mb-md-5">
-                                <div class="card card-popularly shadow-lg my-5" style="width: 20rem-;">
-                                    <div class="card-head position-relative">
-                                        <img src="/public/img/mark-champs-Id2IIl1jOB0-unsplash.jpg" class="card-img-top"
+                            <li class="splide__slide d-flex justify-content-center px-md-3 mb-2">
+                                <div class="card c-populary border-0 rounded-0 shadow my-5">
+                                    <div class="position-relative">
+                                        <img class="card-img-top" src="/public/img/mark-champs-Id2IIl1jOB0-unsplash.jpg"
                                             alt="">
-                                        <div class="badge py-2 px-3 bg-primary position-absolute bottom-0 start-0">
+                                        <div class="badge bg-primary position-absolute bottom-0 start-0">
                                             <span class="fs-4 fw-medium">$987</span>
                                             <span class="fs-6 fw-normal">/Mounth</span>
                                         </div>
                                     </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title text-capitalize text-start text-secondary fw-bold">
-                                            single family home view
-                                        </h4>
-                                        <p class="card-text text-start">Some quick example text to build on the card
-                                            title and
+                                    <div class="card-body mt-4">
+                                        <h5 class="card-title text-start text-secondary fw-bold">New Apartament Nice
+                                            View</h5>
+                                        <p class="card-text fs-sm text-start">Some quick example text to build on the
+                                            card title and
                                             make
                                             up
                                             the bulk of the
@@ -423,12 +444,14 @@
                                                 <i class="fa-solid fa-location-dot text-primary"></i>
                                                 <span>777 Panama City, FL</span>
                                             </div>
-                                            <div class="text-primary">
-                                                <span class="rounded-circle me-2 border p-2 border-light-subtle">
+                                            <div class="text-primary d-flex align-items-center">
+                                                <span
+                                                    class="rounded-circle me-2 border d-flex align-items-center p-2 border-light-subtle">
                                                     <i class="fa-regular fa-heart"></i>
 
                                                 </span>
-                                                <span class="rounded-circle  border p-2 border-light-subtle">
+                                                <span
+                                                    class="rounded-circle d-flex align-items-center border p-2 border-light-subtle">
                                                     <i class="fa-solid fa-arrow-right-arrow-left"></i>
                                                 </span>
                                             </div>
@@ -437,22 +460,21 @@
                                 </div>
                             </li>
                             <!-- item -->
-                            <li class="splide__slide d-flex justify-content-center px-md-3 mb-2 mb-md-5">
-                                <div class="card card-popularly shadow-lg my-5" style="width: 20rem-;">
-                                    <div class="card-head position-relative">
-                                        <img src="/public/img/vu-anh-TiVPTYCG_3E-unsplash.jpg" class="card-img-top"
+                            <li class="splide__slide d-flex justify-content-center px-md-3 mb-2">
+                                <div class="card c-populary border-0 rounded-0 shadow my-5">
+                                    <div class="position-relative">
+                                        <img class="card-img-top" src="/public/img/vu-anh-TiVPTYCG_3E-unsplash.jpg"
                                             alt="">
-                                        <div class="badge py-2 px-3 bg-primary position-absolute bottom-0 start-0">
+                                        <div class="badge bg-primary position-absolute bottom-0 start-0">
                                             <span class="fs-4 fw-medium">$987</span>
                                             <span class="fs-6 fw-normal">/Mounth</span>
                                         </div>
                                     </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title text-capitalize text-start text-secondary fw-bold">
-                                            apartament luxury family home
-                                        </h4>
-                                        <p class="card-text text-start">Some quick example text to build on the card
-                                            title and
+                                    <div class="card-body mt-4">
+                                        <h5 class="card-title text-start text-secondary fw-bold">New Apartament Nice
+                                            View</h5>
+                                        <p class="card-text fs-sm text-start">Some quick example text to build on the
+                                            card title and
                                             make
                                             up
                                             the bulk of the
@@ -488,12 +510,14 @@
                                                 <i class="fa-solid fa-location-dot text-primary"></i>
                                                 <span>777 Panama City, FL</span>
                                             </div>
-                                            <div class="text-primary">
-                                                <span class="rounded-circle me-2 border p-2 border-light-subtle">
+                                            <div class="text-primary d-flex align-items-center">
+                                                <span
+                                                    class="rounded-circle me-2 border d-flex align-items-center p-2 border-light-subtle">
                                                     <i class="fa-regular fa-heart"></i>
 
                                                 </span>
-                                                <span class="rounded-circle  border p-2 border-light-subtle">
+                                                <span
+                                                    class="rounded-circle d-flex align-items-center border p-2 border-light-subtle">
                                                     <i class="fa-solid fa-arrow-right-arrow-left"></i>
                                                 </span>
                                             </div>
@@ -502,22 +526,21 @@
                                 </div>
                             </li>
                             <!-- item-->
-                            <li class="splide__slide d-flex justify-content-center px-md-3 mb-2 mb-md-5">
-                                <div class="card card-popularly shadow-lg my-5" style="width: 20rem-;">
-                                    <div class="card-head position-relative">
-                                        <img src="/public/img/avi-werde-hHz4yrvxwlA-unsplash.jpg" class="card-img-top"
+                            <li class="splide__slide d-flex justify-content-center px-md-3 mb-2">
+                                <div class="card c-populary border-0 rounded-0 shadow my-5">
+                                    <div class="position-relative">
+                                        <img class="card-img-top" src="/public/img/avi-werde-hHz4yrvxwlA-unsplash.jpg"
                                             alt="">
-                                        <div class="badge py-2 px-3 bg-primary position-absolute bottom-0 start-0">
+                                        <div class="badge bg-primary position-absolute bottom-0 start-0">
                                             <span class="fs-4 fw-medium">$987</span>
                                             <span class="fs-6 fw-normal">/Mounth</span>
                                         </div>
                                     </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title text-start text-capitalize text-secondary fw-bold">
-                                            economical but no less comfortable
-                                        </h4>
-                                        <p class="card-text text-start">Some quick example text to build on the card
-                                            title and
+                                    <div class="card-body mt-4">
+                                        <h5 class="card-title text-start text-secondary fw-bold">New Apartament Nice
+                                            View</h5>
+                                        <p class="card-text fs-sm text-start">Some quick example text to build on the
+                                            card title and
                                             make
                                             up
                                             the bulk of the
@@ -553,12 +576,14 @@
                                                 <i class="fa-solid fa-location-dot text-primary"></i>
                                                 <span>777 Panama City, FL</span>
                                             </div>
-                                            <div class="text-primary">
-                                                <span class="rounded-circle me-2 border p-2 border-light-subtle">
+                                            <div class="text-primary d-flex align-items-center">
+                                                <span
+                                                    class="rounded-circle me-2 border d-flex align-items-center p-2 border-light-subtle">
                                                     <i class="fa-regular fa-heart"></i>
 
                                                 </span>
-                                                <span class="rounded-circle  border p-2 border-light-subtle">
+                                                <span
+                                                    class="rounded-circle d-flex align-items-center border p-2 border-light-subtle">
                                                     <i class="fa-solid fa-arrow-right-arrow-left"></i>
                                                 </span>
                                             </div>
@@ -572,7 +597,7 @@
             </div>
         </section>
         <!-- team -->
-        <div class="team pb-5">
+        <div class="team py-5 my-md-5">
             <div class="container">
                 <div class="c-title-center text-center text-capitalize mb-3">
                     <span class="title-center text-primary position-relative mb-3">our dream most team</span>
@@ -580,13 +605,14 @@
                 </div>
                 <div class="row">
                     <div class="col col-12 col-md-6 col-lg-4 my-3">
-                        <div class="c-team w-100">
+                        <div class="c-team d-flex">
                             <div class="team__wrapper ms-auto d-flex p-3">
                                 <div class="team__inner d-flex- pt-3">
-                                    <div class="team__img w-100- position-relative">
-                                        <img class="h-100 w-100" src="/public/img/buissnes-man.jpg" alt="">
+                                    <div class="team__img  position-relative">
+                                        <img class="h-100" src="/public/img/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"
+                                            alt="">
                                     </div>
-                                    <div class="team__name my-3 text-lg-start">
+                                    <div class="team__name mt-3 text-lg-start">
                                         <h4 class="fs-6 fw-bold text-secondary m-0">Md Sofekul Islam</h4>
                                         <span class="fs-sm text-dark">Chief Enginer</span>
                                     </div>
@@ -595,22 +621,22 @@
                                     <div class="c-socials">
                                         <ul class="c-socials__list list-unstyled">
                                             <li class="c-socials__item ">
-                                                <a href="#" class="c-socials__element  m-2 p-2-">
+                                                <a href="#" class="c-socials__element m-2">
                                                     <i class="c-socials__brand fa-brands fa-facebook-f"></i>
                                                 </a>
                                             </li>
                                             <li class="c-socials__item ">
-                                                <a href="#" class="c-socials__element m-2 p-2-">
+                                                <a href="#" class="c-socials__element m-2">
                                                     <i class="c-socials__brand fa-solid  fa-v"></i>
                                                 </a>
                                             </li>
                                             <li class="c-socials__item ">
-                                                <a href="#" class="c-socials__element m-2 p-2-">
+                                                <a href="#" class="c-socials__element m-2">
                                                     <i class="c-socials__brand fa-brands  fa-instagram"></i>
                                                 </a>
                                             </li>
                                             <li class="c-socials__item ">
-                                                <a href="#" class="c-socials__element m-2 p-2-">
+                                                <a href="#" class="c-socials__element m-2">
                                                     <i
                                                         class="c-socials__brand fa-solid pe-1  c-socials__brands fa-share-nodes"></i>
                                                 </a>
@@ -622,13 +648,13 @@
                         </div>
                     </div>
                     <div class="col col-12 col-md-6 col-lg-4 my-3">
-                        <div class="c-team w-100">
+                        <div class="c-team ">
                             <div class="team__wrapper ms-auto d-flex p-3">
                                 <div class="team__inner d-flex- pt-3">
                                     <div class="team__img w-100- position-relative">
                                         <img class="h-100 w-100" src="/public/img/buissnes-man-1.jpg" alt="">
                                     </div>
-                                    <div class="team__name my-3 text-lg-start">
+                                    <div class="team__name mt-3 text-lg-start">
                                         <h4 class="fs-6 fw-bold text-secondary m-0">Md Sofekul Islam</h4>
                                         <span class="fs-sm text-dark">Chief Enginer</span>
                                     </div>
@@ -664,13 +690,14 @@
                         </div>
                     </div>
                     <div class="col col-12 col-md-6 col-lg-4 mx-auto my-3">
-                        <div class="c-team w-100">
+                        <div class="c-team">
                             <div class="team__wrapper ms-auto d-flex p-3">
                                 <div class="team__inner d-flex- pt-3">
                                     <div class="team__img w-100- position-relative">
-                                        <img class="h-100 w-100" src="/public/img/buissnes-man-2.jpg" alt="">
+                                        <img class="h-100 w-100"
+                                            src="/public/img/corey-collins-jKv4_6zXUBw-unsplash.jpg" alt="">
                                     </div>
-                                    <div class="team__name my-3 text-lg-start">
+                                    <div class="team__name mt-3 text-lg-start">
                                         <h4 class="fs-6 fw-bold text-secondary m-0">Md Sofekul Islam</h4>
                                         <span class="fs-sm text-dark">Chief Enginer</span>
                                     </div>
@@ -709,11 +736,12 @@
             </div>
         </div>
         <!-- reviews -->
-        <div class="reviews py-5">
+        <div class="reviews">
             <div class="container">
                 <div class="text-center text-lg-start">
                     <div class="c-title-start text-start text-capitalize mb-3">
-                        <span class=" title-start ms-4 text-white position-relative mb-3">browse testimonial our</span>
+                        <span class=" title-start ms-4 text-white position-relative mb-3">browse testimonial
+                            our</span>
                         <h2 class="fs-1 text-white text-capitalize fw-bolder">what our client say abut us</h2>
                     </div>
                 </div>
@@ -722,11 +750,13 @@
                         <div class="card position-relative px-2 py-4 my-2">
                             <div class="card-header d-flex align-items-center">
                                 <div class="card-img overflow-hidden">
-                                    <img class="w-100 h-100" src="/public/img/jeremy-mcgilvrey-Mum-4dB0VsE-unsplash.jpg"
+                                    <img class="w-100 h-100"
+                                        src="/public/img/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg"
                                         alt="business-man">
                                 </div>
                                 <div class="card-name my-3  ms-3 text-lg-start">
-                                    <h4 class="fs-6 fw-bold text-capitalize text-secondary m-0">fiorinio savinio</h4>
+                                    <h4 class="fs-6 fw-bold text-capitalize text-secondary m-0">fiorinio savinio
+                                    </h4>
                                     <span class="fs-sm text-dark">Dramatically enhance</span>
                                 </div>
                             </div>
@@ -748,7 +778,8 @@
                                     <img class="w-100 h-100" src="/public/img/constructor.jpg" alt="business-man">
                                 </div>
                                 <div class="card-name my-3  ms-3 text-lg-start">
-                                    <h4 class="fs-6 fw-bold text-capitalize text-secondary m-0">catello adolfo</h4>
+                                    <h4 class="fs-6 fw-bold text-capitalize text-secondary m-0">catello adolfo
+                                    </h4>
                                     <span class="fs-sm text-dark">Dramatically enhance</span>
                                 </div>
                             </div>
@@ -767,11 +798,13 @@
                         <div class="card position-relative px-2 py-4 my-2">
                             <div class="card-header d-flex align-items-center">
                                 <div class="card-img overflow-hidden">
-                                    <img class="w-100 h-100" src="/public/img/ph-m-duy-quang-QGr6H7pri-Q-unsplash.jpg"
+                                    <img class="w-100 h-100"
+                                        src="/public/img/christina-wocintechchat-com-SJvDxw0azqw-unsplash.jpg"
                                         alt="business-man">
                                 </div>
                                 <div class="card-name my-3  ms-3 text-lg-start">
-                                    <h4 class="fs-6 fw-bold text-capitalize text-secondary m-0">fiorinio savinio</h4>
+                                    <h4 class="fs-6 fw-bold text-capitalize text-secondary m-0">fiorinio savinio
+                                    </h4>
                                     <span class="fs-sm text-dark">Dramatically enhance</span>
                                 </div>
                             </div>
@@ -790,16 +823,17 @@
             </div>
         </div>
         <!-- latest-articles -->
-        <div class="latest-articles py-5">
+        <div class="latest-articles py-5 m-mdy-5">
             <div class="container">
-                <div class="c-title-center mb-3">
-                    <span class="title-center text-primary position-relative mb-3">Views all 329 New Listings</span>
-                    <h2 class="fs-1 text-capitalize fw-bolder">title</h2>
+                <div class="c-title-center text-center text-capitalize mb-4">
+                    <span class="title-center text-primary position-relative mb-3">Views all 329 New
+                        Listings</span>
+                    <h2 class="fs-1 text-capitalize fw-bolder">rad our latest articles</h2>
                 </div>
                 <div class="row">
                     <div class="col col-12 col-md-6 col-lg-4 mx-auto">
-                        <div class="card h-100 position-relative">
-                            <img class="card-img--top" src="/public/img/luke-van-zyl-koH7IVuwRLw-unsplash.jpg"
+                        <div class="card card-top card-top--middle position-relative">
+                            <img class="card-img--top" src="/public/img/frames-for-your-heart-2d4lAQAlbDA-unsplash.jpg"
                                 alt="home">
                             <div
                                 class="c-latest-articles__body text-secondary p-3 card-body position-absolute bg-white rounded-top shadow">
@@ -867,7 +901,7 @@
                     </div>
                     <div class="col col-12 col-md-6 col-lg-4 mx-auto">
                         <div class="card card-top position-relative">
-                            <img class="card-img--top" src="/public/img/collov-home-design-4_jQL4JCS98-unsplash.jpg"
+                            <img class="card-img--top" src="/public/img/s-group-official-6spmqj2OSLk-unsplash.jpg"
                                 alt="home">
                             <div
                                 class="c-latest-articles__body text-secondary p-3 card-body position-absolute bg-white rounded-top shadow">
@@ -885,7 +919,7 @@
                                         </span>
                                     </div>
                                 </div>
-                                <p class="fw-bolder my-2 text-nowrap">Retail banks wakeup to digital</p>
+                                <p class="fw-bolder my-2 text-nowrap">The Most Insiring Interior 2023</p>
                                 <div class="c-latest-articles__btns rounded d-flex ">
                                     <a class="c-latest-articles__btn btn fs-sm rounded" href="#">
                                         Learn More
@@ -905,18 +939,17 @@
     </main>
     <!-- footer -->
     <footer class="footer position-relative py-5 mt-5">
-        <div class="footer-wrapper position-absolute top-0 w-100 h-100"></div>
-
         <div class="container z-3 position-relative text-white">
             <div class="text-white  d-flex justify-content-between mb-4">
-                <div>
+                <div class="footer-title">
                     <div class="c-title-start text-start text-capitalize mb-3">
-                        <h2 class="fs-1 text-capitalize fw-bolder">looking for the beast dream house solutions? </h2>
+                        <h2 class="fs-2 text-capitalize fw-bolder">looking for the beast dream house solutions? </h2>
                     </div>
                     <span class="fs-sm">As app web crawler expert, We will help too organize</span>
                 </div>
                 <div class="">
-                    <button class="c-button btn btn-primary position-relative px-5 d-flex align-items-center justify-content-between">
+                    <button
+                        class="c-button btn btn-primary position-relative px-5 d-flex align-items-center justify-content-between">
                         <svg class="icon icon-left position-absolute">
                             <use xlink:href="#triangle-left"></use>
                         </svg>
@@ -927,12 +960,15 @@
                     </button>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4">
-                <div class="col">
+            <div class="row ">
+                <div class="col col-12 col-md-4 col-lg-3">
                     <div class="footer-logo d-flex justify-content-start mb-3">
                         <img src="/SVG/head-logo-footer.svg" style="height: 55px;" alt="">
                         <div class="d-flex flex-column ms-2">
-                            <span class="text-white fs-5 fw-semibold">Hamilton</span>
+                            <span class="text-white fs-5 fw-semibold">
+                                Hamil
+                                <span class="text-primary">ton</span>
+                            </span>
                             <span class="text-primary fs-sm">Estate Rental</span>
                         </div>
                     </div>
@@ -946,35 +982,35 @@
                             <h6>Social Info</h6>
                         </div>
                         <div class="c-socials">
-                            <ul class="socials__list list-unstyled d-flex">
-                                <li class="socials__item ">
-                                    <a href="#" class="socials__element  m-2 p-2-">
-                                        <i class="socials__brand fa-brands fa-facebook-f"></i>
+                            <ul class="c-socials__list list-unstyled d-flex">
+                                <li class="c-socials__item ">
+                                    <a href="#" class="c-socials__element m-2">
+                                        <i class="c-socials__brand fa-brands fa-facebook-f"></i>
                                     </a>
                                 </li>
-                                <li class="socials__item ">
-                                    <a href="#" class="socials__element m-2 p-2-">
-                                        <i class="socials__brand fa-solid  fa-v"></i>
+                                <li class="c-socials__item ">
+                                    <a href="#" class="c-socials__element m-2">
+                                        <i class="c-socials__brand fa-solid  fa-v"></i>
                                     </a>
                                 </li>
-                                <li class="socials__item ">
-                                    <a href="#" class="socials__element m-2 p-2-">
-                                        <i class="socials__brand fa-brands  fa-instagram"></i>
+                                <li class="c-socials__item ">
+                                    <a href="#" class="c-socials__element m-2">
+                                        <i class="c-socials__brand fa-brands  fa-instagram"></i>
                                     </a>
                                 </li>
-                                <li class="socials__item ">
-                                    <a href="#" class="socials__element m-2 p-2-">
-                                        <i class="socials__brand fa-solid pe-1  socials__brands fa-share-nodes"></i>
+                                <li class="c-socials__item ">
+                                    <a href="#" class="c-socials__element m-2">
+                                        <i class="c-socials__brand fa-solid fa-share-nodes"></i>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col footer-block">
-                    <h4 class="footer-subtitle text-capitalize">
+                <div class="col col-12 col-md-4 col-lg-3 footer-block">
+                    <h5 class="footer-subtitle text-capitalize">
                         our navigation
-                    </h4>
+                    </h5>
                     <ul class="list-unstyled">
                         <li class="text-capitalize my-3">
                             <a href="" class="footer-list text-decoration-none">
@@ -1008,10 +1044,10 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col footer-block">
-                    <h4 class="footer-subtitle text-capitalize">
-                        our sevices
-                    </h4>
+                <div class="col col-12 col-md-4 col-lg-3 footer-block">
+                    <h5 class="footer-subtitle text-capitalize">
+                        our services
+                    </h5>
                     <ul class="list-unstyled">
                         <li class="text-capitalize my-3">
                             <a href="" class="footer-list text-decoration-none">
@@ -1045,46 +1081,38 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col footer-block ">
-                    <h4 class="footer-subtitle text-capitalize">
+                <div class="col col-12 col-md-4 col-lg-3 mx-auto footer-block overflow-hidden">
+                    <h5 class="footer-subtitle text-capitalize">
                         our gallery
-                    </h4>
-                    <div class="row ">
-                        <div class="col col-4 footer-inner">
-                            <img class="footer-gallery" src="/public/img/footer-img/adam-kring-uqCMurxrzZc-unsplash.jpg"
+                    </h5>
+
+                    <div class="d-flex mt-2">
+                            <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
                                 alt="">
-                        </div>
-                        <div class="col col-4 footer-inner">
-                            <img class="footer-gallery"
-                                src="/public/img/footer-img/angelina-litvin-52R7t7x8CPI-unsplash.jpg" alt="">
-                        </div>
-                        <div class="col col-4 footer-inner">
-                            <img class="footer-gallery"
-                                src="/public/img/footer-img/asier-pais-martins-VUIQxik_PQU-unsplash.jpg" alt="">
-                        </div>
-                        <div class="col col-4 footer-inner">
-                            <img class="footer-gallery"
-                                src="/public/img/footer-img/bilal-mansuri-3r9HlCYTtLU-unsplash.jpg" alt="">
-                        </div>
-                        <div class="col col-4 footer-inner">
-                            <img class="footer-gallery"
-                                src="/public/img/footer-img/bilal-mansuri-R8F3tLZUWRs-unsplash.jpg" alt="">
-                        </div>
-                        <div class="col col-4 footer-inner">
-                            <img class="footer-gallery"
-                                src="/public/img/footer-img/karolina-bobek-rFM9u9mYptA-unsplash.jpg" alt="">
-                        </div>
-
-
+                            <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
+                                alt="">
+                            <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
+                                alt="">
                     </div>
+                    <div class="d-flex ">
+                            <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
+                                alt="">
+                            <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
+                                alt="">
+                            <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
+                                alt="">
+                    </div>
+                   
                 </div>
-                <div
-                    class="text-white d-flex flex-column flex-md-row w-100 mt-5 align-items-center justify-content-center py-4  border-top border-primary">
-                    <span>cCopyrights 2003</span>
-                    <a href="#">Website_Stock</a>
-                    <span>All right reserved</span>
-                </div>
+
             </div>
+            <div
+                class="text-white d-flex flex-column flex-md-row w-100 mt-5 align-items-center justify-content-center py-4  border-top border-primary">
+                <span>cCopyrights 2003</span>
+                <a href="#">Website_Stock</a>
+                <span>All right reserved</span>
+            </div>
+        </div>
     </footer>
 
     <!-- Modal Contact-->

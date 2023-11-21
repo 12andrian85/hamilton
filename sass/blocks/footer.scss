@@ -1,13 +1,8 @@
 .footer {
-    background-image: url("/public/img/avi-werde-hHz4yrvxwlA-unsplash.jpg");
-    background-size: cover;
+    background-color: #191818;
+    opacity: 0.95;
     .footer-logo img{
         width: min-content;
-    }
-
-    .footer-wrapper {
-        background-color: $black;
-        opacity: 85%;
     }
 
     .footer-subtitle {
@@ -45,10 +40,27 @@
         display: flex;
         justify-content: center;
     }
-
+   
     .footer-gallery {
         max-height: 65px;
         max-width: 65px;
+        padding: 5px;
+    }
+    .c-socials{
+        &__element{
+            background-color: transparent;
+        }
+        &__brand{
+            color: $white;
+        }
+    }
+    .c-socials:hover{
+        &__element{
+            background-color: $white;
+        }
+        &__brand{
+            color: $primary;
+        }
     }
 }
 
@@ -56,6 +68,9 @@
     .footer {
         .form-control {
             width: 100px;
+        }
+        .footer-title{
+            margin-bottom: 60px;
         }
     }
 }

@@ -1,0 +1,33 @@
+.c-progress {
+    progress {
+        position: relative;
+        height: 11px;
+    }
+
+    progress::before,
+    progress::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    progress::before {
+        width: 100%;
+        background: $secondary;
+    }
+
+    progress::after {
+        width: 70%;
+        background: $primary;
+        border-top-right-radius: 14px;
+    }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $secondary;
+        font-weight: 700;
+    }
+}

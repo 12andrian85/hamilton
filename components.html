@@ -72,25 +72,31 @@
             <a href="/index.html" class="btn btn-secondary sticky-top">home</a>
             <a href="/theme-kit.html" class="btn btn-secondary">bootst</a>
             <a href="/about-us.html" class="btn btn-secondary">about</a>
+            <a href="/service.html" class="btn btn-secondary">service</a>
+            <a href="/team-details.html" class="btn btn-secondary">team-details</a>
+            <a href="/projects.html" class="btn btn-secondary">projects</a>
         </div>
     </header>
-    <main>
+    <main class="ms-5">
 
         <div class="container text-center bg-dark- py-5">
             <!-- Component breadcrumb -->
             <h3>breadcrumbs</h3>
             <nav class="c-breadcrumb" aria-label="breadcrumb">
-                <ol class="breadcrumb rounded-top py-3 px-4 bg-primary">
+                <ul class="breadcrumb rounded-top px-4 bg-primary">
                     <li class="breadcrumb-item"><a href="#" class="text-white text-decoration-none">Home</a></li>
                     <li class="breadcrumb-item active text-white" aria-current="page">Services</li>
-                </ol>
+                </ul>
             </nav>
         </div>
-        <!-- c-button -->
+        <!-- c-btn-simple -->
+        <div class="c-btn">
+            <button class="btn btn-primary py-2 px-4" type="submit">Find Property</button>
+        </div>
+        <!-- c-button svg triangle-->
         <h3>button</h3>
-        <div class="">
-            <button
-                class="c-button btn btn-primary position-relative px-5 d-flex align-items-center justify-content-between">
+        <div class="button">
+            <button class="c-button btn btn-primary position-relative d-flex align-items-center justify-content-between">
                 <svg class="icon icon-left position-absolute">
                     <use xlink:href="#triangle-left"></use>
                 </svg>
@@ -102,13 +108,13 @@
         </div>
         <h3>title</h3>
         <!-- c-title-center -->
-        <div class="c-title-center text-capitalize mb-3">
+        <div class="c-title-center text-center text-capitalize mb-3">
             <span class="title-center text-primary position-relative mb-3">Views all 329 New Listings</span>
             <h2 class="fs-1 text-capitalize fw-bolder">title</h2>
         </div>
         <!-- c-title-start -->
         <div class="c-title-start text-start text-capitalize mb-3">
-            <span class=" title-start ms-4 text-primary position-relative mb-3">Views all 329 New Listings</span>
+            <span class=" title-start text-primary position-relative mb-3">Views all 329 New Listings</span>
             <h2 class="fs-1 text-capitalize fw-bolder">title</h2>
         </div>
         <!-- sub-title -->
@@ -121,16 +127,15 @@
 
         <!-- card-feature -->
         <h4>card-feature</h4>
-        <div class="card c-card-feature shadow-lg d-flex justify-content-center align-items-center"
-            style="width: 18rem;">
-            <div class="w-25 h-25 border border-light-subtle m-5 p-3">
+        <div class="card c-card-feature shadow-lg rounded-0 border-0 align-items-center" style="width: 18rem;">
+            <div class="card-wrapper">
                 <img src="/SVG/home.svg" class="card-img-top" alt="">
             </div>
-            <div class="card-body mb-4">
-                <h4 class="card-title text-secondary fw-bold">Sell a property</h4>
-                <p class="card-text">This is a longer card with supporting text below as a natural
+            <div class="card-body p-0">
+                <h4 class="card-title text-secondary text-center fw-bold">Sell a property</h4>
+                <p class="card-text text-center fs-sm">This is a longer card with supporting text below as a natural
                     lead-in
-                    to additional content. This content is a little bit longer.
+                    to additional content.
                 </p>
                 <a href="#" class="card-btn btn btn-outline-primary fw-medium d-flex p-2 border-0 rounded-0">Find
                     A Home
@@ -141,17 +146,17 @@
 
         <!-- card-popularly -->
         <h4>card-popularly</h4>
-        <div class="card card-popularly shadow-lg my-5" style="width: 20rem;">
+        <div class="card c-populary border-0 rounded-0 shadow-lg my-5" style="width: 20rem;">
             <div class="position-relative">
-                <img src="/public/img/naomi-ellsworth-EMPLSuvDuhQ-unsplash.jpg" class="card-img-top" alt="">
-                <div class="badge py-2 px-3 bg-primary position-absolute bottom-0 start-0">
+                <img class="card-img-top " src="/public/img/naomi-ellsworth-EMPLSuvDuhQ-unsplash.jpg" alt="">
+                <div class="badge bg-primary position-absolute bottom-0 start-0">
                     <span class="fs-4 fw-medium">$987</span>
                     <span class="fs-6 fw-normal">/Mounth</span>
                 </div>
             </div>
-            <div class="card-body">
-                <h4 class="card-title text-start text-secondary fw-bold">New Apartament Nice View</h4>
-                <p class="card-text text-start">Some quick example text to build on the card title and
+            <div class="card-body mt-4">
+                <h5 class="card-title text-start text-secondary fw-bold">New Apartament Nice View</h5>
+                <p class="card-text fs-sm text-start">Some quick example text to build on the card title and
                     make
                     up
                     the bulk of the
@@ -246,10 +251,10 @@
             </a>
         </div>
 
-        <!-- articals -->
-        <h2>articals</h2>
-        <article class="articals my-4">
-            <div class="card aricals__card p-2 shadow-lg" style="width: 23rem;">
+        <!-- articles -->
+        <h2>articles</h2>
+        <article class="c-articles my-4">
+            <div class="card articles__card p-2 shadow-lg" style="width: 23rem;">
                 <img src="" class="card-img-top" style="height: 150px;" alt="">
                 <div class="card-body">
                     <div class="d-flex align-items-start">
@@ -277,7 +282,7 @@
                         </div>
                         <div class="d-flex align-items-center">
                             <a href="#" class=" fw-bolder">More Details</a>
-                            <i class="fa-solid fa-arrow-trend-up" style="color: #1684B5FF;"></i>
+                            <i class="fa-solid fa-arrow-trend-up ms-1" style="color: #1684B5FF;"></i>
                         </div>
                     </div>
 
@@ -285,28 +290,27 @@
             </div>
 
         </article>
-
         <!-- socials -->
         <div class="c-socials bg-dark">
             <ul class="c-socials__list list-unstyled d-flex">
                 <li class="c-socials__item ">
-                    <a href="#" class="c-socials__element  m-2 p-2-">
+                    <a href="#" class="c-socials__element m-2">
                         <i class="c-socials__brand fa-brands fa-facebook-f"></i>
                     </a>
                 </li>
                 <li class="c-socials__item ">
-                    <a href="#" class="c-socials__element m-2 p-2-">
+                    <a href="#" class="c-socials__element m-2">
                         <i class="c-socials__brand fa-solid  fa-v"></i>
                     </a>
                 </li>
                 <li class="c-socials__item ">
-                    <a href="#" class="c-socials__element m-2 p-2-">
+                    <a href="#" class="c-socials__element m-2">
                         <i class="c-socials__brand fa-brands  fa-instagram"></i>
                     </a>
                 </li>
                 <li class="c-socials__item ">
-                    <a href="#" class="c-socials__element m-2 p-2-">
-                        <i class="c-socials__brand fa-solid pe-1  c-socials__brands fa-share-nodes"></i>
+                    <a href="#" class="c-socials__element m-2">
+                        <i class="c-socials__brand fa-solid fa-share-nodes"></i>
                     </a>
                 </li>
             </ul>
@@ -316,19 +320,19 @@
         <div class="c-team">
             <div class="team__wrapper ms-auto d-flex p-3">
                 <div class="team__inner d-flex- pt-3">
-                    <div class="team__img w-100 position-relative">
+                    <div class="team__img  position-relative">
                         <img class="h-100" src="/public/img/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg" alt="">
                     </div>
-                    <div class="team__name my-3 text-lg-start">
+                    <div class="team__name mt-3 text-lg-start">
                         <h4 class="fs-6 fw-bold text-secondary m-0">Md Sofekul Islam</h4>
                         <span class="fs-sm text-dark">Chief Enginer</span>
                     </div>
                 </div>
-                <div class="team__social mt-4 me-2">
+                <div class="team__social mt-4">
                     <div class="c-socials">
                         <ul class="c-socials__list list-unstyled">
                             <li class="c-socials__item ">
-                                <a href="#" class="c-socials__element  m-2 p-2-">
+                                <a href="#" class="c-socials__element ">
                                     <i class="c-socials__brand fa-brands fa-facebook-f"></i>
                                 </a>
                             </li>
@@ -408,8 +412,6 @@
                 </div>
             </div>
         </div>
-        </div>
-        </div>
         <!-- contacts-information -->
         <div class="container">
             <h3>contact-information</h3>
@@ -425,11 +427,15 @@
                 </div>
             </div>
         </div>
-
-        <div style="height: 15rem;"></div>
+        <!-- proggres costum-->
+        <div class="c-progress m-3" style="width: 180px;">
+            <div class="c-progress__wrapper">
+                <label for="file">text</label>
+                <span>70%</span>
+            </div>
+            <progress id="file" max="100" value="10">70%</progress>
         </div>
-
-
+        <div style="height: 15rem;"></div>
 
     </main>
     <footer></footer>

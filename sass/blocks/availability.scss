@@ -1,6 +1,9 @@
 .availability{
     background-color: #F2F6F7FF;
-       
+    
+    .availability-item{
+        padding: 12px 10px;
+    }
     .availability-style{
             height: 20px;
     }
@@ -12,14 +15,26 @@
             height: 380px;
             width: 100%;
         }
+        .container::after{
+            position: absolute;
+            content: "";
+            width: 30px;
+            height: 30px;
+            top: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-image: url(/SVG/Polygon.svg);
+           background-repeat: no-repeat;
+        }
     }
 }
 @media (min-width: $width-desktop) {
 
     .availability{
         .availability-img{
-            height: 540px;
+            height: 615px;
             width: 100%;
         }
+       
     }
 }

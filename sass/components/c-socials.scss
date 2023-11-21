@@ -1,6 +1,7 @@
-.socials{
+.c-socials {
 
-    &__element{
+
+    &__element {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -8,15 +9,18 @@
         height: 30px;
         width: 30px;
         border: 1px dashed $primary;
-    }
-    &__brand{
-        color: $white;
-    }
-    &__element:hover{
         background-color: $white;
-       
-       .socials__brand{
-        color: $primary;
-       } 
+    }
+
+    &__brand {
+        color: $secondary;
+    }
+
+    &__element:hover {
+        background-color: $secondary;
+
+        .socials__brand {
+            color: $white;
+        }
     }
 }

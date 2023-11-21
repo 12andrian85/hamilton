@@ -1,12 +1,16 @@
-.c-button{
-    .icon{
-        width: 32px;
-        height: 40px;
+.c-button {
+    padding: 9px 45px;
+
+    .icon {
+        width: 45px;
+        height: 42px;
     }
-    .icon-left{
-        left: -1px;
+
+    .icon-left {
+        left: -5px;
     }
-    .icon-right{
-     right: -1px;
+
+    .icon-right {
+        right: -5px;
     }
 }

@@ -6,7 +6,7 @@ $gray-900: #212529;
 
 // scss-docs-start color-variables
 $c-primary:    #1684B5FF;
-$c-secondary:  #003D4EFF;
+$c-secondary:  #003E4DFF;
 $red:     #cc0a1e;
 $yellow:  #e6ff07;
 $green:   #5fc01e;
@@ -46,7 +46,16 @@ $width-tablet: 768px;
 $width-desktop: 992px;
 $width-x-desktop: 1200px;
 $width-xx-desktop: 1400px;
+$width-xxx-desktop: 2560px;
 
 // ex
 // @media (min-width: $width-tablet) {}
 // @media (min-width: $width-desktop) {}
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 860px,
+  xl: 1140px,
+  xxl: 1200px
+);

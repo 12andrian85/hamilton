@@ -6,7 +6,7 @@
     }
 
     &__text {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     &__inner {
@@ -40,7 +40,7 @@
 @media (min-width: $width-tablet) {
     .new-works {
         &__text {
-            font-size: 12px;
+            font-size: 16px;
         }
 
         &__inner {
@@ -52,6 +52,16 @@
 }
 
 @media (min-width: $width-desktop) {
+    .new-works {
+        &__text {
+            font-size: 15px;
+        }
+        .new-works__text--title{
+            font-weight: 700;
+        }
+    }
+}
+@media (min-width: $width-x-desktop) {
     .new-works {
         &__text {
             font-size: 22px;

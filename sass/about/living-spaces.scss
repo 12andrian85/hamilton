@@ -1,27 +1,31 @@
 .living-spaces {
-    &__border {
-        height: 50vh;
-        width: 50%;
-    }
+
 
     &__service {
-        top: 70px;
+        background-color: #16243EFF;
+        top: 35px;
         transform: translateX(-50%);
         left: 50%;
-        padding: 15px;
+        padding: 20px;
+
+        i{
+            padding: 0 5px;
+        }
     }
-    
+
     &__img {
         height: 75vh;
     }
-    &__element{
+
+    &__element {
         padding: 10px 0;
         font-weight: bolder;
         color: $secondary;
         position: relative;
         text-transform: capitalize;
     }
-    &__element::before{
+
+    &__element::before {
         position: absolute;
         content: "";
         height: 10px;
@@ -31,35 +35,66 @@
         transform: translateY(-50%);
         left: -15px;
     }
-    
-    &__foto {
-        height: 150px;
-        width: 50%;
-    }
-    
 }
-    
+
 @media (min-width: $width-tablet) {
     .living-spaces {
-        &__block{
+        &__service {
+            left: 115px;
+            border-top-left-radius: 5px;
+
+        }
+
+        &__block {
             height: 520px;
+        }
+
+        &__border {
+            height: 50vh;
+            width: 48%;
+            left: 20px;
+            bottom: 50px;
+        }
+
+        &__foto {
+            height: 200px;
+            width: 50%;
+            left: 10px;
+            bottom: 50px;
+            border: 3px solid $white;
         }
 
         &__img {
             width: 90%;
         }
 
-        &__service {
-            left: 88px;
-            border-top-left-radius: 5px;
 
-        }
     }
 }
-@media (min-width: $width-xx-desktop){
-    .living-spaces{
-        &__block{
-            height: 710px;
+
+@media (min-width: $width-x-desktop) {
+    .living-spaces {
+        &__block {
+            height: 590px;
+        }
+
+        &__service {
+            top: 20px;
+        }
+    }
+
+}
+@media (min-width: $width-xx-desktop) {
+    .living-spaces {
+        &__img {
+            height: 500px;
+        }
+        &__border{
+            height: 350px;
+        }
+
+        &__service {
+            top: 20px;
         }
     }
 

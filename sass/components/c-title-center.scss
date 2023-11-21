@@ -1,6 +1,9 @@
 .c-title-center {
     font-size: 0.9rem;
 
+    h2{
+        color: $secondary;
+    }
 
     .title-center::before {
         position: absolute;

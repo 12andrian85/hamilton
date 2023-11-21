@@ -1,11 +1,15 @@
 .banner {
-    max-height: 1100px;
+    // max-height: 1100px;
     background-color: black;
     background-image: url(/public/img/naomi-ellsworth-EMPLSuvDuhQ-unsplash.jpg);
     background-size: cover;
+    // padding: 30px 0px;
 
-    .container {
-        padding-top: 50px;
+    .form {
+        .btn {
+            width: 155px;
+            height: 50px;
+        }
     }
 
     .splide {
@@ -46,6 +50,8 @@
 
 @media (min-width: $width-tablet) {
     .banner {
+        // padding: 50px 0;
+
         .form-find-estate::before {
             position: absolute;
             content: "";
@@ -56,56 +62,76 @@
             left: -20px;
         }
 
-        .container {
-            margin-left: 50px;
-            border-left: 1px solid grey;
-        }
-
         .splide {
             .title-center::after {
                 display: none;
             }
 
-            &__pagination {
-                display: flex;
-                left: -50px;
+            &__title {
+                font-size: 2.5rem;
             }
-
         }
     }
 }
 
 @media (min-width: $width-desktop) {
     .banner {
-
-        .splide {
-            height: 90vh;
-
-            &__pagination {
-                // left: -45px;
-            }
-
-            &__slide {
-                padding: 90px 0;
-            }
+        .banner-border {
+            width: 1px;
+            height: 100%;
+            left: 90px;
+            background-color: $gray-600;
         }
+
     }
 }
 
+
 @media (min-width: $width-xx-desktop) {
     .banner {
-
-        .splide {
-            height: 80vh;
-        }
-
+       
         .container {
+            padding: 50px;
             margin-left: auto;
-            border-left: 1px solid grey;
+            padding: 55px 10px;
+            
+            &::before{
+                position: absolute;
+                content: "";
+                width: 1px;
+                top: 0;
+                bottom: 0;
+                background-color: $gray-600;
+                left: -50px;
+            }
+        }
+        .splide {
+            height: 35rem;
+
+            &__pagination {
+            }
+            &__pagination {
+                display: flex;
+                left: -95px;
+                height: auto;
+            }
+
+            &__title {
+                font-size: 3.5rem;
+            }
         }
 
-        &__slide {
-            padding: 150px 0;
+      
+    }
+}
+
+@media (min-width: $width-xxx-desktop) {
+    .banner {
+        .splide {
+
+            &__pagination {
+                left: -120px;
+            }
         }
     }
 }

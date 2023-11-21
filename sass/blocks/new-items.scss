@@ -6,16 +6,17 @@
         background-color: $white;
         border-radius: 5px;
         .btn-tab{
-            padding: 10px;
+            padding: 15px;
             color: $secondary;
             font-size: 14px;
+            text-decoration: none;
         }
         .btn-tab:hover{
             background-color: $primary;
             border-radius: 5px;
             color: $white;
             text-decoration: white;
-          
+            text-decoration: underline;
         }
     }
 
