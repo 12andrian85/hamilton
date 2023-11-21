@@ -89,47 +89,72 @@
 <body>
     <header class="header position-relative mb-5" style="height: 100px-;">
         <!-- <h1 class="d-none">Hamilton</h1> -->
-        <!-- logo-mobile -->
-        <div class="container d-flex justify-content-center d-lg-none">
-            <div class="nav-logo">
-                <img src="/SVG/head-logo.svg" style="height: 55px;" alt="">
-                <div class="d-flex flex-column ms-2">
-                    <span class="text-primary fs-5 fw-semibold">Hamilton</span>
-                    <span class="text-secondary fs-sm">Estate Rental</span>
-                </div>
+        <!-- logo -->
+        <div class="nav-logo d-flex justify-content-center d-lg-none ">
+            <img src="/SVG/head-logo.svg" style="height: 55px;" alt="">
+            <div class="d-flex flex-column ms-2">
+                <span class="text-primary fs-5 fw-semibold">Hamilton</span>
+                <span class="text-secondary fs-sm">Estate Rental</span>
             </div>
         </div>
-        <div class="container-fluid  d-none d-lg-flex align-items-center justify-content-center border-bottom">
-            <!-- contact-header -->
-            <div class="contact-header d-none d-lg-flex">
-                <ul class="justify-content-center list-unstyled d-flex text-secondary fs-sm m-0">
-                    <li class="text-secondary px-4 d-flex align-items-center">
-                        <i class="fa-solid pe-2 fa-location-dot"></i>
-                        <span>588 road broklyan - </span><span class="text-primary">London</span>
-                    </li>
-                    <li class="text-secondary px-4 d-flex align-items-center border-end border-start">
-                        <i class="fa-solid pe-2 fa-phone"></i>
-                        <span>+199(980)6915</span>
-                    </li>
-                    </li>
-                    <li class="text-secondary px-4 d-flex align-items-center">
-                        <i class="fa-regular pe-2 fa-envelope"></i>
-                        <span>shifamoni@gmail.com</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="header-block text-secondary px-4 d-flex align-items-center border-start">
-                <form class="form" role="search">
-                    <div class="field d-flex position-relative">
-                        <input class="form-control text-secondary form__search fs-sm me-2" type="search"
-                            placeholder="Search..." aria-label="Search">
-                        <button class="btn form__submit" type="submit">
-                            <i class="fa-solid pe-2 fa-magnifying-glass"></i>
-                        </button>
+
+        <!-- <div class="contact-header  -->
+            <!-- aici atachazi ::before -->
+            <!-- si ::after -->
+            <!-- si border-bottom -->
+            <!-- si va fii 100% -->
+            
+            <!-- <div class="container d-flex justify-content-between px-0"> -->
+                    
+            <!-- </div> -->
+
+            <!-- body se va afla in .container -->
+        <!-- </div> -->
+
+        <!-- contact-header -->
+        <div class="contact-header d-none d-lg-flex border-bottom">
+
+            <ul class="justify-content-between list-unstyled d-flex w-100">
+                <li class="text-secondary align-items-center d-none d-xl-block">
+                    <img src="/SVG/headleft-sfg.svg" alt="">
+                </li>
+
+
+                <!-- add div in li -->
+                <!-- pseudo element ::before, ::after -->
+                <div class="container d-flex justify-content-between px-0">
+                    <ul>
+                        <li class="text-secondary px-2 d-flex align-items-center">
+                            <i class="fa-solid pe-2 fa-location-dot"></i>
+                            <span>588 road broklyan - </span><span class="text-primary">London</span>
+                        </li>
+                        <li class="text-secondary px-2 d-flex align-items-center">
+                            <i class="fa-solid pe-2 fa-phone"></i>
+                            <span>+199(980)6915</span>
+                        </li>
+                        </li>
+                        <li class="text-secondary px-2 d-flex align-items-center">
+                            <i class="fa-regular pe-2 fa-envelope"></i>
+                            <span>shifamoni@gmail.com</span>
+                        </li>
+                    </ul>
+                    <div class="text-secondary px-2 d-flex align-items-center ">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button>
+                                <i class="fa-solid pe-2 fa-magnifying-glass"></i>
+                            </button>
+                        </form>
                     </div>
-                </form>
-            </div>
+                </div>
+
+
+                <li class="text-secondary d-none d-xl-block align-items-center">
+                    <img src="/SVG/head-right.svg" alt="">
+                </li>
+            </ul>
         </div>
+
         <!-- navigation -->
         <div class="main-nav">
             <div class="container">
@@ -858,6 +883,9 @@
             </div>
         </section>
         <!-- availability -->
+
+        <!-- mareste inaltimea iconitelor -->
+        <!-- add arrow to top blue bar -->
         <section class="availability">
             <div class="container-fluid">
                 <div class="row">
@@ -1018,8 +1046,9 @@
                 </div>
             </div>
         </section>
+
         <!-- types -->
-        <section class="types text-center py-md-5 my-5">
+        <section class="types text-center py-5 my-5">
             <div class="container">
                 <div class="c-title-center mb-3">
                     <span class="title-center text-primary position-relative mb-3">Views all 329 New Listings</span>
