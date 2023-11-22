@@ -1,40 +1,4 @@
 .team-details {
-    input[type="range"] {
-        /* removing default appearance */
-        -webkit-appearance: none;
-        appearance: none;
-        /* creating a custom design */
-        width: 100%;
-        cursor: pointer;
-        outline: none;
-        /*  slider progress trick  */
-        overflow: hidden;
-        border-radius: none;
-        border-bottom-width: 50px;
-
-    }
-
-    input[type="range"]::-webkit-slider-runnable-track {
-        height: 12px;
-        background: $secondary;
-        border-bottom-width: 50px;
-        border-radius: none;
-    }
-
-    .team-details-range::-webkit-slider-thumb {
-        /* removing default appearance */
-        -webkit-appearance: none;
-        appearance: none;
-        /* creating a custom design */
-        height: 12px;
-        width: 12px;
-        background-color: $primary;
-        border-radius: none;
-        border: 2px solid $primary;
-        border-bottom-width: 50px;
-        /*  slider progress trick  */
-        box-shadow: -407px 0 0 400px $primary;
-    }
 
     &__information {
         background-color: #F7F6F1FF;
@@ -49,14 +13,23 @@
             border-radius: 50%;
             width: 30px;
             height: 30px;
-            margin: 5px;
+            margin: 10px 0;
         }
-        &__item:hover{
+        &__element {
+            border-radius: 50%;
+            padding: 16px;
+            border: none;
+            background-color: transparent;    
+        }
+
+        &__element:hover {
             background-color: $primary;
-            .c-socials__brand{
+
+            .c-socials__brand {
                 color: $white;
             }
         }
+
     }
 
 }
@@ -65,15 +38,24 @@
     .team-details {
         height: 550px;
         overflow: hidden;
+
         &__information {
             position: relative;
             margin-left: -90px;
         }
     }
 }
+
 @media (min-width: $width-desktop) {
     .team-details {
         &__information {
+            margin-left: -105px;
+            top: 30px;
+        }
+
+        img {
+            object-position: top;
+            height: 465px;
         }
     }
 }

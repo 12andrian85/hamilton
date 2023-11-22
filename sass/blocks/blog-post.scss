@@ -3,9 +3,10 @@
         height: 19rem;
     }
 
+    width: 35px;
     &__share {
-        width: 35px;
         height: 35px;
+        padding: 10px;
         border-radius: 50%;
         background-color: $gray-400;
     }
@@ -29,15 +30,14 @@
         .card {
             border: none;
 
-            .card-head {
-                // width: 200px;
-            }
-
             .card-img {
                 height: 170px;
                 object-position: center;
             }
 
+            .card-socials {
+                text-decoration: none;
+            }
             .card-socials i {
                 font-size: large;
                 color: $gray-500;
@@ -68,8 +68,8 @@
             border-bottom: 1px solid $gray-500;
 
             .card-wrapper {
-                height: 140px;
-                width: 140px;
+                height: 100px;
+                width: 100px;
             }
         }
 
@@ -82,7 +82,7 @@
             }
 
             &__field {
-                border-radius: 5px;
+                border-radius: 2px;
                 background-color: $gray-300;
             }
         }
@@ -93,12 +93,14 @@
 
         .form-control {
             background-color: $gray-100;
-            padding: 10px;
+            padding: 14px;
             border-radius: 0;
         }
 
         .form-btn {
-            right: -30px
+            background-color: #f8f9fa;
+            padding: 0;
+            right: 0;
         }
 
         .form-icon::before {
@@ -120,6 +122,9 @@
     &__categories {
         background-color: $gray-100;
 
+    }
+    &__suport{
+        background-color: #525157FF;
     }
 
     &__options {

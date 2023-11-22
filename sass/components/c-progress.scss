@@ -17,6 +17,18 @@
         width: 100%;
         background: $secondary;
     }
+    .c-progress__first::after{
+        width: 80%;
+
+    }
+    .c-progress__two::after{
+        width: 50%;
+
+    }
+    .c-progress__last::after{
+        width: 95%;
+
+    }
 
     progress::after {
         width: 70%;

@@ -5,6 +5,13 @@
     .c-sub-title::before {
         background-color: $gray-300;
     }
+    .contacts-icon{
+            padding: 15px;
+            margin-right: 10px;
+            background-color: $secondary;
+            color: $white;
+    }
+
     .form{
         .form-control{
             padding: 8px 10px;

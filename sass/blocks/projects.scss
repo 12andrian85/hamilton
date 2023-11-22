@@ -1,13 +1,16 @@
 .projects {
-    .projects-img{
+    .projects-img {
         object-position: left;
     }
+
+    .projects__highlight {}
 
     .accordion {
 
         .accordion-item {
             background-color: #d0e6f0;
             margin: 15px 0;
+            border-radius: 0;
         }
 
         .accordion-button {
@@ -18,15 +21,17 @@
             background-color: #d0e6f0;
             box-shadow: none;
         }
-        .accordion-button-icon-transform:focus{
+
+        .accordion-button-icon-transform:focus {
             transform: rotate(90deg);
+            // background-color: $primary;
         }
+
         .accordion-button::after {
             background-image: url("/SVG/angles-right-solid.svg");
+            background-size: 14px;
             background-color: $secondary;
-            padding: 5px;
-            width: 41px;
-            height: 42px;
+            padding: 14px;
             background-position: center;
             border-radius: 5px;
         }
@@ -37,4 +42,12 @@
         }
     }
 
+}
+
+@media (min-width: $width-desktop) {
+    .projects {
+        .projects__highlight {
+            height: 380px;
+        }
+    }
 }

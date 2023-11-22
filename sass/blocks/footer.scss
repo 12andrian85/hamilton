@@ -1,7 +1,8 @@
 .footer {
-    background-color: #191818;
+    background-color: #181818FF;
     opacity: 0.95;
-    .footer-logo img{
+
+    .footer-logo img {
         width: min-content;
     }
 
@@ -27,10 +28,29 @@
         }
     }
 
-    .form-control {
-        width: min-content;
-        background-color: $white;
-        padding: 2px;
+    .form {
+        .form-input {
+            width: min-content;
+            background-color: $white;
+            border: none;
+            border-radius: 0;
+            padding: 14px 10px;
+        }
+
+        .form-search {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 7px;
+            width: 40px;
+            height: 40px;
+            background-color: $primary;
+            border: none;
+        }
+        .form-svg{
+            color: $white;
+        }
+
     }
 
     .footer-inner {
@@ -40,25 +60,29 @@
         display: flex;
         justify-content: center;
     }
-   
+
     .footer-gallery {
         max-height: 65px;
         max-width: 65px;
-        padding: 5px;
+        margin: 7px;
     }
-    .c-socials{
-        &__element{
+
+    .c-socials {
+        &__element {
             background-color: transparent;
         }
-        &__brand{
+
+        &__brand {
             color: $white;
         }
     }
-    .c-socials:hover{
-        &__element{
+
+    .c-socials:hover {
+        &__element {
             background-color: $white;
         }
-        &__brand{
+
+        &__brand {
             color: $primary;
         }
     }
@@ -69,7 +93,8 @@
         .form-control {
             width: 100px;
         }
-        .footer-title{
+
+        .footer-title {
             margin-bottom: 60px;
         }
     }
