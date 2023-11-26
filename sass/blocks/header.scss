@@ -1,8 +1,10 @@
 .header {
     background-color: #F4F4F4FF;
-    .container-fluid{
+
+    .container-fluid {
         height: 50px;
     }
+
     .header-svg-element {
         display: none;
     }
@@ -24,7 +26,7 @@
             position: absolute;
             right: 0;
         }
-
+       
     }
 
     .header-block {
@@ -73,27 +75,30 @@
 
         }
 
-    }
-
-    .navbar-nav {
-        // margin-right: 50px;
-    }
-
-    .nav-logo {
-        width: max-content;
-    }
-
-    .collapse {
-        .btn {
-            padding: 8px 30px;
-        }
-
-        .btn:hover {
-            background-color: $primary;
+        .navbar-collapse {
+            background-color: #F4F4F4FF;
+            z-index: 10;
         }
     }
 
 }
+
+.nav-logo {
+    display: flex;
+    margin: 12px;
+    width: max-content;
+}
+
+.collapse {
+    .btn {
+        padding: 8px 30px;
+    }
+
+    .btn:hover {
+        background-color: $primary;
+    }
+}
+
 
 .header::before {
     display: none;

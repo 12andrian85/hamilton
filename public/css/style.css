@@ -10287,13 +10287,21 @@ input:focus-visible {
   color: #1684b5;
   border-bottom: 1px solid #1684b5;
 }
-.header .nav-logo {
+.header .navbar .navbar-collapse {
+  background-color: #f4f4f4;
+  z-index: 10;
+}
+
+.nav-logo {
+  display: flex;
+  margin: 12px;
   width: max-content;
 }
-.header .collapse .btn {
+
+.collapse .btn {
   padding: 8px 30px;
 }
-.header .collapse .btn:hover {
+.collapse .btn:hover {
   background-color: #1684b5;
 }
 
@@ -10340,6 +10348,9 @@ input:focus-visible {
 .banner .form .btn {
   width: 155px;
   height: 50px;
+}
+.banner .form .form-select {
+  color: #6c757d;
 }
 .banner .splide {
   margin-left: auto;
@@ -10718,7 +10729,7 @@ input:focus-visible {
   font-weight: 500;
   border: 1px solid #ced4da;
   padding: 5px 25px;
-  margin: 0 5px;
+  margin: 5px;
 }
 .blog-post__sugestion .card {
   border: none;
@@ -10825,6 +10836,7 @@ input:focus-visible {
   border-bottom: 1px solid #1684b5;
   display: inline-block;
   padding-bottom: 5px;
+  margin-top: 15px;
 }
 .footer .footer-svg {
   color: #1684b5;
@@ -10888,12 +10900,15 @@ input:focus-visible {
     width: 100px;
   }
   .footer .footer-title {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 }
 @media (min-width: 768px) {
   .footer .form-control {
     width: auto;
+  }
+  .footer .footer-subtitle {
+    margin-top: 0;
   }
 }
 .c-btn .btn {

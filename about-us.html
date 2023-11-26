@@ -27,17 +27,17 @@
 
 <body>
     <!-- header -->
-    <header class="header position-relative">
+    <header class="header position-relative" style="height: 100px-;">
         <!-- <h1 class="d-none">Hamilton</h1> -->
         <!-- logo-mobile -->
         <div class="container d-flex justify-content-center d-lg-none">
-            <div class="nav-logo">
+            <a class="nav-logo text-decoration-none" href="index.html">
                 <img src="/SVG/head-logo.svg" style="height: 55px;" alt="">
                 <div class="d-flex flex-column ms-2">
                     <span class="text-primary fs-5 fw-semibold">Hamilton</span>
                     <span class="text-secondary fs-sm">Estate Rental</span>
                 </div>
-            </div>
+            </a>
         </div>
         <div class="container-fluid  d-none d-lg-flex align-items-center justify-content-center border-bottom">
             <!-- contact-header -->
@@ -73,7 +73,7 @@
         <!-- navigation -->
         <div class="main-nav">
             <div class="container">
-                <nav class="navbar navbar-expand-lg my-2">
+                <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid d-flex ">
                         <div class="d-flex flex-row-reverse justify-content-between w-100">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -137,37 +137,26 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Services
+                                    <a class="nav-link dropdown-toggle" href="service.html" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Service
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="service.html">Services</a></li>
-                                        <li><a class="dropdown-item" href="team-details.html">Team Details</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li><a class="dropdown-item" href="service.html">Service</a>
+                                        <li><a class="dropdown-item" href="team-details.html">team-details</a>
+                                        </li>
+
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="projects.html" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link" href="projects.html" role="button">
                                         Projects
                                     </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="projects.html">Projects</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog-post.html" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link text-nowrap" href="blog-post.html" role="button">
                                         Block Post
                                     </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="blog-post.html">Block Post</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" aria-current="page" href="contacts.html">Contacts</a>
@@ -240,7 +229,6 @@
                                 <span class=" title-start text-primary position-relative mb-3">
                                     We can help you realize your
                                 </span>
-                                <h2 class="fs-1 text-capitalize fw-bolder">title</h2>
                             </div>
                             <h2 class="fs-1 text-capitalize fw-bolder">
                                 dream living spaces setting new build storage
@@ -275,7 +263,7 @@
                                 <progress class="w-100" id="file" max="100" value="10">70%</progress>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center">
+                        <div class="d-md-flex align-items-center justify-content-between">
                             <button
                                 class="c-button btn btn-primary position-relative me-4 px-5 d-flex align-items-center justify-content-between">
                                 <svg class="icon icon-left position-absolute">
@@ -286,11 +274,11 @@
                                     <use xlink:href="#triangle-right"></use>
                                 </svg>
                             </button>
-                            <div class="d-flex justify-content-between">
-                                <div class="d-flex align-items-center">
+                            <div class="">
+                                <div class="d-flex mt-3 mt-md-0 align-items-center">
                                     <div class="rounded-circle overflow-hidden border border-primary border-2 me-1"
                                         style="height: 40px; width: 40px;">
-                                        <img class="" src="public/img/joe-holland-80zZ1s24Nag-unsplash.jpg" width="70px"
+                                        <img class="" src="public/img/noaa-VbHLtYBlkEU-unsplash.jpg" width="70px"
                                             alt="">
                                     </div>
                                     <div class="d-flex flex-column">
@@ -689,7 +677,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-12 col-md-6 col-lg-4 mx-auto my-3">
+                    <div class="col col-12 col-md-6 col-lg-4 my-3">
                         <div class="c-team">
                             <div class="team__wrapper ms-auto d-flex p-3">
                                 <div class="team__inner d-flex- pt-3">
@@ -865,7 +853,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-12 col-md-6 col-lg-4 mx-auto">
+                    <div class="col col-12 col-md-6 col-lg-4">
                         <div class="card card-top card-top--middle position-relative">
                             <img class="card-img--top" src="/public/img/naomi-ellsworth-EMPLSuvDuhQ-unsplash.jpg"
                                 alt="home">
@@ -899,7 +887,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-12 col-md-6 col-lg-4 mx-auto">
+                    <div class="col col-12 col-md-6 col-lg-4">
                         <div class="card card-top position-relative">
                             <img class="card-img--top" src="/public/img/s-group-official-6spmqj2OSLk-unsplash.jpg"
                                 alt="home">
@@ -1081,28 +1069,28 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col col-12 col-md-4 col-lg-3 mx-auto footer-block overflow-hidden">
+                <div class="col col-12 col-md-4 col-lg-3 footer-block overflow-hidden">
                     <h5 class="footer-subtitle text-capitalize">
                         our gallery
                     </h5>
 
                     <div class="d-flex mt-2">
-                            <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
-                                alt="">
-                            <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
-                                alt="">
-                            <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
-                                alt="">
+                        <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
+                            alt="">
+                        <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
+                            alt="">
+                        <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
+                            alt="">
                     </div>
                     <div class="d-flex ">
-                            <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
-                                alt="">
-                            <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
-                                alt="">
-                            <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
-                                alt="">
+                        <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
+                            alt="">
+                        <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
+                            alt="">
+                        <img class="footer-gallery" src="/public/img/footer-img/webaliser-_TPTXZd9mOo-unsplash.jpg"
+                            alt="">
                     </div>
-                   
+
                 </div>
 
             </div>
