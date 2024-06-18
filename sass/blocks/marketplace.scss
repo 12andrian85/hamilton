@@ -1,0 +1,41 @@
+.banner {
+
+    .splide {
+        margin-left: auto;
+        
+
+        &__pagination {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin-left: 0;
+            right: auto;
+            left: -17px;
+        }
+
+        &__arrows {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: $width-tablet) {
+    .banner {
+        .splide {
+
+            .splide__pagination {
+                left: -18px;
+            }
+        }
+    }
+}
+@media (min-width: $width-desktop) {
+    .banner {
+        .splide {
+
+            .splide__pagination {
+                left: -23px;
+            }
+        }
+    }
+}
