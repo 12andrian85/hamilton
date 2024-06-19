@@ -1,6 +1,6 @@
 .banner {
     background-color: black;
-    background-image: url(https://12andrian85.github.io/public/img/naomi-ellsworth-EMPLSuvDuhQ-unsplash.jpg);
+    background-image: url("https://12andrian85.github.io/public/img/home_banner_img.jpg");
     background-size: cover;
 
     .form {
@@ -59,7 +59,7 @@
             content: "";
             width: 90px;
             height: 100px;
-            background-image: url("/SVG/form-element.svg");
+            background-image: url("/public/icons/form-element.svg");
             top: -19px;
             left: -20px;
         }

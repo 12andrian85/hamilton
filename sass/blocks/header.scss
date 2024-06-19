@@ -106,7 +106,7 @@
     content: "";
     width: 200px;
     height: 50px;
-    background-image: url("https://12andrian85.github.io/SVG/head-left.svg");
+    background-image: url("/public/icons/head-left.svg");
     left: 0;
     top: 0;
 
@@ -117,12 +117,12 @@
 }
 
 .header::after {
-    display: none;
     position: absolute;
+    display: none;
     content: "";
     width: 200px;
     height: 50px;
-    background-image: url("https://12andrian85.github.io/SVG/head-right.svg");
+    background-image: url("/public/icons/head-right.svg");
     right: 0;
     top: 0;
 

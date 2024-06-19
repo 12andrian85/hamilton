@@ -10311,7 +10311,7 @@ input:focus-visible {
   content: "";
   width: 200px;
   height: 50px;
-  background-image: url("/SVG/head-left.svg");
+  background-image: url("/public/icons/head-left.svg");
   left: 0;
   top: 0;
 }
@@ -10322,12 +10322,12 @@ input:focus-visible {
 }
 
 .header::after {
-  display: none;
   position: absolute;
+  display: none;
   content: "";
   width: 200px;
   height: 50px;
-  background-image: url("/SVG/head-right.svg");
+  background-image: url("/public/icons/head-right.svg");
   right: 0;
   top: 0;
 }
@@ -10339,7 +10339,7 @@ input:focus-visible {
 
 .banner {
   background-color: black;
-  background-image: url(/public/img/naomi-ellsworth-EMPLSuvDuhQ-unsplash.jpg);
+  background-image: url("https://12andrian85.github.io/public/img/home_banner_img.jpg");
   background-size: cover;
 }
 .banner .form {
@@ -10389,7 +10389,7 @@ input:focus-visible {
     content: "";
     width: 90px;
     height: 100px;
-    background-image: url("/SVG/form-element.svg");
+    background-image: url("/public/icons/form-element.svg");
     top: -19px;
     left: -20px;
   }
@@ -10476,7 +10476,7 @@ input:focus-visible {
     top: 18px;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url(/SVG/Polygon.svg);
+    background-image: url(/public/icons/polygon.svg);
     background-repeat: no-repeat;
   }
 }
@@ -10552,7 +10552,7 @@ input:focus-visible {
 }
 
 .video {
-  background-image: url("/public/img/bedroom.jpg");
+  background-image: url("https://12andrian85.github.io/public/img/bedroom.jpg");
   background-position: center;
   background-size: cover;
   filter: brightness(0.7);
@@ -10671,7 +10671,7 @@ input:focus-visible {
   transform: rotate(90deg);
 }
 .projects .accordion .accordion-button::after {
-  background-image: url("/SVG/angles-right-solid.svg");
+  background-image: url("/public/icons/angles-right-solid.svg");
   background-size: 14px;
   background-color: #003e4d;
   padding: 14px;
@@ -10687,25 +10687,6 @@ input:focus-visible {
     height: 380px;
   }
 }
-.contacts .c-sub-title {
-  border-bottom: none;
-}
-.contacts .c-sub-title::before {
-  background-color: #dee2e6;
-}
-.contacts .contacts-icon {
-  padding: 15px;
-  margin-right: 10px;
-  background-color: #003e4d;
-  color: #ffffff;
-}
-.contacts .form .form-control {
-  padding: 8px 10px;
-  border: none;
-  border-radius: 2px;
-  background-color: #dee2e6;
-}
-
 .blog-post {
   width: 35px;
 }
@@ -10949,7 +10930,7 @@ input:focus-visible {
   content: "";
   width: 20px;
   height: 20px;
-  background-image: url(/SVG/fits.svg);
+  background-image: url(/public/icons/fits.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -10961,7 +10942,7 @@ input:focus-visible {
   content: "";
   width: 20px;
   height: 20px;
-  background-image: url(/SVG/fits.svg);
+  background-image: url(/public/icons/fits.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -10981,7 +10962,7 @@ input:focus-visible {
   content: "";
   width: 20px;
   height: 20px;
-  background-image: url(/SVG/fits.svg);
+  background-image: url(/public/icons/fits.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -11151,7 +11132,7 @@ input:focus-visible {
 .c-socials__element:hover {
   background-color: #003e4d;
 }
-.c-socials__element:hover .socials__brand {
+.c-socials__element:hover__brand {
   color: #ffffff;
 }
 
@@ -11189,9 +11170,6 @@ input:focus-visible {
 }
 .c-team .c-socials__item:hover {
   background-color: #1684b5;
-}
-.c-team .c-socials__item:hover .c-socials__brand {
-  color: #ffffff;
 }
 
 @media (min-width: 1200px) {
@@ -11267,18 +11245,14 @@ input:focus-visible {
   font-weight: 700;
 }
 .c-progress-but .progress-bar {
-  border-top-right-radius: 20px;
+  border-radius: 20px;
 }
-.c-progress-but .progress-bar {
-  height: 12px;
-}
-
 .banner-about {
   display: flex;
   align-items: flex-end;
   min-height: 350px;
   background-color: black;
-  background-image: url(/public/img/vu-anh-TiVPTYCG_3E-unsplash.jpg);
+  background-image: url(https://12andrian85.github.io/public/img/vu-anh-TiVPTYCG_3E-unsplash.jpg);
   background-size: cover;
 }
 .banner-about .container {
@@ -11446,7 +11420,7 @@ input:focus-visible {
   align-items: center;
   min-height: 550px;
   background-color: black;
-  background-image: url(/public/img/vu-anh-TiVPTYCG_3E-unsplash.jpg);
+  background-image: url(https://12andrian85.github.io/public/img/vu-anh-TiVPTYCG_3E-unsplash.jpg);
   background-size: cover;
 }
 .banner-service .c-breadcrumb {
