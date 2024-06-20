@@ -14,13 +14,18 @@
         height: 50px;
     }
 
-    .form {
+    .form { 
         &__search {
             background-color: transparent;
             border: none;
             max-width: 150px;
         }
 
+
+
+        &__submit:active {
+            border: none;
+        }
         &__submit {
 
             position: absolute;

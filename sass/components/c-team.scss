@@ -47,10 +47,11 @@
         &__item:hover {
             background-color: $primary;
 
-            // .c-socials__brand {
-                // color: $white;
-            // }
+            .c-socials__brand {
+                color: $white;
+            }
         }
+    
     }
 
 }
@@ -58,7 +59,7 @@
 @media (min-width: $width-x-desktop) {
     .c-team {
 
-        .c-socilas{
+        .c-socilas {
             margin-left: 10px;
         }
     }

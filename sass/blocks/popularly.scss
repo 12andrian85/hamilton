@@ -1,4 +1,14 @@
-.popularly{
+.popularly {
     padding-top: 95px;
     padding-bottom: 70px;
+
+    &__social {
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+    &__social span:hover {
+        background-color: $primary;
+        color: $white;
+        border: none;
+    }
 }

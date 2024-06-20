@@ -1,0 +1,33 @@
+.c-socials-card {
+    margin-top: 20px;
+
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__element {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        height: 30px;
+        width: 30px;
+        background-color: $white;
+        transition: all 0.3s;
+    }
+
+    &__brand {
+        color: $secondary;
+    }
+
+    &__element:hover {
+        background-color: $secondary;
+
+        .c-socials-card__brand {
+            color: $white;
+        }
+    }
+
+}
