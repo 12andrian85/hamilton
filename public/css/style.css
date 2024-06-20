@@ -10342,7 +10342,7 @@ input:focus-visible {
 
 .banner {
   background-color: black;
-  background-image: url("/public/img/vu-anh-TiVPTYCG_3E-unsplash.jpg");
+  background-image: url("https://12andrian85.github.io/hamilton/public/img/vu-anh-TiVPTYCG_3E-unsplash.jpg");
   background-size: cover;
 }
 .banner .form {
