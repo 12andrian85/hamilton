@@ -10314,7 +10314,7 @@ input:focus-visible {
   content: "";
   width: 200px;
   height: 50px;
-  background-image: url("/public/icons/head-left.svg");
+  background-image: url("https://12andrian85.github.io/hamilton/public/icons/head-left.svg");
   left: 0;
   top: 0;
 }
@@ -10329,8 +10329,8 @@ input:focus-visible {
   display: none;
   content: "";
   width: 200px;
+  background-image: url("https://12andrian85.github.io/hamilton/public/icons/head-right.svg");
   height: 50px;
-  background-image: url("/public/icons/head-right.svg");
   right: 0;
   top: 0;
 }
@@ -10564,7 +10564,7 @@ input:focus-visible {
 }
 
 .video {
-  background-image: url("/public/img/bedroom.jpg");
+  background-image: url("https://12andrian85.github.io/hamilton/public/img/bedroom.jpg");
   background-position: center;
   background-size: cover;
   filter: brightness(0.7);
@@ -11162,7 +11162,7 @@ input:focus-visible {
   justify-content: center;
   text-decoration: none;
   height: 30px;
-  width: 30px;
+  width: 35px;
   background-color: #ffffff;
   transition: all 0.3s;
 }
@@ -11288,14 +11288,18 @@ input:focus-visible {
   font-weight: 700;
 }
 .c-progress-but .progress-bar {
-  border-radius: 20px;
+  border-top-right-radius: 20px;
 }
+.c-progress-but .progress-bar {
+  height: 12px;
+}
+
 .banner-about {
   display: flex;
   align-items: flex-end;
   min-height: 350px;
   background-color: black;
-  background-image: url("/public/img/vu-anh-TiVPTYCG_3E-unsplash.jpg");
+  background-image: url("https://12andrian85.github.io/hamilton/public/img/vu-anh-TiVPTYCG_3E-unsplash.jpg");
   background-size: cover;
 }
 .banner-about .container {
@@ -11463,7 +11467,7 @@ input:focus-visible {
   align-items: center;
   min-height: 550px;
   background-color: black;
-  background-image: url(public/img/vu-anh-TiVPTYCG_3E-unsplash.jpg);
+  background-image: url("https://12andrian85.github.io/hamilton/public/img/vu-anh-TiVPTYCG_3E-unsplash.jpg");
   background-size: cover;
 }
 .banner-service .c-breadcrumb {

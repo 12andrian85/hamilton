@@ -111,14 +111,14 @@
     content: "";
     width: 200px;
     height: 50px;
-    background-image: url("/public/icons/head-left.svg");
+    background-image: url("https://12andrian85.github.io/hamilton/public/icons/head-left.svg");
     left: 0;
     top: 0;
-
+    
     @media (min-width: $width-x-desktop) {
         display: block;
     }
-
+    
 }
 
 .header::after {
@@ -126,8 +126,8 @@
     display: none;
     content: "";
     width: 200px;
+    background-image: url("https://12andrian85.github.io/hamilton/public/icons/head-right.svg");
     height: 50px;
-    background-image: url("/public/icons/head-right.svg");
     right: 0;
     top: 0;
 
