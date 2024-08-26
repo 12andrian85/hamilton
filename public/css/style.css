@@ -10272,6 +10272,10 @@ input:focus-visible {
   margin: 15px 10px;
   padding: 0;
 }
+.header .navbar .navbar-toggler {
+  border: none;
+  box-shadow: none;
+}
 .header .navbar .btn {
   width: max-content;
   border-radius: 0;
@@ -10297,7 +10301,7 @@ input:focus-visible {
 
 .nav-logo {
   display: flex;
-  margin: 12px;
+  margin: 0 12px;
   width: max-content;
 }
 
@@ -10444,6 +10448,9 @@ input:focus-visible {
   background-color: #1684b5;
   color: #ffffff;
   border: none;
+}
+.popularly .splide__slide {
+  margin: 0 5px;
 }
 
 .consulting .title-start {

@@ -14,7 +14,7 @@
         height: 50px;
     }
 
-    .form { 
+    .form {
         &__search {
             background-color: transparent;
             border: none;
@@ -26,12 +26,13 @@
         &__submit:active {
             border: none;
         }
+
         &__submit {
 
             position: absolute;
             right: 0;
         }
-       
+
     }
 
     .header-block {
@@ -54,6 +55,11 @@
             font-weight: 600;
             margin: 15px 10px;
             padding: 0;
+        }
+
+        .navbar-toggler {
+            border: none;
+            box-shadow: none;
         }
 
         .btn {
@@ -90,7 +96,7 @@
 
 .nav-logo {
     display: flex;
-    margin: 12px;
+    margin: 0 12px;
     width: max-content;
 }
 
@@ -114,11 +120,11 @@
     background-image: url("https://12andrian85.github.io/hamilton/public/icons/head-left.svg");
     left: 0;
     top: 0;
-    
+
     @media (min-width: $width-x-desktop) {
         display: block;
     }
-    
+
 }
 
 .header::after {

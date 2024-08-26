@@ -11,4 +11,9 @@
         color: $white;
         border: none;
     }
+    .splide{
+        &__slide{
+            margin: 0 5px;
+        }
+    }
 }
